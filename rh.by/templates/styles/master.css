@@ -1,0 +1,1504 @@
+/* 
+Title:     Regionalna gazeta master screen styles
+Updated:   May 21, 2009
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, serif;
+  font-size: small;
+  color: #333;
+  background: #333;
+  }
+
+td {
+  font-family: Arial, sans-serif;
+  font-size: small;
+  color: #333;
+  }
+  
+/* links */
+
+a:link, a:visited {
+  color: #154a7f;
+  }
+
+a:hover {
+  color: #333;
+  }
+  
+/* headings */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Times New Roman", Times, serif;
+  color: #000;
+} 
+
+h2 {
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-size: 185%;
+  line-height: 1em;
+  font-weight: bold;
+  }
+  
+h3 {
+  font-family: Arial, sans-serif;
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 145%;
+  line-height: 1em;
+  font-weight: normal;  
+} 
+
+h4 {
+  font-family: Arial, sans-serif;
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 105%;
+  line-height: 1.25em;
+  font-weight: bold;  
+} 
+
+h2 a, h3 a, h4 a {
+  text-decoration: none;
+}
+
+/* page structure
+---------------------------------------------- */
+
+#wrap {
+  width: 981px;
+  font-size: 95%;
+  margin: 0px auto 20px auto;
+  background: #fff;
+  background: url(../images/headerbgr.gif) #fff repeat-x top left;
+  }
+
+#footer {
+  width: 981px;
+  font-size: 95%;
+  margin:0 auto 20px auto;
+  padding: 20px 0;
+  background: #fff;
+  }
+  
+/* header
+---------------------------------------------- */
+
+#header {
+  margin: 0 20px 15px 20px;
+  padding-top:15px;
+  } 
+  
+#header #logo {
+  float: left;
+  width:50%;
+  margin-bottom: 10px;
+  position: relative;
+} 
+
+#header #logo p#current-date {
+  position: absolute;
+  bottom: 0px;
+  right: 245px;
+  font-family: Arial, sans-serif;
+  font-size: 95%;
+  letter-spacing: -.5px;
+} 
+
+#header #banner468 {
+  float: right;
+  clear:right;
+  width: 468px;
+  height: 60px;
+  background: #e7e7e7;
+  overflow: hidden;
+  }
+
+#header #logo img,
+#header #banner468 img {
+  display: block;
+        
+  }
+
+#header #head-menu {
+  float: left;
+        margin:0;
+  padding: 0;
+  clear: left;
+  width: 50%;
+}
+
+#head-menu p {
+  color: #6b6858;
+  font-size: 80%;
+        text-transform: uppercase;
+  letter-spacing: -0.5px;
+  word-spacing: -1px;
+  font-weight: bold;
+  line-height: 1.5em;
+       
+}
+
+#head-menu p a {
+  color: #6b6858;
+        text-decoration: underline;
+}
+
+#header #search-box {
+  float: right;
+  clear: right;
+  width: 50%;
+  text-align: right;
+}
+
+.search-form {
+  margin:0;
+  padding: 0;
+}
+
+.search-form .search-text {
+  float: left;
+  border-top: 1px solid #bbb;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #ccc;
+  background-color: #f6f6f6;
+  width: 175px;
+  height: 15px;
+  padding: 5px;
+  font-family: Arial, sans-serif;
+  color: #666;
+  font-size: 100%;
+  margin-left: 90px;
+}
+
+.search-form .search-button {
+  float: right;
+  background: #333;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  font-size: 80%;
+  line-height: 25px;
+  height: 27px;
+  /* padding: 0 3px; */
+  border: 1px solid #333;
+  margin: 0px 7px;
+}
+
+.search-form a {
+  display: block;
+  float: right;
+  text-decoration: none;
+  line-height: 25px;
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+  color: #154a7f;
+  background: url(../images/poshuk.gif) center right no-repeat;
+  padding-right: 7px;
+}
+  
+/* main navigation 
+---------------------------------------------- */
+
+#main-nav {
+  border-top: 1px solid #bfb8b8;
+  border-bottom:1px solid #bfb8b8;
+  width: 100%;
+  clear: both;
+  list-style: none;
+  overflow: hidden;
+  } 
+  
+#main-nav ul#novosti {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f5e8;
+  list-style: none;
+  width: 100%; /* ie 6.0 */
+  border-bottom:1px solid #bfb8b8;
+  background: url(../images/ul-novosti-bckgr.gif) center left no-repeat #f8f5e8;
+  } 
+  
+ul#novosti li {
+  float: left;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 145%;
+  line-height: 1em;
+  font-weight: bold;
+  color: #333;
+}
+
+ul#novosti li#title {
+  font-weight: normal;
+}
+
+ul#novosti li#title a,
+ul#novosti li#title a:hover {
+  text-decoration: none;
+  margin: 5px 0;
+  padding: 3px 30px 3px 20px;
+  display: block;
+  color: #333;
+  background: none;
+}
+
+ul#novosti li a {
+  text-decoration: none;
+  margin: 5px 0;
+  padding: 3px 10px;  
+  display: block;
+  color: #333;
+}
+
+ul#novosti li a:hover {
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+}
+  
+#main-nav ul#novine {
+  margin: 0;
+  padding: 0 0 0 15px;
+  background: #fff;
+  list-style: none;
+  } 
+  
+ul#novine li {
+  float: left;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10.5px;
+  word-spacing: -1px;
+  letter-spacing:-0.5px;
+  text-transform: uppercase;
+  line-height: 1em;
+  font-weight: bold;
+  color: #333;
+} 
+
+ul#novine li.curr,
+ul#novine li.curr a {
+  color: #154a7f;
+}
+
+ul#novine li img {
+  margin-right: 3px;
+  float: left;
+}
+
+ul#novine li a {
+  text-decoration: none;
+  margin: 5px 0;
+  padding: 3px 8px; 
+  display: block;
+  color: #333;
+}
+
+ul#novine li a:hover{
+  color: #154a7f;
+  text-decoration: none;
+}
+  
+/* universal styles */
+
+p.uptitle {
+  font-family: Arial, sans-serif;
+  font-size: 90%;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+p.uptitle a {
+  text-decoration: none;
+}
+
+div.intro-div {
+  font-family: Arial, sans-serif;
+  font-size: 105%;
+  line-height: 1.35em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p.intro, div.intro, div.intro p {
+  font-family: Arial, sans-serif;
+  font-size: 105%;
+  line-height: 1.35em;
+  color: #333;
+  margin-bottom: 10px;
+} 
+  
+/* big main stories
+---------------------------------------------- */ 
+#big-stories {
+  margin: 20px 20px 0 20px;
+  padding: 0 0 15px 0;
+  border-bottom: 3px solid #ece8d7;
+  }
+  
+#big-stories .slides {
+  width: 480px;
+  float: left;
+  margin: 0 140px 0 0;
+} 
+  
+#big-stories p.readmore {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 130%;
+  font-weight: bold;
+  line-height: 1em;
+  color: #154A7F;
+  text-align: right;
+} 
+
+p.readmore a {
+  text-decoration: none;
+  color:;
+}
+  
+/* four stories
+---------------------------------------------- */ 
+#four-stories {
+  margin: 5px 20px 0 20px;
+  } 
+  
+#four-stories .fourths,
+#four-stories .fourths-last {
+  float: left;
+  width: 234px;
+} 
+
+.fourths {
+border-right: 1px solid #ece8d7;
+}
+
+.fourths .fourth-inner,
+.fourths-last .fourth-inner {
+  margin: 15px;
+  background: #fff;
+}
+
+.fourth-inner img.thumb {
+  clear: both;
+  margin-bottom: 15px;
+}
+
+.comcount {
+  float: left;
+  width: 10%;
+  padding: 0 0 0 17px;
+  background: url(../images/balloon.gif) no-repeat bottom left;
+  font-family: Arial, sans-serif;
+  font-size: 90%;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #000;
+}
+
+.comcount a {
+  text-decoration: none;
+}
+
+p.placetime {
+  float: right;
+  text-align: right;
+  width: 80%;
+  font-family: Arial, sans-serif;
+  font-size: 90%;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.placetime a {
+  text-decoration: none;
+}
+  
+/* left bar
+---------------------------------------------- */
+
+#leftbar {
+  float: left;
+  width: 531px;
+  margin: 0 20px 20px 20px;
+  border-top: 3px solid #ece8d7;
+  } 
+  
+body#section #leftbar {
+  margin-top: 20px;
+  border-top: none;
+} 
+
+body#article #leftbar {
+  margin-top: 20px;
+  border-top: none;
+} 
+
+body#archive #leftbar {
+  margin-top: 20px;
+  border-top: none;
+} 
+  
+#leftbar #praekt {
+  background: #333;
+  margin: 0 0 20px 0;
+  height: 100%;
+  border-bottom:7px solid #333;
+} 
+
+#praekt #praekt-inner {
+  background:#fff;
+  margin: 0 10px 0 10px;
+  padding: 10px;
+}
+
+#praekt p#praektrg {
+  color: #fff;
+  padding: 5px 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 100%;
+  line-height: 1.75em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#praekt p#praektrg span {
+  color: #39c;
+}
+
+#praekt p#praektrg a {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 130%;
+  color: #000;
+  text-align: right;
+  color: #39c;
+  float: right;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.separated {
+  background: url(../images/bullet-arr.gif) no-repeat top left;
+  border-bottom: 1px dotted #ccc;
+  padding: 0 0 0 8px;
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+  font-weight: bold;
+  line-height: 1.75em;
+}
+
+.separated span.dateright {
+  float: right;
+  font-size: 90%;
+  color: #666;
+  text-align: right;
+}
+
+.separated a {
+  text-decoration: none;
+}
+
+#leftbar #galereja {
+  background: #f8f5e8;
+  border-top: 3px solid #ece8d7;
+  border-bottom: 2px solid #ece8d7;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#galereja p#galtitle {
+  color: #000;
+  padding: 0 0 5px 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 100%;
+  line-height: 1.75em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#galereja #galereja-inner {
+  background:#fff;
+  border: 1px solid #ece8d7;
+  width: 98%;
+  padding: 0 2px;
+  position: relative;
+}
+
+.galereja-item {
+  width: 92px;
+  margin:10px 15px;
+  float: left;
+}
+
+.galereja-item img {
+  border: 1px solid #bfb8b8;
+  width:90px;
+  height:60px;
+  clear: both;
+  display: block;
+}
+
+.galereja-item a {
+  clear: both;
+  display: inline-block;
+  font-size: 85%;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #154a7f;
+  padding-right: 5px;
+  margin: 3px 0;
+  background: url(../images/poshuk.gif) center right no-repeat;
+}
+
+
+/* Section pages
+---------------------------------- */
+
+.section-pages {
+  display: block;
+  float: left;
+  clear: both;
+  padding: 20px 12px;
+}
+
+.section-pages li {
+  font-size: 1em;
+  line-height: 22px;
+  float: left;
+  clear: right;
+  margin-right: 16px;
+}
+
+.section-pages li a {
+  display: block;
+  background: #ECE8D7;
+  color: #333;
+  text-decoration: none;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.section-pages li a:hover, .section-pages li.selected a {
+  background: #154A7F;
+  color: #fff;
+}
+
+
+
+/* repeating elements
+---------------------------------------------- */   
+  
+.story {
+  background: #f8f5e8;
+  border-right: 2px solid #ece8d7;
+  border-bottom: 2px solid #ece8d7;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.story img.thumb1 {
+  float: right;
+  margin: 0 0 0 10px;
+  clear: right;
+  display: block;
+}
+
+p.pubplacetime {
+  font-family: Arial, sans-serif;
+  font-size: 90%;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.pubplacetime a {
+  text-decoration: none;
+}
+
+.type-o-cont {
+  background: #f8f5e8;
+  border-top: 3px solid #ece8d7;
+  margin-bottom:10px;
+  padding: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 100%;
+  color: #000;
+}
+
+.divcont {
+  padding: 0 10px 5px 10px;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 105%;
+  line-height: 1.35em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.divcont-tight {
+  padding: 0 0 5px 0;
+  margin-bottom:10px;
+  font-family: Arial, sans-serif;
+  font-size: 105%;
+  line-height: 1.35em;
+  color: #333;
+  margin-bottom: 10px;
+}
+  
+/* right bar
+---------------------------------------------- */ 
+#rightbar {
+  float: right;
+  width: 390px;
+  margin: 0 20px 20px 0;
+  border-top: 3px solid #ece8d7;
+  } 
+  
+body#section #rightbar {
+  margin-top: 20px;
+}   
+
+body#article #rightbar {
+  margin-top: 20px;
+} 
+  
+body#archive #rightbar {
+  margin-top: 20px;
+  border-top: none; 
+}   
+  
+#rightbar #most {
+  background: #f8f5e8;
+  border-right: 2px solid #ece8d7;
+  border-bottom: 2px solid #ece8d7;
+  margin-bottom: 10px;
+  padding: 10px 0 0 0;
+} 
+
+#most a.tabtitle {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 5px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #e6e3d3;
+  color: #000;
+  text-decoration: none;
+}
+
+#most a.tabtitle-current {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 5px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+}
+  
+#rightbar #most #most-inner-reads,
+#rightbar #most #most-inner-comments {
+  background: #fff;
+  margin: 5px;
+  border: 1px solid #ddd;
+  padding: 10px;
+} 
+
+.mostitem {
+  border-bottom: 1px dotted #ccc;
+  padding: 5px 0;
+}
+
+.mostitem .mosttitle {
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+  font-weight: bold;
+  line-height: 1.2em;
+  margin-right: 10px;
+}
+
+.mostitem .pubplacetime {
+  font-size: 90%;
+  margin-bottom: 0;
+}
+
+.mosttitle a {
+  text-decoration: none;
+}
+
+#arhiu .mosttitle {
+  margin: 0 10px;
+}
+
+#kursi .mosttitle {
+  margin: 0 10px;
+  font-weight: normal;
+}
+
+#kursi .mosttitle span {
+  color: #ccc;
+  padding:0 5px;
+}
+
+#kursi .mosttitle a {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 90%;
+}
+
+#nadvore .mosttitle {
+  margin: 0 10px;
+}
+
+span.comcount-most {
+  padding: 0 0 0 17px;
+  margin-left: 5px;
+  background: url(../images/balloon.gif) no-repeat bottom left;
+}
+
+span.comcount-reads {
+  padding: 0 0 0 17px;
+  margin-left: 5px;
+  background: url(../images/reads.gif) no-repeat bottom left;
+}
+
+.comcount-most a, span.comcount-reads a {
+  text-decoration: none;
+}
+
+#rightbar .banner {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#rightbar #three-banners {
+  margin-bottom: 30px;
+} 
+
+#three-banners .banner125 {
+  float: left;
+  margin-right: 5px;
+  width: 125px;
+  height: 125px;
+  overflow: hidden;
+  background: #e7e7e7;
+}
+
+#rightbar #pol-box form#poll-form,
+.story form#poll-form {
+  margin: 0;
+  padding: 5px;
+}
+
+#poll-box p.question,
+.story p.question {
+  font-family: Arial, sans-serif;
+  font-size: 95%;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#poll-box .poll-item,
+.story .poll-item {
+  float: left;
+  width: 50%;
+  margin: 5px 0;
+}
+
+#poll-box #poll-button,
+.story #poll-button {
+  clear: left;
+  background: #333;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  font-size: 80%;
+  line-height: 25px;
+  height: 27px;
+  border: 1px solid #333;
+  margin: 10px 10px 0 0;
+}
+
+#poll-box a {
+  line-height: 27px;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 90%;
+  margin: 0 5px;
+}
+
+#rightbar .left {
+  float: left;
+  margin:0 20px 0 0;
+  width: 185px;
+  clear: left;
+}
+
+#rightbar .right {
+  float: left;
+  margin:0;
+  width: 185px;
+  clear: right;
+}
+
+.florig {
+  float: right;
+  margin: 0 0 5px 5px;
+  display: block;
+  clear: right;
+}
+
+.furthermore {
+  font-family: Arial, sans-serif;
+  font-size: 90%;
+  font-weight: bold;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.furthermore a {
+  text-decoration: none;
+}
+  
+/* footer
+---------------------------------------------- */
+
+#footer-inner {
+  margin: 0 20px;
+  padding: 0;
+}
+
+#foot-left {
+  float: left;
+  width: 35%;
+  clear: left;
+}
+
+#foot-right {
+  background: url(../images/foot.jpg) top right no-repeat;
+  float: right;
+  width: 50%;
+  clear: right;
+  text-align: right;
+  padding-right: 100px;
+}
+
+#footer .naslov {
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+  font-weight: bold;
+  line-height: 1.75em;
+  color: #154a7f;
+}
+
+#footer ul#footer-menu {
+  margin: 0 0 10px 0;
+  padding: 0;
+  background: #fff;
+  list-style: none;
+  clear: both;
+  } 
+  
+ul#footer-menu li {
+  float: right;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 120%;
+  text-transform: uppercase;
+  line-height: 1em;
+  font-weight: bold;
+  color: #333;
+} 
+
+ul#footer-menu li.curli a {
+  color:#154a7f;
+}
+
+ul#footer-menu li img {
+  margin-right: 3px;
+  float: left;
+}
+
+ul#footer-menu li a {
+  text-decoration: none;
+  margin: 5px 0;
+  padding: 3px 5px; 
+  display: block;
+  color: #333;
+}
+
+ul#footer-menu li a:hover {
+  color: #154a7f;
+  text-decoration: none;
+}
+
+#footer #search-box-foot {
+  clear: both;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+#footer p.copyright {
+  font-size: 100%;
+  line-height: 1.5em;
+  font-family: Arial, sans-serif;
+  color: #000;
+  clear: both;
+}
+
+p.copyright a {
+  color:#000;
+  text-decoration: underline;
+}
+
+/* Article styles
+---------------------------------------------- */
+
+#article .story {
+  margin-bottom: 20px;
+        background: #fff;
+        border: none;
+        padding-left: 0;
+}
+
+#article h1 {
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 20px;
+  font-size: 250%;
+  font-weight: bold;
+}
+
+#article #article-tools {
+  border-top: 1px dotted #a0bdd4;
+  border-bottom: 1px dotted #a0bdd4;  
+  padding: 3px 0;
+  margin-bottom: 20px;
+}
+
+#article-tools a {
+  margin-right: 20px;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  font-size: 100%;
+  line-height: 1.2em;
+  font-weight: bold;
+  padding-left: 17px;
+}
+
+#article-tools a#drukavac {
+  background: url(../images/drukavac.gif) center left no-repeat;
+}
+
+#article-tools a#komentari {
+  background: url(../images/balloon.gif) center left no-repeat;
+}
+
+#article-tools a#peraslac {
+  background: url(../images/email.gif) center left no-repeat;
+}
+
+#article-tools a#areses {
+  background: url(../images/rssbutt.gif) center left no-repeat;
+}
+
+#article img.artimage {
+  clear: both;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#article .image-caption {
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  font-size: 90%;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+}
+#article strong{
+  font-weight:bold;
+}
+.image-caption strong {
+  font-weight: bold;
+}
+
+.story p.intro, .story div.intro-div {
+  font-size: 105%;
+  color: #333;
+        line-height: 1.35em;
+}
+.story div.intro p, .divcont .intro p, .divcont .intro{
+  font-size: 100%;
+  color: #333;
+        line-height: 1.35em;
+}
+.story p, .story div.full_text_div, .story div.full_text_div p {
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+  color: #333;
+  line-height: 1.2em;
+        margin-bottom: 10px;
+}
+
+.story ul {
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+  color: #333;
+        margin: 0 0 10px 10px;
+}
+
+.story ul li {
+  line-height: 1.2em;       
+}
+
+/* Article comments
+---------------------------------------------- */
+
+#comments {
+  margin: 20px 0;
+}
+
+p.hot {
+        font-weight: bold;
+        color: #cc0000;
+        margin-bottom: 20px;
+        text-align: center;
+}
+
+.comment-item {
+  border: 1px solid #dcdcdc;
+  background: #f8f5e8;
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.comment-item p {
+  font-family: Arial, sans-serif;
+  font-size: 95%;
+  line-height: 1.2em;
+  color: #000;
+}
+
+.comment-item .comment-author {
+  font-weight: bold;
+}
+
+.comment-item .comment-date {
+  color: #666 !important;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#comment-form {
+  width: 90%;
+  margin: 20px 0;
+}
+
+#comment-form .form-element {
+  clear: both;
+  margin-bottom: 15px;
+}
+
+.form-element label {
+  text-transform: uppercase;
+  font-size: 90%;
+  font-family: Arial, sans-serif;
+  float: left;
+  line-height: 28px;
+  margin-left: 10px;
+}
+
+.form-element label#captcha-label {
+  margin-top: 15px;
+}
+
+.form-element input {
+  float: left;
+  border: 1px solid #808080;
+  background: #f6f6f6;
+  width: 188px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 120%;
+  font-weight: bold;
+  color: #000;
+}
+
+.form-element input#comment-captcha {
+  width: 94px;
+  margin-top: 15px;
+} 
+
+.form-element img {
+  float: left;
+  margin-right: 10px;
+}
+
+.form-element textarea {
+  width: 100%;
+  border: 1px solid #808080;
+  background: #f6f6f6;
+  height: 155px;
+}
+
+.form-element input#article_comment_submit {
+  background: #333;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  font-size: 80%;
+  line-height: 25px;
+  height: 27px;
+  font-weight: normal;
+  /* padding: 0 3px; */
+  border: 1px solid #333;
+}
+
+/* Archive page
+---------------------------------------------- */
+
+#rightbar #calendar {
+  text-align: center;
+  background: #f8f5e8;
+  margin-top: -10px;
+  padding-top: 10px;
+}
+
+#archive #nadvore .mostitem {
+  float: left;
+  width: 180px;
+  margin-right: 10px;
+}
+
+#archive .story {
+  width: 94%;
+}
+
+#archive p.archived-issue {
+  font-family: Arial, sans-serif;
+  line-height: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+  font-size: 130%;
+  text-transform: none;
+}
+
+p.archived-issue a {
+  text-decoration: none;
+}
+
+#archive .pubplacetime {
+  font-size: 110%;
+  padding-top: 10px;
+}
+
+/* Advanced search styles
+---------------------------------------------- */
+
+form#advanced-search .form-item {
+  clear: both;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+}
+
+form#advanced-search label {
+  float: left;
+  width: 15%;
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+  color: #333;
+}
+
+form#advanced-search .wider {
+  width: 170px;
+  float:left;
+}
+
+form#advanced-search .notwide {
+  width: 90px;
+  float:left;
+}
+
+
+#advanced-search #SearchDate span {
+  display: inline-block;
+  float: left;
+}
+
+#advanced-search input#advasearch {
+  background: #333;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  font-size: 80%;
+  line-height: 25px;
+  height: 27px;
+  font-weight: normal;
+  /* padding: 0 3px; */
+  border: 1px solid #333;
+}
+
+#prevnext {
+        text-align: center;
+        padding: 10px 0;
+}
+
+#prevnext span {
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  font-size: 80%;
+        margin: 0 10px;
+}
+
+/* tabs
+---------------------------------------------- */
+
+/* Caution! Ensure accessibility in print and other media types... */
+@media projection, screen { /* Use class for showing/hiding tab content, so that visibility can be better controlled in different media types... */
+    .ui-tabs-hide {
+        display: none;
+    }
+}
+
+/* Hide useless elements in print layouts... */
+@media print {
+    .ui-tabs-nav {
+        display: none;
+    }
+}
+
+/* Skin */
+.ui-tabs-nav {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 100%;
+}
+.ui-tabs-nav {
+    list-style: none;
+    padding: 0;
+}
+.ui-tabs-nav:after { /* clearing without presentational markup, IE gets extra treatment */
+    display: block;
+    clear: both;
+    content: " ";
+}
+.ui-tabs-nav li {
+    float: left;
+    margin: 0 5px;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+.ui-tabs-nav a, .ui-tabs-nav a span {
+    float: left; /* fixes dir=ltr problem and other quirks IE */
+    padding: 5px 10px;
+    background: #e6e3d3;
+}
+.ui-tabs-nav a {
+    /* margin: 5px 0 0; position: relative makes opacity fail for disabled tab in IE */
+    padding-left: 0;
+    background-position: 100% 0;
+    text-decoration: none;
+    white-space: nowrap; /* @ IE 6 */
+    outline: 0; /* @ Firefox, prevent dotted border after click */    
+   border: none;
+}
+.ui-tabs-nav a:link, .ui-tabs-nav a:visited {
+    color: #000;
+}
+.ui-tabs-nav .ui-tabs-selected a, .ui-tabs-nav .ui-tabs-selected a span {
+    position: relative;
+    /* top: 1px;
+    z-index: 2;
+    margin-top: 0; */
+   border:none;
+   background: #333;
+   color: #fff;  
+}
+.ui-tabs-nav a span {
+    padding-top: 1px;
+    padding-right: 0;
+    /* height: 20px;
+    background-position: 0 0;
+    line-height: 20px; */
+}
+.ui-tabs-nav .ui-tabs-selected a span {
+    padding-top: 0;
+    /* height: 27px;
+    line-height: 27px; */
+}
+.ui-tabs-nav .ui-tabs-selected a:link, .ui-tabs-nav .ui-tabs-selected a:visited,
+.ui-tabs-nav .ui-tabs-disabled a:link, .ui-tabs-nav .ui-tabs-disabled a:visited { /* @ Opera, use pseudo classes otherwise it confuses cursor... */
+    cursor: text;
+}
+.ui-tabs-nav a:hover, .ui-tabs-nav a:focus, .ui-tabs-nav a:active,
+.ui-tabs-nav .ui-tabs-unselect a:hover, .ui-tabs-nav .ui-tabs-unselect a:focus, .ui-tabs-nav .ui-tabs-unselect a:active { /* @ Opera, we need to be explicit again here now... */
+    cursor: pointer;
+}
+.ui-tabs-disabled {
+    opacity: .4;
+    filter: alpha(opacity=40);
+}
+.ui-tabs-nav .ui-tabs-disabled a:link, .ui-tabs-nav .ui-tabs-disabled a:visited {
+    color: #000;
+}
+.ui-tabs-panel {
+    /* border: 1px solid #ccc; */
+    padding: 10px 20px;
+    background: #fff; /* declare background color for container to avoid distorted fonts in IE while fading */
+}
+/*.ui-tabs-loading em {
+    padding: 0 0 0 20px;
+    background: url(loading.gif) no-repeat 0 50%;
+}*/
+
+/* Additional IE specific bug fixes... */
+* html .ui-tabs-nav { /* auto clear @ IE 6 & IE 7 Quirks Mode */
+    display: inline-block;
+}
+*:first-child+html .ui-tabs-nav  { /* auto clear @ IE 7 Standards Mode - do not group selectors, otherwise IE 6 will ignore complete rule (because of the unknown + combinator)... */
+    display: inline-block;
+}
+/* calendar result links */
+
+.archive-div a:link, .archive-div a:visited{
+text-decoration:none;
+}
+.archive-div a:hover{
+text-decoration:underline;
+}
+
+/* printer friendly page
+---------------------------------------------- */
+
+body#printer {
+       background: #fff;
+       color: #000;
+       margin: 10px 0 10px 20px;
+       width: 660px;
+}
+
+#printer #logo {
+       clear: both;
+       font-family: Arial, sans-serif;
+       font-size: 110%;
+       color: #000;
+}
+
+#printer .story {
+       background: #fff;
+       border: none;
+       padding: 0;
+       margin: 10px 0 0 0;
+}
+
+#printer h1 {
+       font-family: Arial, sans-serif;
+       font-size: 250%;
+       font-weight: normal;
+       margin: 20px 0;
+}
+
+#printer p {
+       font-family: Arial, sans-serif;
+       font-size: 100%;
+       line-height: 1.2em;
+}
+
+p#em {
+       font-style: italic;
+       border-top: 1px solid #ccc;
+       padding: 20px 0;
+}
+
+#printer #footer {
+       border-top: 1px solid #000;
+       padding: 10px 0;
+       width: 660px;
+       margin-top: 20px;
+}
+
+#printer #footer p span {
+       color: #666;
+}
+
+/* misc.
+---------------------------------------------- */
+
+hr, .hide {
+  display: none;
+  }
+
+a img, abbr {
+  border: none;
+  }
+
+a { /* gets rid of dotted outline in FF */
+  outline: none;
+  }
+  
+.clear {
+  clear: both;
+  height: 0;
+} 
+  
+/* self-clearing floats */
+
+#wrap:after,
+#header:after,
+#logo:after,
+#banner468:after,
+#head-menu:after,
+#search-box:after,
+.search-form:after,
+#novosti:after,
+ul#novosti li:after,
+#big-stories:after,
+#four-stories:after,
+.fourths:after,
+#galereja-inner:after,
+.galereja-item:after,
+#leftbar:after,
+.story:after,
+#rightbar:after,
+.banner125:after,
+.left:after,
+.right:after,
+#footer:after,
+#foot-left:after,
+#foot-right:after,
+#footer-menu:after,
+#comment-form:after,
+.form-element:after,
+.form-item:after,
+#prevnext:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}

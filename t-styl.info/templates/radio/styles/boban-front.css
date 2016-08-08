@@ -1,0 +1,137 @@
+div.clear {
+  clear: both;
+}
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+  }
+  .clearfix {
+   display: inline-block;
+  display:block;
+  }
+/* Hides from IE-mac */
+* html .clearfix {height: 1%;}
+/* End hide from IE-mac */
+  .home-middle{
+  padding: 0;
+   width:850px;
+   clear:left;
+   text-align:left;
+   margin: 0 auto;
+   background:#1b1b1b url(../images/home-wrapper-bkg.gif) repeat-x;
+  
+   }
+  .bkg-wrapper{
+    background: url(../images/home-bkg-lines.gif) repeat-y;
+    min-height:200px;
+    
+  }
+  .col-1{
+    width: 237px;
+    float: left;
+    margin:0 40px 0 21px;
+    display: inline;
+    color: white;
+    background: transparent;
+    clear:left;
+  }
+  .col-1 .home-title, .col-2 .home-title, .col-3 .home-title{
+    font-size:24px;
+    font-weight:bold;
+    color: #9ab2be;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 16px;
+                margin-bottom: 8px;
+    line-height: 16px;
+  }
+        .home-title a:link, .home-title a:visited{
+         font-size:24px;
+   font-weight:bold;
+   color: #9ab2be;
+         }
+  .col-1 img {
+    margin:9px 0 7px 0;
+    border-top: 4px solid #363636;
+    border-left: 6px solid #363636;
+    border-right: 6px solid #363636;
+    border-bottom: 5px solid #363636;
+  }
+  .col-1 p, .col-2 p{
+    font-size:12px;
+    line-height:16px;
+    font-family: Helvetica;
+  }
+  .col-1 strong{
+    font-weight:bold;
+  }
+  .col-1 .title a:link, .col-1 .title a:visited,.col-2 .title a:link, .col-2 .title a:visited{
+    font-size:13px;
+    font-weight:bold;
+    color: #fff;
+    line-height:16px;
+  }
+  .col-1 .date{
+    color: #d3d3d3;
+    margin:0 0 4px 0;
+  }
+  .col-1 .comments a:link, .col-1 .comments a:visited{
+    color: #9ab2be;
+    line-height:26px;
+  }
+  .col-2{
+    width: 258px;
+    float: left;
+    margin: 0 40px 0 0;
+    color: white;
+    display: inline;
+    background: transparent;
+  }
+  .col-2 img {
+    margin:9px 4px 7px 0;
+    border: 5px solid #464646;
+                float:left;
+  }
+  .col-2 .title{
+    margin: 4px 0 0 0;
+  }
+  .col-2 div.hr-home, .col-3 div.hr-home{
+    clear: left;
+    height: 1px;
+    background: url(../images/home-divider-bkg.gif) repeat-x;
+    margin: 5px 0 0px 0;
+  }
+  .col-2 div.hr-home hr, .col-3 div.hr-home hr{
+    display:none;
+  }
+  .col-3{
+    width:236px;
+    float: left;
+    color: white;
+    background: transparent;
+  }
+  .col-3 a:link, .col-3 a:visited{
+    font-size:13px;
+    color:#fff;
+  }
+  .col-3 p{
+    line-height: 16px;
+  }
+  .col-3 p.home-title{
+    margin-bottom: 8px;
+  }
+.col-1 a:link, .col-1 a:visited, .col-2 a:link, .col-2 a:visited, .col-1 p a:link, .col-1 p a:visited, .col-2 p a:link, .col-2 p a:visited{
+  color: #9ab2be;
+}
+.archive-div a:link, .archive-div a:visited{
+color:#fff;
+}
+.archive-div p.archive-title{
+color:#9AB2BE;
+font-size:16px;
+font-weight:bold;
+padding:13px 0 0 0;
+}

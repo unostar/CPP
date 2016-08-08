@@ -1,0 +1,98 @@
+/* minigalZoom CSS declarations */
+
+#lightbox{
+	background-color:#eee;
+	border: 1px solid #ccc;
+	}
+
+#lightboxDetails{ font-size: 0.8em; line-height:1.6em; }
+#lightboxCaption{ float: left; margin-left: 0.4em; }
+#keyboardMsg{ float: right; display: none; }
+#closeButton{ top: 0px; right: 0px; display: none; }
+
+#lightbox img{ border: none; clear: both;} 
+#overlay img{ border: none; }
+
+#overlay{ background-image: url(overlay.png); }
+
+* html #overlay{
+	background-color: #1b1b1b;
+	back\ground-color: transparent;
+	background-image: url(blank.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="overlay.png", sizingMethod="scale");
+	}
+
+#galereja .galereja-item a.lightbox {
+padding:0;
+margin:0;
+background:none;
+}
+
+
+/* 
+	root element for the scrollable. 
+	when scrolling occurs this element stays still. 
+*/
+#galereja-inner {
+	
+	/* required settings */
+	position:relative;
+	overflow:hidden;	 	
+	height:100px;
+  width:501px;
+}
+
+/* 
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a super large width to accomodate scrollable items.
+	it's enough that you set width and height for the root element and
+	not for this element.
+*/
+#galereja-inner div.items {
+	/* this cannot be too large */
+	width:20000em;	
+	position:absolute;
+	clear:both;
+}
+
+/* single scrollable item */
+#galereja-inner div.items div.galereja-item {
+	float:left;
+  margin:15px;
+}
+
+/* active item */
+#galereja-inner div.items div.galereja-item.active {
+
+}
+
+
+/* this makes it possible to add next button beside scrollable */
+#galereja-inner div.items {
+	float:left;
+  padding: 0 0 0 7px;
+}
+
+/* prev, next, prevPage and nextPage buttons */
+#galereja a.prev, #galereja a.next {
+	display:block;
+  position:relative;
+	width:16px;
+	height:16px;
+	background:url(/templates/images/gal-back.gif) 0 0 no-repeat;
+	cursor:pointer;
+  top:-70px;
+  left:-7px;
+}
+
+/* next button uses another background image */
+#galereja a.next {
+	background-image:url(/templates/images/gal-forw.gif);
+  top:-86px;
+  left:496px;
+}
+
+/* disabled navigational button */
+#galereja a.disabled {
+background-position:0 -16px;
+}

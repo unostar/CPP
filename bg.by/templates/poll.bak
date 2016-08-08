@@ -1,0 +1,40 @@
+{{list_polls length="1" order="bynumber desc"}}
+{{if !$campsite->poll->is_votable || $smarty.get.action=="results" }}
+  <div class="box-305" style="margin:0 !important;">
+    <div class="top-alt"><span>Опрос недели</span></div>
+    <div class="center-content-blank clearfix" style="width:281px;">
+    <br /><p><b><i>{{$campsite->poll->question }}</i></b></p><br />
+    <p>Всего проголосовали: {{$campsite->poll->votes}}</p><br />
+    {{list_poll_answers}}
+      <div style="width:{{$campsite->pollanswer->percentage|string_format:"%d"}}%;background-color:#0076C9;">&nbsp;</div>
+      <p align="right">{{$campsite->pollanswer->percentage|string_format:"%d"}}%: {{ $campsite->pollanswer->answer }}</p><br />
+    {{/list_poll_answers}}
+    </div>
+    <div class="bottom-blank"><span>&nbsp;</span></div>
+  </div>
+{{else}}
+  {{if !$campsite->poll_action->defined}}
+  <div class="box-305">
+    <div class="top-alt"><span>Опрос недели</span></div>
+    <div class="center-content-blank clearfix" style="width:281px;">
+    <br /><p><b><i>{{$campsite->poll->question }}</i></b></p><br />
+    <div id="poll">
+  {{/if}}
+  <p>{{if $campsite->poll_action->ok}}Спасибо за участие в опросе.<br />{{elseif $campsite->poll_action->is_error}}Вы уже голосовали.<br />{{/if}}</p>
+  {{poll_form template="poll.tpl" submit_button=false}}
+  {{list_poll_answers}}
+    <label>{{pollanswer_edit}}{{$campsite->pollanswer->answer}}</label><br />
+  {{/list_poll_answers}}
+  <input type="submit" id="submit_poll" class="poll-button" value=" " />
+  {{/poll_form}}
+  {{if !$campsite->poll_action->defined}}
+      </div>
+      <p class="topic"><a name="poll-results" href="{{uri options="template poll.tpl"}}&action=results">Результаты голосования</a></p>
+      <p class="topic"><a href="/templates/phpscripts/mail/send.php" class="email" target="email">Предложить тему опроса</a></p>
+      {{* <p class="topic"><a href="{{ uri options="template archive-poll.tpl" }}">Архив опросов</a></p> *}}
+    </div>
+    <div class="bottom-blank"><span>&nbsp;</span></div>
+  </div>
+  {{/if}}
+{{/if}}
+{{/list_polls}}

@@ -1,0 +1,132 @@
+/*
+Author:		Aleks Hudochenkov
+Version:	3.04.2011
+-----------------------------------------------------------------------------*/
+
+.middle {
+	zoom: 1;
+}
+
+
+img {
+	-ms-interpolation-mode: bicubic;
+	}
+
+a.button,
+a.comments-count,
+.type,
+.header .nav-main > ul > li,
+.search p,
+.read-us dt,
+.read-us dd,
+.read-us ul,
+.read-us li,
+.video-news > ul > li,
+.videos > li,
+.tag-cloud li,
+.footer .social li,
+.main .pagination h3,
+.main .pagination ol,
+.main .pagination li,
+.search-articles .date .pickdate,
+.archive-page .choose-year li {
+	display: inline;
+}
+.search p {
+	margin-left: 5px;
+	
+}
+.search .submit {
+	border: 1px solid #ccdae3;
+	margin-top: 1px;
+	
+}
+.search .submit button {
+	border: none;
+	height: 19px;
+	line-height: 16px;
+	
+}
+.emails form span {
+	border: 1px solid #ccdae3;
+
+}
+.emails form span button {
+	border: none;
+	height: 19px;
+	line-height: 16px;
+	
+}
+
+
+.main > section > header .more {
+	margin-top: -15px;
+	
+}
+.main .more-videos-from-section .more {
+	margin-top: -13px;
+}
+.tabs .tabs-labels a:hover span {
+	cursor: pointer;
+	
+}
+
+.rss-content header .read-more {
+	margin-top: -20px;
+	
+}
+.rss-content {
+	padding-bottom: 20px;
+}
+
+
+
+.search-articles .date .pickdate {
+	top: 0;
+	left: 5px;
+}
+.archive-page .choose-year li {
+	vertical-align: middle;
+}
+
+
+.read-us li {
+	text-indent: 0;
+	font-size: 0;
+	line-height: 0;
+	vertical-align: middle;
+	margin-left: 4px;
+	
+}
+.read-us ul {
+	padding-left: 4px;
+	
+}
+.type {
+	margin-top: 0;
+	
+}
+.header .date {
+	margin-top: 4px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

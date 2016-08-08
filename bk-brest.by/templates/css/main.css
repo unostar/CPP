@@ -1,0 +1,464 @@
+@charset "utf-8";
+
+/* 0. ОБЩИЙ СБРОС СТИЛЕЙ
+-------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+  /* 0.5. РАЗМЕТКА БАЗОВОЙ СЕТКИ
+  -------------------------------------------------------- */
+  .l-container {margin: 0 auto; padding: 0 7px; text-align: left; width: 980px}
+  .l-wrapper, .l-col2 {float: left; position: relative; width: 100%}
+  .l-content, .l-navigation, .l-secondary, .l-col2_column {float: left; position: relative; left: 100%}
+  .l-content {margin-left: -968px; width: 662px}
+  .l-navigation {margin-left: -282px; width: 270px}
+  .l-footer {clear: both}
+  
+  /* Хорошие колонки */
+  .l-col2_cl196 {margin-left: -100%; width: 196px}
+  .l-col2_cr440 {margin-left:-440px; width: 440px}
+  
+  .l-col2_cl320 {margin-left: -100%; width: 320px}
+  .l-col2_cr320 {margin-left:-320px; width: 320px}
+  
+html, body {
+  font-size: 100.01%;
+  font-size-adjust: none;
+  font-style: normal;
+  font-variant: normal;
+  font-family: inherit;
+  line-height: normal;
+}
+
+/* 1. ГЛОБАЛЬНЫЕ СТИЛИ.
+-------------------------------------------------------- */
+/* 1.1. Стили основных тегов ___________________________ */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #3b5772;
+  color: #000;
+  font: normal 1.2em Arial, Helvetica, sans-serif;
+  text-align: center
+}
+
+a {color: #0c4790; text-decoration: none; outline: none;}
+a:hover {text-decoration: underline;}
+
+img {border: 0;}
+input, textarea {font-family: inherit; outline: none; -moz-outline-style: none;}
+label {font: inherit;}
+.highlight {background:#ffff66;}
+
+// Dotted outline on links & buttons
+:focus {-moz-outline-style: none;}
+input::-moz-focus-inner {border: 0px;}
+input:focus {outline: none;}
+  
+/* 1.2. Стили глобальных классов ( .g- ) _______________ */ 
+.g-none {background: none; border: 0; border-collapse: collapse; font-style: inherit; font-size: 100%; font-family: inherit; list-style: none; outline: 0; vertical-align: top} /* Полное обнуление элемента */
+  .g-none li {list-style: none}
+
+.g-left {float: left}
+.g-right {float: right}
+
+.g-tjustify {text-align: justify; text-justify: newspaper} /* Вырнивание текста (блоков) по всей ширине */
+  .g-bjustify, .g-tjustify li {display: -moz-inline-box; display: inline-block; text-align: left; vertical-align: top} /* Стиль для блоков, которые выравниваются по все ширине */
+.g-justifynewspaper {display:-moz-inline-box; display:inline-block; height: 0; font-size: 0; width:100%;}
+
+.g-bg {display: block; font-size: 0; overflow: hidden; position: absolute} /* background */
+
+.g-iblock, .g-iblockie, .b-h-top_menu li, .b-h-mid_wt-arrleft, .b-h-mid_wt-arrright, .b-bheader_blue span, .b-bheader_gray span, .ico, .b-bheader_pright a {display: -moz-inline-stack; display: inline-block; vertical-align: top} /* display: inline-block */
+.g-clean:after, .b-h-top:after, .b-nfeed:after, .submit-t1:after {clear: both; content: "."; display: block; height: 0; visibility: hidden} /* Очистка потока */
+
+/* 1.3. Data: Uri  _____________________________________ */
+/* Background repeat-x */
+.b-h-mainmenu, .b-h-mainmenu li, .b-h-submenu, .b-h-submenu li, .b-h-mainmenu a, .b-h-submenu a {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAPoCAYAAAAftpReAAACFElEQVR4Xu3TP2gTYRzG8efeqw6CDiJCCw5KBx0EEXVoV2c3LaKpomBFNCHBIUvgluLiUpEiiA4KCi4dHMTBwUFwCa0JJcmll8Scif/SxIZkack93u/6RtBRiDi8y5fP3XHDc39wPHafOHp+gQqWBUVYwOELi8Rk7CFx8NJj4sDlJ8T4lWfEvqsviN3XlgjMvZQ7xqCjVBhKgkhWmB12mDElksOdNrDfWSYm73wgjt3NE9MLBeL0A5c486hMnHtaJWaffyRuLH2i3fAbjgKAkWR7eT6fl/n3tI5cXNQ6JMsjTchykSzXwvVXQ9188+vc26FuvRvq9nutcVkuUrHXgEgvjzQTLhfJcp+YmJrhCJf3+32i1+sR3W6XChZhp9NpB51Oh2i320RrfZ341mpRkYQKggEi2alUyoHvN2gnk0kHtVqddiKRcFQgV+PxuH5lZBiQIh2USqXfZ1mA67qE51UkHkFylImWY2o+Wq61sfFDS5aLouVan79+0Wo0G1r1uq9Vrda01jxPq7w2lOuWtWT5n5Llon+zvFgs/v0nFYQJhIVCgUqAbDZLrCyvELlcjlgtrMo2l6hUPMKv14lmsylP8ju3v6tet0c7k8k4yrZtYDAYjHi0DqbnqcBozChChrEGIgm2JJthuAlYp+aodmEL2HNylkqJ9p44SyWPYNT/OclI/01MTExMTExMTExMTExMfgISEW6RoyNvmgAAAABJRU5ErkJggg==); background-repeat: repeat-x}
+.bg-dotted, .b-freshnews li, .b-nfeed_bottom, .b-www_item, .b-comments_item, .b-obozrevatel .b-nfeed, .b-archive_search, .b-allcomments_item, .b-article .b-vnimaniya_credits, .b-article_panel {background: url(data:image/gif;base64,R0lGODlhAgABAIABAJmZmf///yH5BAEAAAEALAAAAAACAAEAAAICRAoAOw==) 0 bottom repeat-x} /* dotted bottom */
+
+/* Background-image */
+.a-linebullet, .b-printnumber li, .list-linksgray li, .list-linkslightgray li, .b-freshnews li div, .b-nazvper_next {background-image: url(data:image/gif;base64,R0lGODlhAwAFAIABAAxHkP///yH5BAEAAAEALAAAAAADAAUAAAIFRAKWi1cAOw==); background-repeat: no-repeat} /* blue bullet */
+.b-nazvper_previous {background-image: url(data:image/gif;base64,R0lGODlhAwAFAIABAAxHkAAAACH5BAEAAAEALAAAAAADAAUAAAIGTHCgqAYFADs=); background-repeat: no-repeat;} /* blue bullet left */
+.list-linkslightgray li.down {background-image: url(data:image/gif;base64,R0lGODlhBQAFAIABAAxHkAAAACH5BAEAAAEALAAAAAAFAAUAAAIHjA2ZoQcHCwA7); background-repeat: no-repeat;} /* blue bullet down */
+
+
+/* 3. СТИЛИ БЛОКОВ РАЗМЕТКИ
+-------------------------------------------------------- */
+/* 3.1. Контейнеры _____________________________________ */
+
+.l-container {background: url(/templates/images/bg-container.gif) repeat-y #fff;}
+.l-wrapper {padding: 0 0 40px 0; background: #fff;}
+
+/* 3.2. Шапка сайта ____________________________________ */
+
+.l-header {
+  border-top: #1b3c5c 5px solid;
+  margin-bottom: 30px;
+  position: relative;
+  background: #fff;
+}
+  .l-header h1, .l-header h1 span {display: block; height: 124px; width: 534px}
+  .l-header h1 {font-size: 1.1em; overflow: hidden; position: absolute; left:219px;top:47px}
+  .l-header h1 span {background: url(/templates/images/spr-gray.png); position: absolute; left:0;top:0}
+  .l-header h1 a {color: #999; cursor: pointer; display: block; font-size: 4em; font-family: "Times New Roman", Times, serif; line-height: 0.7; padding-top: 20px; text-align: center; text-decoration: none}
+    .l-header h1 a b {text-transform: uppercase; font-size: 0.9em; color: #333}
+
+/* Верхняя панель */
+.b-h-top {background: url(/templates/images/bg-h-top.gif) 0 0 repeat-x; border-bottom: #224261 1px solid; padding: 5px 0 4px 0; position: absolute; left:0;top:0; width: 100%}
+.b-h-top strong {float: left; clear: right; display: block; padding: 0 0 0 25px; width: 183px}
+.b-h-top_menu {float: left; clear: right; width: 581px; font-size: 1.07em; list-style: none; text-align: right}
+  .b-h-top_menu li {padding-right: 30px; line-height: 1.38}
+  .b-h-top_menu a {color: #0c4790; text-decoration: none}
+  .b-h-top_menu a:hover {text-decoration: underline}
+  .b-h-top_rss {cursor: hand; height: 18px; display: block; position: absolute; margin: 0 0 0 -18px; width: 30px}
+    .b-h-top_rss b {background: url(/templates/images/spr.png); position:absolute; left:0;top:0; height:18px;width:30px}
+.b-h-top .m-h-search {float: left; position:static; width: 165px; clear: right}
+  .b-h-top .m-h-search .text {padding-left: 10px; font-size: 0.93em; font-weight: bold; margin: 0; width: 130px; vertical-align: top}
+    
+/* Средняя часть */
+.b-h-mid {height: 192px; padding: 27px 0 0 0}
+.b-h-mid_date {border-top: #636363 2px solid; font-family: Georgia, "Times New Roman", Times, serif; font-size: 1.2em; padding: 8px 0 0 0; position: absolute; left:219px;top:171px; width: 545px;}
+  .b-h-mid_date em {font-style: normal; color: #930; font-weight: bold;}
+.b-h-mid_banner {height: 120px; position: absolute; left:25px;top:53px; width: 160px}
+.b-h-mid_weather {height: 150px; padding: ; position:absolute; right:25px;top:53px; text-align: center; width: 145px}
+    .b-h-mid_wt-city {color: #6b6b6b; font-family: Georgia, "Times New Roman", Times, serif; font-size: 1.33em;}
+    .b-h-mid_wt-arrleft, .b-h-mid_wt-arrright {background: url(/templates/images/spr.png) #fff -67px -20px no-repeat; height: 16px; width: 16px; margin:0; font-size:0}
+    .b-h-mid_wt-arrright {background-position: -83px -20px;}
+  .b-h-mid_weather-body {height:110px; padding: 2px 17px 0 18px; text-align: center;}
+    .b-h-mid_weather-body img {display: none; width: 110px; height: 110px; padding: 0; cursor: help;}
+  .b-h-mid_weather-footer a {color: #0c4790; font-size: 0.93em; font-weight: bold; text-decoration: none}
+    .b-h-mid_weather-footer a:hover {text-decoration: underline}
+  
+
+/* Главное меню */
+.b-h-mainmenu {background-position: 0 0; font-family: Georgia, "Times New Roman", Times, serif; font-size: 1.07em; font-weight: bold; height: 32px; list-style: none; margin: 0 7px}
+  .b-h-mainmenu li {background-position: 0 0; float: left; clear: right}
+  .b-h-mainmenu li.active {background-position: 0 -250px}
+    .b-h-mainmenu li:first-child a, .b-h-mainmenu li.first-child a {background: none}
+  .b-h-mainmenu a {background-position: 0 -50px; background-repeat: no-repeat; color: #fff; display: block; padding: 8px 14px; text-decoration: none; text-shadow: #000 0 0}
+  
+/* Меню под главным */
+.b-h-submenu {background-position: 0 -100px; font-family: Georgia, "Times New Roman", Times, serif; font-size: 1.07em; font-weight: bold; height: 32px; list-style: none; margin: 0 7px}
+  .b-h-submenu li {background-position: 0 -100px; float: left; clear: right}
+  .b-h-submenu li.active {background-position: 0 -200px}
+    .b-h-submenu li:first-child a, .b-h-submenu li.first-child a {background: none}
+  .b-h-submenu a {background-position: 0 -150px; background-repeat: no-repeat; color: #0c4790; display: block; padding: 8px 10px; text-decoration: none; text-shadow: #000 0 0}
+  .b-h-submenu a.twitter {background-position: 0 -150px; background-repeat: no-repeat; color: #0c4790; display: block; padding: 4px 10px; text-decoration: none; text-shadow: #000 0 0}
+
+/* 3.3. Боковая колонка ______________________________ */
+
+/* Основной блок боковой колонки */
+.b-navi {margin-bottom: 30px}
+  .m-navi_bgbottom {background: url(data:image/gif;base64,R0lGODlhAQAYALMAAP///+Li4ujo6OXk5Pn5+fv7+/Pz8+rp6vz9/PDx8Pf39+bn5uzs7PT19e7u7/7+/iH5BAAAAAAALAAAAAABABgAAAQPEMgpHypENZMcO8IyBEAEADs=) 0 bottom repeat-x; border-bottom: #999 1px solid; padding-bottom: 24px}
+  .m-navi_bgbottomsm {padding-bottom: 12px}
+
+/* Серый блок */
+.b-navigray {background: #ccc; padding: 14px 0 20px 0; margin-bottom: 2px}
+  .b-navigray .a-linebullet {margin: 20px 13px 0 13px}
+  .b-navigray .b-bheader_gray {background: none}
+  .b-navigray .b-bheader_gray span {background: none}
+
+/* Обозреватель */
+.b-obozrevatel {}
+  .b-obozrevatel .b-nfeed {background-position: 0 0; margin: 10px 0 0 0; padding: 10px 0 0 0}
+    .b-obozrevatel .b-nfeed:first-child, .b-obozrevatel .b-nfeed.first-child {background: none; margin-top:0; padding-top: 0}
+  .b-obozrevatel .b-vnimaniya_credits {padding: 3px 0}
+
+/* Карикатура */
+  .b-caricatura_body {text-align: center}
+  #caricature img {margin-top: 20px;}
+
+/* Печатный номер */
+  .b-printnumber {height: 165px;}
+  .b-printnumber_header {color: #333; display: block; font-size: 1.14em; line-height: 1.29; padding: 0 10px 20px 10px}
+  .b-printnumber li {background-position: 8px 6px; font-size: 0.93em; font-weight: bold; line-height: 1.45; padding: 0 0 9px 20px}
+  .bg-printnumber {background: url(/templates/images/spr-gray.png) 0 -124px; display: block; float: right; height: 85px; width: 127px}
+
+/* Курсы валют */
+  .b-kursyvalyut #exchange_rates {height: 92px;}
+  .b-kursyvalyut table {width:264px;height:86px;}
+  .b-kursyvalyut table td {font-family:Tahoma, Arial;font-size:11px;color:#333}
+  .b-kursyvalyut a {text-decoration:none;}
+  .b-kursyvalyut a:hover {text-decoration:underline}
+  .b-kursyvalyut #line td {border-bottom:1px solid;border-bottom-color:#555}
+  .b-kursyvalyut var {font-style:normal; color:#aaa;}
+
+/* Что Где Когда */
+  .b-www_item {background-position: 0 0; padding: 12px 0 9px 0}
+    .b-www_item.first-child, .b-www_item:first-child {background: none}
+  .b-www_header {color: #0c4790; display: block; font: normal 1.3em Georgia, "Times New Roman", Times, serif; padding: 0 0 7px 0}
+
+/* Арт галлерея  */
+  .b-artgallery {background: #1f4b76;}
+  .b-artgallery a.header {
+    display: block;
+    color: #fff;
+    font-size: 1.07em;
+    line-height: 1.38;
+    text-decoration: none;
+    border-top: 1px solid #666;
+    padding: 10px 2px 10px 60px;
+    background: #1f4b76 url(data:image/gif;base64,R0lGODlhAQAoANUAABs9XRxAYx1FbBs8XR5Ldhs9Xh5Kdh5Hbx5LdBs/Yx1DaRw9Xh5IcRw+Xxw9Xx5Ich1GbxxCZh5JdBxBZR1Faxw/YR9LdhxAZB1Eahw+YB5IcBxAYRs9XB1DZx5Jcx1GbSBMdhs8XAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAABACgAAAYkQBDBIPFoDh8BphO5JCqOBSDEoQ4KjcwmMOkoKB8I4+FBWEBBADs=) repeat-x 0 top;
+  }
+  .b-artgallery a.header.ui-state-active {font-size: 1.23em; padding-left:10px;}
+  .b-artgallery a.first {border-top: none;}
+  .b-artgallery div {display: none; background: #1f4b76 url(data:image/gif;base64,R0lGODlhAQDtAOYAABxCZh9Ldh5JdBxCZx5IcR5KdBxAZB1GbRs9XB1HcBxAYx5Ichw8XRw+Xx1CZx1FbR5Kdhs+YB1Eax5HcBw/Yh5LdhxDaRxDaBxCZR5KcxxEaR5LdRtAYh9KdR1BZRxBZB1Jch1EaR1Jcx1DaRs/YR9Ldx1Hbxs/Yh1Fax5Jchw+YB1Hbh9Mdhw/Yxw9Xh1Ibx1CaBw+YR5GbRw/YB5Gbx1DaBxAYh1GbxxBYxs/YB1Kcxw8XB1CZhxDZx1Fahs+YRs8XhxAZSBLdh5FbRxBZR1Gbh1Eah5Jcx1IcRs9XR5KdRw/YRs+Xxs8XR1FbB5Ldxs9Xhs8XAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAABAO0AAAfUgAFPgk8lJQEVFRsQShtKBQUCkgUiOiIpKQsLSJwESBMJCRM3NEVFMkUHQ04PTigoEhI+RiFGFhoXFw4DMLsAADweRMJEHwYKxycnHBwkFD9LJEsROQ1MTNZQDVDcUElASU1NDOE7UVHi5wjn7O1R6+dJCAgMDE0u3t3cTFDXKhH/ZiyJsaQgBQU2WiDDYeBDECIYIP4aMKCHgxojRtyqZcSIBCcgWx14cOBAkRVFTJh4kYBAAiQECIBYMPOIzSMCChzJkEFJByU+IUB4MugJiydCAgEAOw==) repeat-x 0 top;}
+  .b-artgallery div img {width: 245px; padding: 1px; border: #9b9b9b 1px solid;}
+  .art_gallery {display:block;float:left;clear:both;}
+  .art_gallery a {display: block; float: left; clear: right; padding: 5px; margin:15px 0; border:1px solid #999999; width: 200px; height: 150px; overflow: hidden; outline: none;}
+  .art_gallery img {position:absolute;clip:rect(0px,200px,150px,0px);}
+  .art_gallery a.rm {margin-right:10px;}
+
+/* 3.5. Подошва ________________________________________ */
+
+.l-footer {
+  background: url(/templates/images/bg-footer.gif) 0 0 repeat-x #fff;
+  border-top: #1b3c5c 13px solid;
+  min-height: 30px;
+  padding: 63px 10px 20px 235px;
+  position: relative;
+}
+
+.l-footer .b-brcourier {left:14px;top:10px}
+.b-f-copy {color: #333; display: block; position: absolute; left:20px;top:58px}
+
+/* Меню */
+.b-f-menu {font-family: Georgia, "Times New Roman", Times, serif; line-height: 2}
+  .b-f-menu ul {list-style: none}
+  .b-f-menu li {display: -moz-inline-stack; display: inline-block}
+  .b-f-menu ul:first-child a, .b-f-menu ul.first-child a, .b-f-menu ul:first-child, .b-f-menu ul.first-child {color: #0c4790}
+    .b-f-menu ul:first-child li:before {content: "|"}
+  .b-f-menu ul li:first-child, .b-f-menu ul li.first-child {padding-left: 0}
+    .b-f-menu ul li:first-child:before, .b-f-menu ul li.first-child:before {content: ""}
+  .b-f-menu a {color: #000; padding: 0 3px 0 7px}
+
+/* Поиск */
+.b-f-search {color: #171717; position: absolute; left:240px;top:16px}
+  .b-f-search form {display: inline;}
+  .b-f-search .text {font-size: 0.93em; font-weight: bold; padding-left: 2px; background: none; border-width: 1px; border-style: solid; border-color: #b7b8b8 #cccdcd #cccdcd #b7b8b8; cursor: text; height: 16px; margin: 0 0 0 28px; vertical-align: middle; width: 118px;}
+  .b-f-search a {color: #333; text-decoration: none}
+  .b-f-search fieldset {border: none}
+  .b-f-search legend {display: none}
+  .b-f-search_razd {margin: 0 20px}
+  .b-f-search_submit {background:url(/templates/images/img-search.gif) 0 0; border: none; cursor: pointer; margin: 1px 0 0 2px; padding: 0; height: 12px; vertical-align: middle; width: 12px;}
+  .b-f-search_submit:active {-ms-background-position-x: 1px;-ms-background-position-y: 1px;}
+.b-f-search .gsc-branding {display: none;}
+.b-f-search form.gsc-search-box, .b-f-search table.gsc-search-box {margin:0;}
+
+/* 4. СТИЛИ ОСНОВНОГО СОДЕРЖИМОГО
+-------------------------------------------------------- */
+.b-brcourier {background: url(/templates/images/img-brcourier.png); display: block; height: 35px; width: 156px}
+
+.b-nazvper {font-weight: bold; margin-top: 20px; padding: 0 0 0 9px}
+    .b-nazvper a, .b-nazvper span {color: #999; padding: 0 8px}
+    a.b-nazvper_next {color: #0c4790; background-position: right 5px; padding-right: 5px;}
+    a.b-nazvper_previous {color: #0c4790; background-position: left 5px; padding-left: 7px;}
+
+/* Заголовки */
+.b-bheader_black {background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==) 0 12px repeat-x; color: #050505; display: block; font: bold 1.12em Georgia, "Times New Roman", Times, serif; margin: 0 0 17px 0; text-transform: uppercase; text-shadow: #000 0 0}
+  .b-bheader_black span {background: #fff; padding: 0 3px 0 0}
+  
+.b-bheader_blue, .b-bheader_gray {background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAB2yQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==) 0 11px repeat-x; color: #fff; display: block; font: bold 1.12em Georgia, "Times New Roman", Times, serif; margin: 0 0 19px 0; position: relative; text-transform: uppercase; text-shadow: #000 0 0}
+  .b-bheader_blue span, .b-bheader_gray span {background: #fff; padding: 0 9px 0 0;}
+  .b-bheader_blue span a, .b-bheader_gray span a {color: #fff; text-decoration: none;}
+  .b-bheader_blue b, .b-bheader_gray b {background: #0076c9; border-left: #999 1px solid; border-top: #999 1px solid; padding: 3px 8px 5px 8px}
+  
+  .b-bheader_gray b {background: #999; border-width: 0 1px 1px 0; border-right: #6b6b6b 1px solid; border-bottom: #6b6b6b 1px solid; padding: 3px 8px 5px 8px}
+
+.b-bheader_pright {background: #fff; display: block; position: absolute; right:0;top:1px}
+  .b-bheader_pright a {background: url(/templates/images/spr.png) -65px 0; font: normal 1.14em/17px Georgia, "Times New Roman", Times, serif; height: 19px; text-align: center; width: 18px; margin: 0 0 0 9px}
+    .b-bheader_pright a:hover {text-decoration: none}
+
+.b-subheader {color: #0c4790; display: block; font: normal 1.15em/1.15 Georgia, "Times New Roman", Times, serif; margin: 0 0 30px 0; text-transform: uppercase}
+
+/* Иконки */
+.ico {font-size: 0; vertical-align: middle}
+.ico-calc {background: url(/templates/images/spr.png) 0 -19px; height: 16px; position: relative; top:-2px; width: 22px}
+.ico-time {background: url(/templates/images/spr.png) -52px 0; height: 13px; width: 13px; margin: 0 0 1px 3px;}
+.ico-views {background: url(/templates/images/spr.png) -83px 0; height: 15px; width: 16px; margin-left:3px;}
+.ico-comments {background: url(/templates/images/spr.png) -36px 0; height: 15px; width: 16px;}
+.ico-flit {border: none; cursor: pointer; height: 19px; width: 22px; background: url(/templates/images/spr.png) -22px -19px; margin-left: 10px; position: relative; top:-3px}
+.ico-fres {border: none; cursor: pointer; height: 19px; width: 22px; background: url(/templates/images/spr.png) -99px -19px; margin-left: 10px; position: relative; top:-3px}
+.ico-fbig {border: none; cursor: pointer; height: 19px; width: 22px; background: url(/templates/images/spr.png) -44px -19px; margin-left: 10px; position: relative; top:-3px}
+
+
+/* Ссылки */
+.a-linebullet {background-position: 0 4px; display: block; font-size: 0.93em; font-weight: bold; padding-left: 9px}
+
+.submit-t1 {cursor: pointer; background: url(data:image/gif;base64,R0lGODlhAQAVAMQAAMzNzdXV1dLS0uPj5NDQ0Ozt7enq6tjZ2P39/ebm5vf4+M7OzvT19fHy8t/e4Nva3Pr6+vz7++/w8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAABABUAAAURIBJBCtNIhZEMznMEArEAdAgAOw==) #cacbcb repeat-x; border-width: 1px; border-style: solid; border-color: #e0dedf #8f8f8f #8f8f8f #e0dedf; color: #2c85d1; display: block; float: left; font-size: 0.93em; font-weight: bold; line-height: 1.6; padding: 2px 13px;}
+  .submit-t1:hover {text-decoration: none}
+
+/* Списки */
+.list-linksgray, .list-linkslightgray {font-weight: bold}
+  .list-linksgray li, .list-linkslightgray li {background-position: 0 5px; padding: 0 0 4px 9px}
+  .list-linksgray .ico, .list-linkslightgray .ico {margin: 0 5px}
+  
+  .list-linksgray a {color: #333}
+  .list-linkslightgray a {color: #515151}
+
+/* Стили */
+.st-pb30 {padding-bottom: 30px}
+.st-mt50 {margin-top: 50px}
+.st-mt15 {margin-top: 15px}
+.st-mb15 {margin-bottom: 15px}
+.st-mb30 {margin-bottom: 30px}
+.st-pb20 {padding-bottom: 20px}
+
+/* 5. СТИЛИ ВСЕХ БЛОКОВ
+-------------------------------------------------------- */
+/* Группа новостей _____________________________ */
+
+/* Свежие новости */
+.b-freshnews ul {padding: 3px 0 10px 0}
+  .b-freshnews li {background-position: 0 0; padding: 7px 0 7px 0}
+    .b-freshnews li.first-child, .b-freshnews li:first-child {background: none}
+  .b-freshnews li a {color: #515151; font-weight: bold;}
+  .b-freshnews li div {background-position: 0 5px; padding-left: 9px}
+  .b-freshnews_time, .b-freshnews_no {font-size: 0.93em; padding: 0 4px 0 2px; font-weight: normal;white-space: nowrap;}
+    .b-freshnews_time {color: #930}
+    .b-freshnews_no {color: #0c4790;}
+    
+/* В центре внимания */
+  .b-vnimaniya h2 {color: #0c4790; font: normal 2em/1.1 Georgia, "Times New Roman", Times, serif; margin: 0 0 25px 0}
+  .b-vnimaniya p {font-size: 1.14em; line-height: 1.43; margin: 17px 0 6px 0}
+  .b-vnimaniya_credits {color: #808080}
+    .b-vnimaniya_credits em {padding: 0 5px}
+    .st-pb20 .b-vnimaniya_credits {padding-top: 10px}
+    
+/* Блок небольшой новости */
+.b-nfeed {margin: 0 0 20px 0}
+  .b-nfeed h2, .b-nfeed_mainheader {color: #0c4790; display: block; font: normal 1.67em/1.2 Georgia, "Times New Roman", Times, serif; padding: 0 0 15px 0}
+  .b-nfeed_header {color: #0c4790; display: block; font: 1.38em Georgia, "Times New Roman", Times, serif; margin-bottom: 9px}
+  .b-nfeed_strongh {display: block; font-weight: bold; margin-bottom: 9px;}
+    .m-nfeed_headersmaller {line-height: 1.2; font-size: 1.38em}
+  .b-nfeed .intro {line-height: 1.35; margin: 0 0 3px 0;}
+  .b-nfeed img {float: left; margin: 3px 10px 0 0; padding: 1px; border: #999 1px solid}
+  .b-nfeed_bottom {background-position: 0 0; clear: both; padding: 10px 10px 0 10px; position: relative; top:13px}
+    .b-nfeed_bottom:first-child, .b-nfeed_bottom.first-child {background: none}
+    .b-nfeed_bottom .list-linkslightgray li {padding-right: 14px}
+  
+/* Another _______________________________________ */
+/* Текущий выпуск газеты */
+.b-curpaper {background: url(data:image/gif;base64,R0lGODlhAQAjAMQAAN3d3fz8/P7+/vv6++Hg4eDf4fz7/P39/fLz8ujo6PT19OLh4/Dx8PP089/e3+Tj5O7u7uXk5fj4+P///+3s7ebm5+/w7/b39vn4+erq6t3d3uzr7OTk5N7d3wAAAAAAACH5BAAAAAAALAAAAAABACMAAAUcIAeMgNY5BbE8UZVkGwVZDNIol4QNRhAcAsEkBAA7) 0 0 repeat-x; margin-bottom: 20px; padding: 15px 20px 7px 20px}
+  .b-curpaper .b-brcourier {float: left}
+  .b-curpaper_no {color: #3f3f3f; display: block; font-size: 1.14em; font-weight: bold; padding: 7px 0 0 0; text-align: right}
+
+/* Левая колонка ___________________________________*/
+.b-sec {margin-bottom: 30px}
+
+/* Vote */
+  .b-vote_quest {color: #010101; font-weight: bold; margin-bottom: 15px}
+  .b-vote p {font-weight: bold; color: #515151; line-height: 1.45em; margin-bottom: 5px;}
+  .b-vote_row {padding: 3px 9px;}
+  .b-vote_row input {margin-right: 9px; vertical-align: middle}
+  .b-vote fieldset {border: 0}
+  .b-vote .submit-t1 {margin: 10px 0 0 10px; cursor: pointer; }
+  .b-vote_links {color: #0c4790; font-size: 0.93em; font-weight: bold; padding: 10px 0 0 10px}
+  .b-vote_links a {color: #0c4790;}
+
+/* Calendar */
+.b-calendar {width: 196px; margin-bottom: 30px;}
+
+    
+/* На этой неделе обсуждали */
+  .b-forumlist dt {font-weight: bold; line-height: 1.5; padding-bottom: 7px}
+  .b-forumlist dd {margin-bottom: 8px}
+  .b-forumlist dd a {color: #515151; font-weight: bold; line-height: 1.45em;}
+    .b-forumlist dd a:hover {text-decoration: underline}
+  .b-forumlist_panel {color: #999; display: block; font-size: 0.93em; font-weight: bold; padding-top:2px}
+    .b-forumlist_panel em {padding: 0 5px; font-style: normal}
+    .b-forumlist_panel span {font-size: 1.07em; font-weight: normal;}
+  .b-forumlist dl {margin-bottom: 10px}
+  
+/* Comments */
+  .b-comments_header {display: block; font-weight: bold; line-height: 1.5}
+  .b-comments_item {background-position: 0 0; padding: 12px 0 12px 0}
+    .b-comments_item:first-child, .b-comments_item.first-child {background: none}
+  .b-comments .b-freshnews li {font-size: 1.07em; padding: 0 0 8px 0; line-height: 1.38}
+  .b-comments p {line-height: 1.33}
+  .b-comments p a {color: #000; text-decoration: underline}
+    .b-comments p a:hover {text-decoration: none}
+    
+/* Архив */
+.b-archive_search {padding: 0 0 2px 0; margin-bottom: 30px}
+  .b-archive_search table {width: 100%}
+  .b-archive_search td {padding-bottom: 18px; vertical-align: middle}
+    .b-archive_search td:first-child, .b-archive_search td.first-child {font-weight: bold; color: #515151; white-space: nowrap; padding-right: 4px; width: 1%}
+  .b-archive_search label {padding-left:25px}
+    .b-archive_search label input {position: relative; top: 2px; margin-right: 3px; margin-left: 3px}
+#archive_search_results .poll_results {color: #515151;}
+#archive_search_results .poll_results .b-vote_quest {margin: 15px 0; color: #515151;}
+#archive_search_results .list-linkslightgray li span {display: block; font-weight: normal;}
+
+/* Статья ________________________ */
+.b-article {margin-bottom: 30px}
+  .b-article h2 {margin-bottom: 7px}
+  .b-article .b-vnimaniya_credits {padding-bottom: 7px}
+  .b-article_panel {font-size: 0; color: #0c4790; padding: 7px 0 4px 0; margin-bottom: 30px}
+    .b-article_panel .ico {margin: 0 2px 0 5px}
+    .b-article_panel .b-freshnews_no {font-size: 11px}
+  .b-article .g-bjustify {font-size: 11px; width: 144px;}
+    .b-article .g-bjustify-i {display: block; position: relative}
+  .b-article_text, .b-article_text p {line-height: 1.5; font-size: 1em;}
+  .b-article_text p {margin-bottom: 20px;}
+  .b-article_text pre {margin: 0 auto;font: oblique 1.4em/1.4 Georgia, "Times New Roman", Times, serif;}
+  .b-article_text .intro {font-size: 1.16em;}
+
+/* Элементы статьи
+---------------------------------------------------*/
+  .b-article_text ul {list-style: square inside;}
+  .b-article_text table, .b-article_text td {border-color: #666; border-style: solid;}
+  .b-article_text table {border-width: 0 0 1px 1px;border-spacing: 0;border-collapse: collapse;}
+  .b-article_text td {margin: 0; padding: 2px 4px; border-width: 1px 1px 0 0;}
+
+  div.cs_img {margin:-10px auto;padding:0;display:table;}
+  div.cs_img p {display:table-cell;margin:0;padding:0;}
+  div.cs_img img {width:440px !important;}
+  div.cs_img p.cs_img_caption {display:table-caption;caption-side:bottom;background-color:#dfdfdf;text-align:left;color:#666;line-height:1.1em;font-size:0.9em;padding:0.4em;margin-top:0.1em;}
+  .b-article_image, .b-article_image img {display: block; position: relative;}
+  .b-article_image span {display: block; position: absolute; padding: 5px; bottom: 0; width: 430px; background:url(/templates/images/overlay.png); font-size: 1.16em; color: #fff;}
+
+  .b-article_spravka {border: #999 1px solid; line-height: 1.5; color: #515151; padding: 15px; margin-bottom: 20px}
+    .b-article_sprh {color: #000; display: block; font-weight: bold; font-family: Georgia, "Times New Roman", Times, serif}
+    .b-article_spravka p {margin: 7px 0 0 0}
+  
+  .b-article_ddmenu {background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAQSURBVHjaYjhz5swVgAADAAgFAzlL5A8nAAAAAElFTkSuQmCC ); position: absolute; left:0;top:24px; width: 121px; padding: 7px 5px; z-index: 5;}
+    .b-article_ddmenu a {background-repeat: no-repeat; background-image: url(/templates/images/spr-trans.png); display: block; padding-left: 30px; margin-bottom: 6px}
+      .dd1 {background-position: 0 -297px}
+      .dd2 {background-position: 0 -193px; padding-top: 6px; padding-bottom: 6px}
+      .dd3 {background-position: 0 -93px; padding-bottom: 6px}
+      .dd4 {background-position: 0 0}
+
+  #send2friend_form {width: 300px;height: 160px;background-color:#F2F2F2;padding:15px;text-align:center;}
+    #send2friend_form label {color:#808080;font-size:14px;float: left;}
+    #send2friend_form input.text {margin-bottom: 16px;border:1px solid #CCCCCC;color:#6E6E6E;font:15px "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;padding:5px;width:97%;}
+    #send2friend_form input.error {font-weight:bold; color:#ff0000;}
+    #send2friend_form input.submit {cursor:pointer;outline: none;-moz-border-radius:5px;-webkit-border-radius:5px;background-color:#93BA31;border:3px solid #AFDD39;color:#FFFFFF;font:bold 15px "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;padding:5px 10px;}
+  .send2friend_response {margin: 60px auto; color:#808080; font: bold 1.3em/1.3 "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif; text-align: center;}
+  .send2friend_response.success {color:#2587E8;}
+  .send2friend_response.error {color:#F20A0A;}
+  
+/* Отправить комментарий */
+  .b-sendcomment td {color: #515151; font-weight: bold; padding: 8px 0 8px 16px}
+  .b-sendcomment .text {width: 328px}
+  .b-sendcomment textarea {width: 328px; height: 88px}
+  .b-sendcomment .smalltext {width: 150px}
+  .b-sendcomment .b-comments_response {margin:30% auto; font: bold oblique 1.16em/1.15 Georgia, "Times New Roman", Times, serif; text-align: center;}
+    .b-sendcomment .error {color: #bf0005;}
+    .b-sendcomment .success {color: #2C85D1;}
+
+/* Комментарии к статье */
+  .b-allcomments_item {background-position: 0 0; padding: 25px 0 18px 0}
+    .b-allcomments_item:first-child, .first-child.b-allcomments_item {padding-top: 10px; background: none}
+  .b-allcomments_name {color: #0c4790; font: bold 1.16em/1.15 Georgia, "Times New Roman", Times, serif; text-transform: uppercase; padding-right: 20px}
+  .b-allcomments_header {padding: 0 0 15px 0}
+  .b-allcomments .b-vnimaniya_credits {display: inline}
+
+.addthis_toolbox {
+  margin-top: 15px;
+}

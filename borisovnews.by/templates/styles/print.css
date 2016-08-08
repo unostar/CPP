@@ -1,0 +1,83 @@
+body {
+       background: #fff;
+       color: #000;
+	   font-size:14px;
+	   font-family: Arial, sans-serif;
+	   margin: 7px 0 10px 20px;
+       width: 660px;
+}
+#print-logo p{
+       display: block;
+       position: absolute;
+       text-align: left;
+       top: 68px;
+       left:20px;
+       font-size: 0.79em;
+       line-height:1em;
+}
+#print-logo b {
+       display:block;
+}
+p {
+       line-height: 1.29em;
+	   }
+.intro, .intro p{
+       font-weight:bold;
+	   padding:10px 0;
+	   line-height: 1.29em;
+}
+h1 {
+       font-family:"Times New Roman", Times, serif;
+       font-size: 2.14em;
+       font-weight: normal;
+       margin: 11px 0;
+	   clear:both;
+}
+p span{
+       color:#0000ff;
+}
+p.uptitle{
+       margin-top:6px;
+}
+.print-img{
+       width: 375px !important;
+       margin:10px 10px 10px 0;
+       float:left;
+}
+p.description{
+       font-family:"Times New Roman", Times, serif;
+       font-size:0.86em;
+       color:#3d3832;
+}
+.print-img img{
+       border:1px solid #999999;
+}
+#printer #footer {
+       border-top: 1px solid #000;
+       padding: 10px 0;
+       width: 660px;
+       margin-top: 40px;
+}
+hr {
+       clear: both;
+       border: none;
+       height: 1px;
+       color: #b5b5b5;
+	   margin:50px 0 20px 0;
+       background: #b5b5b5;
+}
+hr.section-divider {
+      color:#000;
+	  background: #000;
+}
+p.em {
+      font-style:italic;
+	  padding-bottom:16px;
+}
+#footer p {
+       color:#666;
+       }
+#footer p span{
+       font-weight:bold;
+	   color:#000;
+}

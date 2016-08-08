@@ -1,0 +1,1 @@
+<img src="/templates/temp/promo.jpg" class="promo" alt="promo" />

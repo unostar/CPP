@@ -1,0 +1,58 @@
+/*
+Author:		Aleks Hudochenkov
+Version:	3.04.2011
+-----------------------------------------------------------------------------*/
+
+button {
+	overflow: visible;
+	width: auto;
+	}
+textarea {
+	overflow: auto;
+	}
+
+/*input[type="radio"] {
+	vertical-align: middle;
+	margin-top: -1px;
+}*/
+.emails .options label input {
+	margin-top: -1px;
+	
+}
+.main .main-news .thumbs-bg,
+.section-home .last-article .article-header h3,
+.video-archive .video h3,
+.article-full .main-image figcaption {
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000); /* IE6–IE9 */
+	zoom: 1;
+	background: transparent;
+}
+
+
+
+
+.search-articles .place input {
+	margin-top: -3px;
+	
+}
+.search-articles .all-words input {
+	margin-top: -2px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

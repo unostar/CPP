@@ -1,0 +1,74 @@
+/* 
+Title:     Progulka - Fixes for ie/win
+Updated:   August 18th, 2010
+*/
+
+/* fixes font-size keyword problem for IE5/Win */
+body {
+  font-size: x-small; /* IE5 Win */
+    voice-family: "\"}\""; 
+    voice-family: inherit;
+    font-size: small;
+  }
+  
+html>body { /* be nice to Opera */
+  font-size: small;
+  }
+
+*html #headfloat form {
+  height: 24px;
+}
+
+*html #headfloat form input#searcheadfield {
+  height: 24px;
+  padding: 0;
+  line-height: 24px;
+}
+
+* html #lastline form input#searchfootfield {
+  height: 15px;
+}
+
+* html #galtrack .right .gallery-album {
+  margin: 5px 12px;
+}
+
+*html #calendar {
+  width: 165px;
+}
+  
+/* double float margin bug */
+
+* html .left,
+* html .right,
+* html .justathumb,
+* html .footright ul {
+    display: inline;
+}
+
+/* self-clearing floats
+----------------------------------------------------- */
+
+/* for ie7 */
+.left,
+.right,
+.justathumb,
+.footright ul {
+  display: inline-block;  
+}
+
+/* target ie5+6/win only, hide for ie/mac, then reset for all other browsers \*/
+* html .left,
+* html .right,
+* html .justathumb,
+* html .footright ul {
+    height: 1%;
+}
+
+.left,
+.right,
+.justathumb,
+.footright ul { 
+  display: block; 
+  }
+/* end hide */  

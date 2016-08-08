@@ -1,0 +1,27 @@
+<div class="meat-right-item" id="pop_comments">
+
+<p class="meatrigred">каментарыі</p>
+<ul class="ui-tabs-nav">
+{{*  <li><a href="#pop_comments-popular"><span>папулярныя</span*}}
+  <li><a href="#pop_comments-last"><span>апошнія</span></a></li>
+</ul>
+
+{{*
+<div id="pop_comments-popular" style="border-top:none;">
+{{list_articles length="5" constraints="section not 310" order="byComments desc"}}
+<div class="news-popular{{if $gimme->current_list->at_end}}-last{{/if}}">
+<a href="{{uri options="article"}}">{{$gimme->article->name}}</a> <a class="combal" href="{{uri options="article"}}">({{$gimme->article->comment_count}})</a>
+</div>
+{{/list_articles}}
+</div>
+*}}
+
+<div id="pop_comments-last" style="border-top:none;">
+{{list_article_comments length="5" ignore_article="true" order="byDate desc"}}
+<div class="news-popular{{if $gimme->current_list->at_end}}-last{{/if}}">
+<a class="combal" href="{{uri options="article"}}"></a><a href="{{uri options="article"}}">{{$gimme->comment->content|truncate:150}}</a>
+</div>
+{{/list_article_comments}}
+</div>
+
+</div>

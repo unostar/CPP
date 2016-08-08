@@ -1,0 +1,1633 @@
+/*
+Author:     Aleks Hudochenkov
+Release:    21.04.2012
+-----------------------------------------------------------------------------*/
+
+/* Reset
+-----------------------------------------------------------------------------*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+	}
+ul, ol {
+	list-style: none;
+	}
+
+/* General
+-----------------------------------------------------------------------------*/
+
+html {
+	overflow-y: scroll;
+	}
+body, select, input, textarea, button {
+	color: #000;
+	font-family: sans-serif;
+	}
+body {
+	background: #f6f6f6;
+	font: 13px/14px sans-serif;
+	}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	}
+a,
+a:active,
+a:visited {
+	color: #0163a3;
+	text-decoration: underline;
+	}
+	a:hover {
+		color: #e79f03;
+		}
+	a:hover,
+	a:active {
+		outline: none;
+		}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+	th {
+		font-weight: bold;
+		}
+	td {
+		vertical-align: top;
+		}
+label {
+	display: block;
+	margin-bottom: 2px;
+	font-size: 11px;
+	}
+input, select, textarea, button {
+	margin: 0;
+	font-size: 99%;
+	}
+	input, select {
+		vertical-align: middle;
+		}
+		input[type="text"] {
+			padding: 0 8px;
+			height: 16px;
+			border: 1px solid #dadada;
+			background: #fff;
+			font-size: 11px;
+			}
+		input[type="submit"] {
+			padding: 0 12px;
+			height: 18px;
+			border: none;
+			background-color: #0095e2;
+			background-image: -webkit-gradient(linear, left top, left bottom, from(#00aae8), to(#0082dd));
+			background-image: -webkit-linear-gradient(top, #00aae8, #0082dd);
+			background-image:    -moz-linear-gradient(top, #00aae8, #0082dd);
+			background-image:     -ms-linear-gradient(top, #00aae8, #0082dd);
+			background-image:      -o-linear-gradient(top, #00aae8, #0082dd);
+			background-image:         linear-gradient(to bottom, #00aae8, #0082dd);
+			color: #fff;
+			font-style: italic;
+			font-size: 13px;
+			}
+			input[type="submit"]::-moz-focus-inner {
+				padding: 0;
+				border: 0;
+				}
+		select {
+			padding: 0 0 0 6px;
+			width: 270px;
+			height: 18px;
+			border: 1px solid #dadada;
+			background: #fff;
+			font-size: 11px;
+			}
+	input[type="radio"] {
+		vertical-align: text-bottom;
+		}
+	input[type="checkbox"] {
+		vertical-align: bottom;
+		}
+	input[type="submit"],
+	button {
+		cursor: pointer;
+		}
+	textarea {
+		display: block;
+		padding: 4px 8px;
+		border: 1px solid #dadada;
+		background: #fff;
+		font-size: 11px;	
+		resize: vertical;
+		}
+img {
+	vertical-align: top;
+	}
+.banner {
+	text-align: center;
+	}
+
+/* Wrapper
+-----------------------------------------------------------------------------*/
+
+.wrapper {
+	margin: auto;
+	padding: 5px;
+	width: 990px;
+	background: #fff;
+	}
+
+/* Header
+-----------------------------------------------------------------------------*/
+
+.header {
+	margin-bottom: 1px;
+	}
+	.header .banner {
+		margin-bottom: 5px;
+		}
+	.nav-general {
+		overflow: hidden;
+		margin-bottom: 10px;
+		background-color: #252525;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#3a3a3a), to(#0e0e0e));
+		background-image: -webkit-linear-gradient(top, #3a3a3a, #0e0e0e);
+		background-image:    -moz-linear-gradient(top, #3a3a3a, #0e0e0e);
+		background-image:     -ms-linear-gradient(top, #3a3a3a, #0e0e0e);
+		background-image:      -o-linear-gradient(top, #3a3a3a, #0e0e0e);
+		background-image:         linear-gradient(to bottom, #3a3a3a, #0e0e0e);
+		font-size: 12px;
+		line-height: 16px;
+		}
+		.nav-general li {
+			float: left;
+			margin-right: 20px;
+			padding: 2px 0;
+			}
+			.nav-general a {
+				padding: 0 8px;
+				border: 1px solid transparent;
+				color: #e1e1e1;
+				text-decoration: none;
+				}
+				.nav-general a:hover {
+					text-decoration: underline;
+					}
+				.nav-general .old-version a {
+					border-color: #bababa;
+					background: #4b4b4b;
+					background: rgba(255, 255, 255, .16);
+					}
+		.nav-general ul:first-child {
+			float: left;
+			margin-left: 3px;
+			padding-top: 1px;
+			padding-bottom: 1px;
+			}
+		.nav-general .social {
+			float: right;
+			margin-top: 2px;
+			margin-right: 10px;
+			}
+			.nav-general .social li {
+				float: right;
+				margin-right: 4px;
+				padding: 0;
+				width: 18px;
+				height: 18px;
+				background: url("img/social.png") 0 0 no-repeat;
+				text-indent: -9999px;
+				}
+				.nav-general .social li:hover {
+					opacity: .5;
+					}
+				.nav-general .social .facebook {
+					background-position: 0 0;
+					}
+				.nav-general .social .twitter {
+					background-position: -18px 0;
+					}
+				.nav-general .social .rss {
+					background-position: -36px 0;
+					}
+				.nav-general .social a {
+					display: block;
+					padding: 0;
+					height: 100%;
+					border: none;
+					}
+	.logo {
+		float: left;
+		margin-right: 28px;
+		margin-bottom: 10px;
+		width: 393px;
+		height: 96px;
+		background: url("img/logo.png") 0 0 no-repeat;
+		text-indent: -9999px;
+		}
+		.logo a {
+			display: block;
+			height: 100%;
+			}
+	.search {
+		margin-bottom: 8px;
+		padding-top: 14px;
+		height: 18px;
+		}
+		.search input[type="text"] {
+			float: left;
+			margin-right: 6px;
+			padding: 0 7px;
+			width: 502px;
+			height: 16px;
+			border: 1px solid #dadada;
+			background: #fff;
+			font-style: italic;
+			font-size: 11px;
+			}
+		.search input[type="submit"] {
+			float: left;
+			padding: 0;
+			width: 44px;
+			height: 18px;
+			border: none;
+			background: #2a2a2a url("img/search-button.png") 0 0 no-repeat;
+			text-indent: -9999px;
+			}
+			.search input[type="submit"]:hover {
+				background-position: 0 100%;
+				}
+	.informer {
+		height: 50px;
+		border: 1px solid #dadada;
+		}
+		.informer h4 {
+			padding: 0 13px;
+			border-bottom: 1px solid #dadada;
+			background-color: #bdbdbd;
+			background-image: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#adadad));
+			background-image: -webkit-linear-gradient(top, #cccccc, #adadad);
+			background-image:    -moz-linear-gradient(top, #cccccc, #adadad);
+			background-image:     -ms-linear-gradient(top, #cccccc, #adadad);
+			background-image:      -o-linear-gradient(top, #cccccc, #adadad);
+			background-image:         linear-gradient(to bottom, #cccccc, #adadad);
+			color: #fff;
+			text-align: right;
+			font: 12px/17px "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+			}
+			.informer h4 a {
+				color: #fff;
+				text-decoration: none;
+				}
+				.informer h4 a:hover {
+					text-decoration: underline;
+				}
+		.informer.exchange {
+			float: right;
+			width: 420px;
+			}
+			.informer.exchange dl {
+				padding-top: 10px;
+				text-transform: uppercase;
+				font-size: 10px;
+				line-height: 14px;
+				}
+				.informer.exchange dt {
+					float: left;
+					margin-right: 6px;
+					margin-left: 12px;
+					padding-left: 12px;
+					border-left: 1px solid #dadada;
+					color: #e79f03;
+					}
+					.informer.exchange dt:first-child {
+						margin-left: 0;
+						border: none;
+						}
+				.informer.exchange dd {
+					float: left;
+					}
+		.informer.weather {
+			float: right;
+			margin-right: 10px;
+			width: 135px;
+			}
+			.informer.weather p {
+				text-align: center;
+				text-transform: uppercase;
+				font-size: 11px;
+				line-height: 32px;
+				}
+			.informer.weather img {
+				margin-right: 2px;
+				margin-left: -5px;
+				vertical-align: middle;
+				}
+	.header .nav {
+		clear: both;
+		overflow: hidden;
+		height: 30px;
+		background-color: #00a2e6;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#00aae8), to(#007ddc));
+		background-image: -webkit-linear-gradient(top, #00aae8, #007ddc);
+		background-image:    -moz-linear-gradient(top, #00aae8, #007ddc);
+		background-image:     -ms-linear-gradient(top, #00aae8, #007ddc);
+		background-image:      -o-linear-gradient(top, #00aae8, #007ddc);
+		background-image:         linear-gradient(to bottom, #00aae8, #007ddc);
+		text-transform: uppercase;
+		font-size: 11px;
+		line-height: 30px;
+		}
+		.header .nav li {
+			float: left;
+			padding-left: 1px;
+			height: 30px;
+			background: url("img/nav-sections-shadow.png") 0 0 no-repeat;
+			}
+			.header .nav li:first-child {
+				padding: 0;
+				background: none;
+				}
+			.header .nav a {
+				display: block;
+				padding: 0 18px;
+				height: 100%;
+				color: #fff;
+				text-decoration: none;
+				}
+				.header .nav a:hover,
+				.header .nav .current a {
+					background-color: #252525;
+					background-image: -webkit-gradient(linear, left top, left bottom, from(#3a3a3a), to(#0e0e0e));
+					background-image: -webkit-linear-gradient(top, #3a3a3a, #0e0e0e);
+					background-image:    -moz-linear-gradient(top, #3a3a3a, #0e0e0e);
+					background-image:     -ms-linear-gradient(top, #3a3a3a, #0e0e0e);
+					background-image:      -o-linear-gradient(top, #3a3a3a, #0e0e0e);
+					background-image:         linear-gradient(to bottom, #3a3a3a, #0e0e0e);
+					}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+
+.middle {
+	padding-top: 16px;
+	padding-bottom: 12px;
+	background: url("img/block-shadow-on-white.gif") 0 -1px repeat-x;
+	}
+	.middle:before,
+	.middle:after {
+		display: table;
+		content: "";
+		}
+		.middle:after {
+			clear: both;
+			}
+	.middle > h2,
+	.search-pane + h2 {
+		margin-bottom: 10px;
+		padding-left: 12px;
+		background: url("img/side-gradient.gif") 0 3px no-repeat;
+		color: #0163a3;
+		text-transform: uppercase;
+		font: 20px/1 "Times New Roman", Times, Baskerville, Georgia, serif;
+		}
+		.middle > h2 a {
+			text-decoration: none;
+			}
+
+/* Main
+-----------------------------------------------------------------------------*/
+
+.main {
+	float: left;
+	width: 650px;
+	}
+
+/* Aside
+-----------------------------------------------------------------------------*/
+
+.aside {
+	float: right;
+	width: 320px;
+	}
+.aside .banner {
+	margin-bottom: 12px;
+	}
+.aside section {
+	margin-bottom: 12px;
+	padding: 0 13px 2px;
+	border: 1px solid #dadada;
+	background: url("img/block-shadow-on-white.gif") 0 21px repeat-x;
+	}
+	.aside section header {
+		margin: -1px -14px 14px;
+		padding: 0 15px;
+		height: 22px;
+		background-color: #0094e2;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#00aae8), to(#0082dd));
+		background-image: -webkit-linear-gradient(top, #00aae8, #0082dd);
+		background-image:    -moz-linear-gradient(top, #00aae8, #0082dd);
+		background-image:     -ms-linear-gradient(top, #00aae8, #0082dd);
+		background-image:      -o-linear-gradient(top, #00aae8, #0082dd);
+		background-image:         linear-gradient(to bottom, #00aae8, #0082dd);
+		color: #fff;
+		}
+		.aside section header h3 {
+			float: left;
+			font: 16px/22px "Times New Roman", Times, Baskerville, Georgia, serif;
+			}
+		.aside section header a {
+			color: #fff;
+			text-decoration: none;
+			}
+			.aside section header a:hover {
+				text-decoration: underline;
+				}
+	.aside section .all {
+		clear: both;
+		margin-bottom: 10px;
+		text-align: right;
+		font-size: 11px;
+		}
+.aside .main-news {
+	margin-top: 38px;
+	padding: 1px 0;
+	border-width: 1px 0;
+	background: #f7f7f7;
+	}
+	.aside .main-news header {
+		margin: -26px 0 2px;
+		border-bottom: 2px solid #f7f7f7;
+		background-color: #f7b72e;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#ffca59), to(#efa505));
+		background-image: -webkit-linear-gradient(top, #ffca59, #efa505);
+		background-image:    -moz-linear-gradient(top, #ffca59, #efa505);
+		background-image:     -ms-linear-gradient(top, #ffca59, #efa505);
+		background-image:      -o-linear-gradient(top, #ffca59, #efa505);
+		background-image:         linear-gradient(to bottom, #ffca59, #efa505);
+		text-transform: uppercase;
+		}
+		.aside .main-news .date {
+			float: right;
+			margin-top: 4px;
+			}
+	.aside .main-news .main-news-wrapper {
+		padding-left: 7px;
+		background: url("img/side-gradient.gif") 0 0 repeat-y;
+		}
+		.aside .main-news .main-news-inner {
+			padding: 10px 9px;
+			border: 1px solid #f7b11a;
+			}
+			.aside .main-news article {
+				margin-top: 20px;
+				}
+				.aside .main-news article:first-child {
+					margin-top: 0;
+					}
+				.aside .main-news h4 {
+					margin-bottom: 6px;
+					text-transform: uppercase;
+					font-size: 11px;
+					line-height: 12px;
+					}
+					.aside .main-news h4 a {
+						color: #000;
+						text-decoration: none;
+						}
+						.aside .main-news h4 a:hover {
+							text-decoration: underline;
+							}
+.aside .news-list {
+	background: #f7f7f7 url("img/block-shadow-on-grey.gif") 0 21px repeat-x;
+	}
+	.aside .news-list header {
+		margin-bottom: 18px;
+		background-color: #1972ac;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#5395c1), to(#0163a3));
+		background-image: -webkit-linear-gradient(top, #5395c1, #0163a3);
+		background-image:    -moz-linear-gradient(top, #5395c1, #0163a3);
+		background-image:     -ms-linear-gradient(top, #5395c1, #0163a3);
+		background-image:      -o-linear-gradient(top, #5395c1, #0163a3);
+		background-image:         linear-gradient(to bottom, #5395c1, #0163a3);
+		text-transform: uppercase;
+		}
+	.aside .news-list li {
+		margin-bottom: 12px;
+		text-transform: uppercase;
+		font-size: 11px;
+		line-height: 12px;
+		}
+		.aside .news-list li a {
+			text-decoration: none;
+			}
+.aside .persons {
+	position: relative;
+	margin-bottom: 13px;
+	}
+	.aside .persons:after {
+		position: absolute;
+		bottom: -8px;
+		left: -1px;
+		width: 320px;
+		height: 6px;
+		border-top: 1px solid #0082dd;
+		content: "";
+		background: url("img/aside-expand-arrow.gif") 17px 100% no-repeat;
+		}
+	.aside .persons header {
+		text-transform: uppercase;
+		}
+	.aside .persons .photo {
+		float: left;
+		margin: 0 10px 5px 0;
+		padding: 2px;
+		width: 70px;
+		border: 1px solid #dadada;
+		}
+	.aside .persons h4 {
+		margin-bottom: 2px;
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 16px;
+		}
+		.aside .persons h4 a {
+			color: #000;
+			text-decoration: none;
+			}
+			.aside .persons h4 a:hover {
+				text-decoration: underline;
+				}
+	.aside .persons .intro {
+		margin-bottom: 8px;
+		}
+	.aside .persons .more {
+		padding-left: 14px;
+		background: url("img/more-ico.gif") 0 3px no-repeat;
+		}
+	.aside .persons article {
+		margin-bottom: 20px;
+		}
+		.aside .persons article .all {
+			margin-top: -5px;
+			margin-bottom: 0;
+			}
+.aside .feuilleton {
+	}
+	.aside .feuilleton h4 {
+		margin-bottom: 2px;
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 16px;
+		}
+		.aside .feuilleton h4 a {
+			color: #000;
+			text-decoration: none;
+			}
+			.aside .feuilleton h4 a:hover {
+				text-decoration: underline;
+				}
+	.aside .feuilleton .intro {
+		margin-bottom: 8px;
+		}
+	.aside .feuilleton .more {
+		padding-left: 14px;
+		background: url("img/more-ico.gif") 0 3px no-repeat;
+		}
+	.aside .feuilleton article {
+		margin-bottom: 20px;
+		}
+		.aside .feuilleton article .all {
+			margin-top: -5px;
+			margin-bottom: 0;
+			}
+.aside .expandable {
+	position: relative;
+	}
+	.aside .expandable:after {
+		position: absolute;
+		top: 22px;
+		left: -1px;
+		width: 320px;
+		height: 5px;
+		content: "";
+		background: url("img/aside-expand-arrow.gif") 17px 0 no-repeat;
+		}
+	.aside .expandable > div {
+		display: none;
+		}
+		.aside .expandable.expanded > div {
+			display: block;
+			}
+	.aside .expandable + .expandable {
+		margin-top: -8px;
+		}
+	.aside .expandable header {
+		cursor: pointer;
+		}
+.aside .feedback {
+	}
+	.aside .feedback form {
+		padding-top: 2px;
+		}
+	.aside .feedback p {
+		margin-bottom: 13px;
+		}
+	.aside .feedback label {
+		margin-bottom: 3px;
+		}
+	.aside .feedback input[type="text"],
+	.aside .feedback textarea {
+		width: 274px;
+		}
+	.aside .feedback textarea {
+		height: 77px;
+		}
+	.aside .feedback .submit {
+		margin-bottom: 8px;
+		text-align: center;
+		}
+.aside .poll {
+	padding-bottom: 10px;
+	}
+	.aside .poll .question {
+		margin-bottom: 16px;
+		font-weight: bold;
+		}
+	.aside .poll li {
+		margin-bottom: 16px;
+		padding-left: 24px;
+		}
+	.aside .poll .votes {
+		padding-left: 0;
+		}
+	.aside .poll label {
+		display: inline;
+		font-size: 13px;
+		}
+		.aside .poll label input {
+			float: left;
+			margin-left: -24px;
+			}
+	.aside .poll .submit {
+		padding-left: 24px;
+		height: 18px;
+		}
+		.aside .poll .submit a {
+			display: inline-block;
+			margin-left: 6px;
+			padding: 0 12px;
+			height: 18px;
+			background-color: #f7b723;
+			background-image: -webkit-gradient(linear, left top, left bottom, from(#ffca59), to(#f0a506));
+			background-image: -webkit-linear-gradient(top, #ffca59, #f0a506);
+			background-image:    -moz-linear-gradient(top, #ffca59, #f0a506);
+			background-image:     -ms-linear-gradient(top, #ffca59, #f0a506);
+			background-image:      -o-linear-gradient(top, #ffca59, #f0a506);
+			background-image:         linear-gradient(to bottom, #ffca59, #f0a506);
+			color: #fff;
+			vertical-align: middle;
+			text-decoration: none;
+			font-style: italic;
+			line-height: 18px;
+			}
+	.aside .poll .votes-bar {
+		display: block;
+		margin-top: 2px;
+		border: 1px solid #c5dbec;
+		background: #dbf1fc;
+		color: #2e6e9e;
+		font-weight: normal;
+		}
+.aside .jokes article {
+	margin-bottom: 28px;
+	}
+	.aside .jokes article p {
+		margin-bottom: 14px;
+		}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+.footer {
+	overflow: hidden;
+	padding-bottom: 5px;
+	}
+	.footer .nav {
+		overflow: hidden;
+		margin-bottom: 10px;
+		background-color: #252525;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#3a3a3a), to(#0e0e0e));
+		background-image: -webkit-linear-gradient(top, #3a3a3a, #0e0e0e);
+		background-image:    -moz-linear-gradient(top, #3a3a3a, #0e0e0e);
+		background-image:     -ms-linear-gradient(top, #3a3a3a, #0e0e0e);
+		background-image:      -o-linear-gradient(top, #3a3a3a, #0e0e0e);
+		background-image:         linear-gradient(to bottom, #3a3a3a, #0e0e0e);
+		font-size: 11px;
+		line-height: 23px;
+		}
+		.footer .nav li {
+			float: left;
+			margin-left: 5px;
+			padding: 0 20px;
+			}
+			.footer .nav li:first-child {
+				margin-left: 0;
+				}
+			.footer .nav a {
+				color: #d7d7d7;
+				text-decoration: none;
+				}
+				.footer .nav a:hover {
+					text-decoration: underline;
+					}
+	.footer .copyright {
+		float: left;
+		color: #0163a3;
+		font-size: 11px;
+		}
+	.footer .counter {
+		float: right;
+		}
+
+/* Blocks
+-----------------------------------------------------------------------------*/
+
+.news-item {
+	position: relative;
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 12px;
+	padding: 8px 14px;
+	border: 1px solid #dadada;
+	}
+	.news-item .section-name {
+		margin: -6px 0 4px -12px;
+		padding-left: 12px;
+		background: url("img/side-gradient.gif") 0 3px no-repeat;
+		font: 18px/1 "Times New Roman", Times, Baskerville, Georgia, serif;
+		}
+		.news-item .section-name a {
+			text-decoration: none;
+			}
+	.news-item .photo {
+		float: left;
+		margin-right: 15px;
+		padding: 2px;
+		width: 130px;
+		height: 130px;
+		border: 1px solid #dadada;
+		}
+		.news-item .photo span {
+			display: block;
+			overflow: hidden;
+			width: 130px;
+			height: 130px;
+			}
+			.news-item .photo img {
+				height: 130px;
+				}
+	.news-item > div {
+		overflow: hidden;
+		padding-bottom: 20px;
+		}
+	.news-item h3 {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 16px;
+		}
+		.news-item h3 a {
+			color: #000;
+			text-decoration: none;
+			}
+			.news-item h3 a:hover {
+				text-decoration: underline;
+				}
+	.news-item .time {
+		margin-bottom: 3px;
+		color: #f7b11a;
+		font-weight: bold;
+		font-size: 11px;
+		}
+	.info {
+		position: absolute;
+		right: 14px;
+		bottom: 8px;
+		}
+		.info li {
+			float: right;
+			margin-left: 12px;
+			padding-left: 14px;
+			font-size: 11px;
+			}
+			.info .comment {
+				background: url("img/comment-ico.gif") 0 4px no-repeat;
+				color: #f7b11a;
+				}
+				.info .has-media + .comment {
+					padding-right: 7px;
+					border-right: 1px solid #dadada;
+					}
+			.info .more {
+				background: url("img/more-ico.gif") 0 3px no-repeat;
+				}
+			.info .has-media {
+				margin-left: 7px;
+				padding-left: 0;
+				width: 12px;
+				height: 16px;
+				}
+				.info .has-photo {
+					background: url("img/has-photo.gif") 100% 1px no-repeat;
+					}
+				.info .has-video {
+					background: url("img/has-video.gif") 100% 2px no-repeat;
+					}
+.pagination {
+	text-align: center;
+	font-size: 11px;
+	line-height: 13px;
+	}
+	.pagination li {
+		display: inline-block;
+		}
+		.pagination a,
+		.pagination span {
+			padding: 0 5px;
+			text-decoration: none;
+			}
+			.pagination a:hover {
+				text-decoration: underline;
+				}
+			.pagination .current a {
+				background-color: #2e7eb3;
+				background-image: -webkit-gradient(linear, left top, left bottom, from(#5395c1), to(#0565a4));
+				background-image: -webkit-linear-gradient(top, #5395c1, #0565a4);
+				background-image:    -moz-linear-gradient(top, #5395c1, #0565a4);
+				background-image:     -ms-linear-gradient(top, #5395c1, #0565a4);
+				background-image:      -o-linear-gradient(top, #5395c1, #0565a4);
+				background-image:         linear-gradient(to bottom, #5395c1, #0565a4);
+				color: #fff;
+				}
+	.pagination .direction {
+		color: #aaa;
+		font-size: 18px;
+		}
+		.pagination .direction a {
+			color: #f7b11a;
+			}
+
+/* Author page */
+
+.about-author {
+	overflow: hidden;
+	margin-bottom: 12px;
+	padding: 15px;
+	border-top: 1px solid #dadada;
+	background: #f7f7f7;
+	}
+	.about-author .photo {
+		float: left;
+		margin: 0 15px 5px 0;
+		padding: 2px;
+		border: 1px solid #dadada;
+		background: #fff;
+		}
+	.about-author h1 {
+		margin-bottom: 10px;
+		font-size: 16px;
+		line-height: 18px;
+		}
+	.about-author .text {
+		line-height: 16px;
+		}
+		.about-author .text b,
+		.about-author .text strong {
+			font-weight: bold;
+			}
+		.about-author .text i,
+		.about-author .text em {
+			font-style: italic;
+			}
+		.about-author .text p {
+			margin-bottom: 16px;
+			}
+	.about-author .write-to-author {
+		margin-top: 20px;
+		}
+		.about-author .write-to-author a {
+			display: inline-block;
+			padding: 0 12px;
+			background-color: #0095e2;
+			background-image: -webkit-gradient(linear, left top, left bottom, from(#00aae8), to(#0082dd));
+			background-image: -webkit-linear-gradient(top, #00aae8, #0082dd);
+			background-image:    -moz-linear-gradient(top, #00aae8, #0082dd);
+			background-image:     -ms-linear-gradient(top, #00aae8, #0082dd);
+			background-image:      -o-linear-gradient(top, #00aae8, #0082dd);
+			background-image:         linear-gradient(to bottom, #00aae8, #0082dd);
+			color: #fff;
+			text-decoration: none;
+			font-style: italic;
+			line-height: 18px;
+			}
+
+/* Full article page */
+
+.article {
+	position: relative;
+	padding-top: 57px;
+	}
+	.article > h1,
+	.article .intro,
+	.article .full-text {
+		margin-left: 13px;
+		}
+	.article h1 {
+		margin-bottom: 10px;
+		text-transform: uppercase;
+		font-size: 16px;
+		line-height: 18px;
+		}
+	.article h2 {
+		margin-bottom: 10px;
+		font-size: 16px;
+		line-height: 18px;
+		}
+	.article .intro {
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 18px;
+		}
+	.article .full-text {
+		margin-top: 16px;
+		line-height: 16px;
+		}
+	.article .main-image {
+		float: left;
+		margin: 0 17px 6px 13px;
+		padding: 2px;
+		border: 1px solid #dadada;
+		}
+		.article .main-image img {
+			max-width: 320px;
+			}
+	.article p {
+		margin-bottom: 16px;
+		}
+	.article ol li,
+	.article ul li {
+		margin-bottom: 16px;
+		padding-left: 17px;
+		}
+	.article ul li {
+		background: url("img/unordered-list-bullet.gif") 3px 3px no-repeat;	
+		}
+	.article ol {
+		list-style: decimal outside;
+		}
+	.article table {
+		margin-bottom: 16px;
+		width: 100%;
+		border: 1px solid #dadada;
+		font-size: 11px;
+		}
+		.article table td {
+			padding: 8px;
+			border: 1px solid #dadada;
+			vertical-align: middle;
+			}
+			.article table tr:first-child td {
+				color: #f7b11a;
+				font-weight: bold;
+				}
+	.article blockquote {
+		position: relative;
+		float: left;
+		margin: 3px 17px 10px 0;
+		padding: 12px 15px;
+		width: 190px;
+		background: #f7f7f7;
+		font-style: italic;
+		}
+		.article blockquote:before {
+			position: absolute;
+			top: 2px;
+			right: -2px;
+			display: block;
+			width: 1px;
+			height: 100%;
+			background: #dadada;
+			content: "";
+			}
+		.article blockquote:after {
+			position: absolute;
+			bottom: -2px;
+			left: 2px;
+			display: block;
+			width: 100%;
+			height: 1px;
+			background: #dadada;
+			content: "";
+			}
+		.article blockquote p {
+			margin: 0;
+			}
+	.article b,
+	.article strong {
+		font-weight: bold;
+		}
+	.article i,
+	.article em {
+		font-style: italic;
+		}
+	.article .cs_img {
+		float: none !important;
+		margin-bottom: 4px;
+		text-align: center;
+		}
+		.article .cs_img p:first-child {
+			margin-bottom: 10px;
+			}
+		.article .cs_img img {
+			padding: 2px;
+			max-width: 100%;
+			border: 1px solid #dadada;
+			}
+		.article .cs_img .cs_img_caption {
+			padding: 0 30px;
+			font-size: 12px;
+			line-height: 14px;
+			}
+	.article > footer {
+		clear: both;
+		margin-top: 20px;
+		width: 100%;
+		}
+		.article > footer .date,
+		.article > footer .author {
+			position: absolute;
+			top: 35px;
+			color: #f7b11a;
+			font-weight: bold;
+			font-size: 11px;
+			}
+			.article > footer .date {
+				left: 13px;
+				}
+			.article > footer .author {
+				right: 0;
+				}
+				.article > footer .author a {
+					font-weight: normal;
+					}
+		.article .actions {
+			position: relative;
+			margin-bottom: 13px;
+			padding-top: 1px;
+			width: 100%;
+			height: 24px;
+			border-top: 1px solid #dadada;
+			background: #f7f7f7;
+			line-height: 22px;
+			}
+			.article .actions:before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background: #fff;
+				content: "";
+				}
+			.article .actions + .actions {
+				position: absolute;
+				top: 0;
+				margin: 0;
+				}
+			.actions .share {
+				float: left;
+				margin-top: 3px;
+				padding-left: 13px;
+				width: 400px;
+				line-height: 16px;
+				}
+				.actions .share li {
+					float: left;
+					margin-right: 20px;
+					margin-bottom: 0;
+					padding: 0;
+					background: none;
+					}
+			.actions .print {
+				float: right;
+				margin-right: 13px;
+				padding-left: 22px;
+				background: url("img/print-ico.png") 0 3px no-repeat;
+				font-size: 11px;
+				}
+.block {
+	margin-bottom: 12px;
+	padding: 0 12px 2px;
+	border: 1px solid #dadada;
+	background: #f7f7f7 url("img/block-shadow-on-grey.gif") 0 21px repeat-x;
+	}
+	.block header {
+		margin: -1px -13px 13px;
+		padding: 0 13px;
+		height: 22px;
+		background-color: #bdbdbd;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#cdcdcd), to(#acacac));
+		background-image: -webkit-linear-gradient(top, #cdcdcd, #acacac);
+		background-image:    -moz-linear-gradient(top, #cdcdcd, #acacac);
+		background-image:     -ms-linear-gradient(top, #cdcdcd, #acacac);
+		background-image:      -o-linear-gradient(top, #cdcdcd, #acacac);
+		background-image:         linear-gradient(to bottom, #cdcdcd, #acacac);
+		color: #fff;
+		}
+		.block header h3 {
+			float: left;
+			font: 18px/22px "Times New Roman", Times, Baskerville, Georgia, serif;
+			}
+.add-comment {
+	}
+	.add-comment p {
+		margin-bottom: 12px;
+		}
+	.add-comment input[type="text"] {
+		width: 606px;
+		}
+	.add-comment textarea {
+		width: 606px;
+		height: 66px;
+		}
+.article-comments {
+	}
+	.article-comments .all-comments-count {
+		float: right;
+		margin-top: 4px;
+		font-size: 11px;
+		}
+	.article .comment {
+		margin-bottom: 18px;
+		}
+		.comment footer {
+			margin-bottom: 5px;
+			font-weight: bold;
+			font-size: 11px;
+			line-height: 11px;
+			}
+			.comment footer time {
+				margin-left: 7px;
+				padding-left: 8px;
+				border-left: 1px solid #000;
+				color: #f7b11a;
+				}
+		.comment .content {
+			font-style: italic;
+			line-height: 16px;
+			}
+			.comment .content p {
+				margin-bottom: 0;
+				}
+
+/* Archive and search page */
+
+.search-pane {
+	overflow: hidden;
+	margin-bottom: 25px;
+	}
+	.search-articles {
+		float: left;
+		padding-right: 10px;
+		}
+		.search-articles label {
+			font-size: 11px;
+			}
+			.search-articles fieldset > label:first-child {
+				float: left;
+				margin-top: 1px;
+				margin-right: 10px;
+				width: 67px;
+				text-align: right;
+				word-wrap: none;
+				}
+		.search-articles fieldset {
+			margin-bottom: 18px;
+			}
+		.search-articles input[type="text"] {
+			width: 221px;
+			font-size: 11px;
+			}
+		.search-articles .all-words {
+			position: relative;
+			top: 3px;
+			display: inline;
+			margin-left: 10px;
+			vertical-align: top;
+			line-height: 12px;
+			}
+			.search-articles .all-words input {
+				margin-top: 1px;
+				margin-left: 7px;
+				vertical-align: top;
+				}
+		.search-articles .place ul {
+			float: left;
+			padding-top: 3px;
+			}
+			.search-articles .place li {
+				float: left;
+				margin-right: 20px;
+				line-height: 13px;
+				}
+				.search-articles .place input {
+					margin-right: 2px;
+					vertical-align: top;
+					}
+		.search-articles .date input {
+			width: 64px;
+			}
+		.search-articles .date ul li {
+			float: left;
+			margin-right: 30px;
+			}
+			.search-articles .date .pickdate {
+				display: inline-block;
+				margin-left: 5px;
+				width: 21px;
+				height: 17px;
+				background: url("img/calendar-ico.gif") 0 0 no-repeat;
+				text-indent: -9999px;
+				}
+		.search-articles .submit {
+			padding-left: 77px;
+			}
+	.search-pane .calendar {
+		float: right;
+		}
+	.search-pane .ui-widget {
+		font-size: 11px;
+		}
+.search-pane + h2 {
+	margin-bottom: 15px;
+	}
+.search-results .news-item {
+	margin-bottom: 22px;
+	padding-top: 0;
+	padding-bottom: 0;
+	border: none;
+	}
+	.search-results .news-item > div {
+		padding: 0;
+		}
+	.search-results .news-item h3 {
+		margin-bottom: 1px;
+		font-size: 11px;
+		line-height: 14px;
+		}
+	.search-results .news-item .time {
+		margin-bottom: 2px;
+		}
+.archive .select-date {
+	margin-top: -1px;
+	margin-bottom: 12px;
+	padding: 10px 12px;
+	height: 18px;
+	border: 1px solid #dadada;
+	background: #f7f7f7 url("img/block-shadow-on-grey.gif") 0 -7px repeat-x;
+	font-size: 11px;
+	}
+	.archive .select-date p {
+		float: left;
+		margin-right: 22px;
+		}
+		.archive .select-date label {
+			float: left;
+			margin-top: 1px;
+			padding-right: 5px;
+			}
+		.archive .select-date select {
+			width: auto;
+			}
+.archive-section {
+	margin-bottom: 12px;
+	padding: 8px 16px 4px;
+	border: 1px solid #dadada;
+	}
+	.archive-section h3 {
+		display: inline-block;
+		margin-bottom: 10px;
+		margin-left: -15px;
+		padding: 0 15px;
+		height: 18px;
+		background: url("img/side-gradient.gif") 0 2px no-repeat;
+		font: 16px/17px "Times New Roman", Times, Baskerville, Georgia, serif;
+		}
+		.archive-section h3 a {
+			text-decoration: none;
+			}
+	.archive-section .selected {
+		background-color: #f6b62b;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#ffca59), to(#f0a506));
+		background-image: -webkit-linear-gradient(top, #ffca59, #f0a506);
+		background-image:    -moz-linear-gradient(top, #ffca59, #f0a506);
+		background-image:     -ms-linear-gradient(top, #ffca59, #f0a506);
+		background-image:      -o-linear-gradient(top, #ffca59, #f0a506);
+		background-image:         linear-gradient(to bottom, #ffca59, #f0a506);
+		background-position: 0 0;
+		}
+	.archive-section .selected-persons {
+		background-color: #0097e3;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#09ade9), to(#0082dd));
+		background-image: -webkit-linear-gradient(top, #09ade9, #0082dd);
+		background-image:    -moz-linear-gradient(top, #09ade9, #0082dd);
+		background-image:     -ms-linear-gradient(top, #09ade9, #0082dd);
+		background-image:      -o-linear-gradient(top, #09ade9, #0082dd);
+		background-image:         linear-gradient(to bottom, #09ade9, #0082dd);
+		background-position: 0 0;
+		}
+		.archive-section .selected a,
+		.archive-section .selected-persons a {
+			color: #fff;
+			font-weight: bold;
+			}
+	.archive-section li {
+		margin-bottom: 10px;
+		}
+		.archive-section li a {
+			color: #000;
+			text-decoration: none;
+			}
+			.archive-section li a:hover {
+				color: #e79f03;
+				}
+		.archive-section li time {
+			color: #f7b11a;
+			font-weight: bold;
+			font-size: 11px;
+			}
+
+/* Front page */
+
+.main-events {
+	overflow: hidden;
+	margin-bottom: 12px;
+	padding-left: 321px;
+	}
+	.main-events h2 {
+		margin-bottom: 5px;
+		margin-left: -321px;
+		color: #0163a3;
+		text-transform: uppercase;
+		font: 20px/1 "Times New Roman", Times, Baskerville, Georgia, serif;
+		}
+	.main-events .photos {
+		float: left;
+		margin-left: -321px;
+		width: 316px;
+		height: 236px;
+		}
+		.main-events .photos a {
+			display: block;
+			padding: 2px;
+			width: 310px;
+			height: 230px;
+			border: 1px solid #dadada;
+			}
+			.main-events .photos img {
+				width: 310px;
+				height: 230px;
+				}
+	.main-events .events-wrapper {
+		padding: 1px 0;
+		height: 232px;
+		border: solid #dadada;
+		border-width: 1px 0;
+		}
+		.main-events .events {
+			overflow: hidden;
+			padding-left: 7px;
+			height: 100%;
+			background: #f7f7f7 url("img/side-gradient.gif") 0 0 repeat-y;
+			}
+			.main-events .event a {
+				display: block;
+				padding: 6px 8px;
+				border: 1px solid transparent;
+				color: #000;
+				text-decoration: none;
+				}
+				.main-events .event.current a {
+					border-color: #f7b11a;
+					}
+				.main-events .event h3 {
+					margin-bottom: 5px;
+					text-transform: uppercase;
+					font-size: 14px;
+					line-height: 16px;
+					}
+.home .block {
+	position: relative;
+	float: left;
+	padding-bottom: 40px;
+	width: 289px;
+	}
+	.home .block + .block {
+		margin-left: 20px;
+		}
+	.home .block header {
+		position: relative;
+		margin-bottom: 8px;
+		background-color: #f7b830;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#ffca59), to(#efa505));
+		background-image: -webkit-linear-gradient(top, #ffca59, #efa505);
+		background-image:    -moz-linear-gradient(top, #ffca59, #efa505);
+		background-image:     -ms-linear-gradient(top, #ffca59, #efa505);
+		background-image:      -o-linear-gradient(top, #ffca59, #efa505);
+		background-image:         linear-gradient(to bottom, #ffca59, #efa505);
+		color: #fff;
+		}
+		.home .block header a {
+			color: #fff;
+			text-decoration: none;
+			}
+			.home .block header a:hover {
+				text-decoration: underline;
+				}
+		.home .block header h3 {
+			text-transform: uppercase;
+			font-size: 16px;
+			}
+		.home .block header .author {
+			position: absolute;
+			top: 4px;
+			right: 13px;
+			text-align: right;
+			}
+	.home .block h1 {
+		margin: 0 -13px 10px;
+		padding: 0 13px 7px;
+		border-bottom: 1px solid #dadada;
+		-webkit-box-shadow: 0 1px 0 #fff;
+		   -moz-box-shadow: 0 1px 0 #fff;
+		        box-shadow: 0 1px 0 #fff;
+		text-transform: uppercase;
+		}
+		.home .block h1 a {
+			color: #000;
+			text-decoration: none;
+			font-size: 14px;
+			line-height: 16px;
+			}
+			.home .block h1 a:hover {
+				text-decoration: underline;
+				}
+	.home .block .info {
+		right: 12px;
+		bottom: 10px;
+		}
+	.home .block .image {
+		float: left;
+		margin: 0 10px 5px 0;
+		padding: 2px;
+		width: 130px;
+		border: 1px solid #dadada;
+		}
+		.home .block .image img {
+			width: 130px;
+			}
+
+/* Feedback */
+
+.main .feedback {
+	padding: 15px;
+	border-top: 1px solid #dadada;
+	background: #f7f7f7;
+	font-size: 13px;
+	}
+	.main .feedback p {
+		margin-bottom: 16px;
+		}
+	.main .feedback label {
+		margin-bottom: 5px;
+		font-size: 13px;
+		}
+	.main .feedback input[type="text"],
+	.main .feedback input[type="password"],
+	.main .feedback textarea {
+		width: 400px;
+		font-size: 13px;
+		}
+		.main .feedback input[type="text"],
+		.main .feedback input[type="password"] {
+			height: 20px;
+			}
+		.main .feedback textarea {
+			width: 500px;
+			line-height: 16px;
+			}
+	.main .feedback .submit {
+		margin: 0;
+		}
+	.main .feedback .error {
+		border-color: #b44;
+		background: #f88;
+		}
+.authors-list {
+	padding-left: 15px;
+	list-style: disc inside;
+	line-height: 22px;
+	}
+
+@media print {
+	* {
+		background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important;
+		}
+	a,
+	a:visited {
+		text-decoration: underline;
+		}
+	a[href]:after {
+		content: " (" attr(href) ")";
+		}
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+		}
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after,
+	.article > footer .author a:after {
+		content: "";
+		}
+	pre,
+	blockquote {
+		border: 1px solid #999; page-break-inside: avoid;
+		}
+	thead {
+		display: table-header-group;
+		}
+	tr,
+	img {
+		page-break-inside: avoid;
+		}
+	img {
+		max-width: 100% !important;
+		}
+	@page {
+		margin: 0.5cm;
+		}
+	p,
+	h2,
+	h3 {
+		orphans: 3; widows: 3;
+		}
+	h2,
+	h3 {
+		page-break-after: avoid;
+		}
+	.header,
+	.aside,
+	.footer .nav,
+	.article .actions,
+	.article .add-comment,
+	.article .article-comments,
+	.middle > h2 {
+		display: none;
+		}
+	.main {
+		float: none;
+		width: auto;
+		}
+	.article > footer .date,
+	.article > footer .author {
+		top: 0;
+		}
+	.article {
+		padding-top: 22px;
+		}
+	.article ul {
+		list-style: disc outside;
+		}
+	.article ol {
+		list-style: decimal outside;
+		}
+	.article ol li,
+	.article ul li {
+		margin-left: 17px;
+		padding-left: 0;
+		}
+}

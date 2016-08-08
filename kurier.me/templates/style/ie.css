@@ -1,0 +1,51 @@
+/*
+Author:		Aleks Hudochenkov
+Version:	3.07.2011
+-----------------------------------------------------------------------------*/
+
+.header,
+.article,
+.aside section,
+.articles-by-section,
+.articles-by-topic,
+.exclusive-video section,
+.article-short,
+.section-pagination,
+.section-related,
+.banner,
+.banners,
+.last-news,
+.section,
+.sections .opinions,
+.photogallery,
+.readers-write .columns,
+.footer nav,
+.featured {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f3f4', endColorstr='#ffffff',GradientType=0 );
+	border: 1px solid #ccc;
+	zoom: 1;
+}
+.header {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f0f0',GradientType=0 );
+}
+
+button {
+	overflow: visible;
+	width: auto;
+	}
+textarea {
+	overflow: auto;
+	}
+
+.section-related {
+	padding-left: 9px;
+	padding-right: 9px;
+	
+}
+.articles-by-section {
+	margin-right: 8px;
+}
+.article .photos li {
+	border: 1px solid #ccc;
+	padding: 9px;
+}

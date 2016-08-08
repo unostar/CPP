@@ -1,0 +1,11 @@
+<div class="articlecomments">
+{{list_article_comments length="10" ignore_article="true" order="byDate desc"}}
+<div>
+<h3 class="section-block" style="margin-bottom:0px;padding-bottom:0px;"><a href="{{ uri options="article" }}#comments">{{ $campsite->article->name }}</a></h3>
+<p class="comment-author" style="margin-top:0px;padding-top:0px;">{{ $campsite->comment->reader_email }}</p>
+<p class="comment-data">{{ $campsite->comment->submit_date|camp_date_format:"%d/%m %Y, %H:%i" }}</p>
+<p class="comment-text">{{ $campsite->comment->content }}</p>
+<p>&nbsp;</p>
+</div>
+{{ /list_article_comments }}
+</div>

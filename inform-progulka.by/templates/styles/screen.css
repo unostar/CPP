@@ -1,0 +1,9 @@
+/* 
+Title:    Progulka screen styles and ie/win fixes
+*/
+
+@import url("reset.css");       /* master reset        */
+@import url("master.css");   /* master screen styles        */
+@import url("ie.css");      /*  IE fixes        */
+@import url("tabs.css");       /* JQuery tabs        */
+@import url("date-picker.css");       /* JQuery date picker        */

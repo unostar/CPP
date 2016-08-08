@@ -1,0 +1,55 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font-size: 100.01%;
+	font-size-adjust: none;
+	font-style: normal;
+	font-variant: normal;
+	font-family: inherit;
+	line-height: normal;
+}
+
+a {color: #0c4790; text-decoration: none}
+	a:visited {}
+	a:hover {outline: 0; text-decoration: underline}
+	a:active {outline: 0}
+
+img {border: 0}
+
+html {font-size: 62.5%}
+body {color: #000; font: normal 1.2em Arial, Helvetica, sans-serif; padding: 5px 0 0 22px}
+pre {font:oblique 1.4em/1.4 Georgia,"Times New Roman",Times,serif;margin:30px 0;}
+
+h1 {font-size: 3.5em; margin-bottom: 12px}
+h2 {color: #0c4790; font: normal 2.57em/1.15 Georgia, "Times New Roman", Times, serif; margin-bottom: 10px}
+
+@media screen, projection {
+.l-container {width: 196mm;}
+}
+@media print {
+.l-container {width: 100%;}
+}
+.l-header {padding-bottom: 10px}
+.l-content {font-size: 1.16em; line-height: 1.3; padding-bottom: 20px}
+	.l-content p {margin-bottom: 1.57em}
+.l-footer {border-top: #525252 1px solid; color: #666; padding: 7px 0; line-height: 1.5}
+	.l-footer strong {font-weight: normal; color: #000}
+	
+.img {float: left; color: #3d3832; font-size: 0.86em; padding: 0 14px 5px 0; width: 454px;}
+	.img img {margin-bottom: 3px; width: 440px;}
+  div.cs_img {margin:0;padding:0;display:table;}
+  div.cs_img p {display:table-cell;margin:0;padding:0;}
+  div.cs_img p.cs_img_caption {display:table-caption;caption-side:bottom;text-align:left;line-height:1.1em;font-size:0.9em;}
+	
+.mycomments {border-top: #b5b5b5 1px solid; padding: 20px 0}
+	.mycomments fieldset {border: 0}
+	.mycomments legend {display: block; padding-bottom: 10px}
+	.mycomments textarea {overflow-x: hidden; overflow-y: auto; height: 135px; width: 570px; border-width: 1px; border-style: solid; border-color: #737373 #999 #999 #999}
+
+.b-article_spravka {display: block; float: left; border: #999 1px solid; line-height: 1.5; color: #333; padding: 10px; margin-bottom: 20px;}
+	.b-article_sprh {color: #000; display: block; font-weight: bold; font-family: Georgia, "Times New Roman", Times, serif;}
+	.b-article_spravka p {margin: 7px 0 0 0;}

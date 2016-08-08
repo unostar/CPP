@@ -1,0 +1,16 @@
+{{ list_articles length="3" constraints="issue is 1 section is 2" order="bypublishdate desc"}}
+  {{ if $gimme->current_list->at_beginning }}
+        <p class="title margin-top-20"><a href="{{ uri options="section"}}">{{ $gimme->section->name }}</a></p>
+  {{ /if }}
+{{ if $gimme->article->Full_text != "" }}
+        <p class="add-title"><a href="{{ uri }}">{{ $gimme->article->name }}</a></p>
+{{ else }}
+        <p class="add-title">{{ $gimme->article->name }}</p>
+{{ /if }}
+        <div class="add-text">{{ $gimme->article->intro }}</div>
+{{ if $gimme->current_list->at_end }}
+        <div class="right-1-hr">
+          <hr/>
+        </div>
+{{ /if }}
+{{ /list_articles }}

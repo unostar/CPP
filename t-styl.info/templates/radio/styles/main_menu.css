@@ -1,0 +1,117 @@
+#main-menu{
+clear:left;
+background-color:#000;
+}
+
+#main-menu .menu-scale {
+display:block;
+width:850px;
+height:160px;
+background:#000 url(/templates/radio/images/menu-scale.jpg) no-repeat;
+}
+
+#main-menu .menu-item-big {
+display:block;
+position:relative;
+width:89px;
+height:105px;
+background:#000;
+top:-72px;
+left:0;
+}
+
+#menu-scale-bar{
+display:block;
+position:relative;
+width:6px;
+height:104px;
+background:url(/templates/radio/images/menu-scale-bar.png) no-repeat;
+top:35px;
+left:730px;
+}
+
+#main-menu .menu-control {
+width:810px;
+height:132px;
+margin:0 20px;
+background-color:#000;
+}
+
+#main-menu .menu-text {
+display:block;
+clear:left;
+width:810px;
+height:29px;
+padding-top:8px;
+text-align:center;
+text-transform:uppercase;
+font-family: Arial,Helvetica,sans-serif;
+font-size:13px;
+font-weight:bold;
+color:#9ab2be;
+}
+
+#main-menu .menu-item {
+display:block;
+position:relative;
+float:left;
+width:81px;
+height:95px;
+background:#000 url(/templates/radio/images/menu-item.gif) center bottom no-repeat;
+}
+
+#main-menu .menu-item p, #main-menu .menu-item-big p{
+font-family:Arial,Helvetica,sans-serif;
+font-size:11px;
+font-weight:bold;
+color:#FFF;
+text-transform:uppercase;
+text-align:center;
+line-height:14px;
+max-height:28px;
+width:81px;
+overflow:hidden;
+position:absolute;
+bottom:67px;
+left:0;
+}
+
+#main-menu .menu-item-big p{
+bottom:79px;
+width:89px;
+max-height:26px;
+}
+
+#main-menu .switched p {color:#d30000;}
+
+#main-menu .menu-item .menu-item-button, #main-menu .menu-item a{
+display:block;
+position:absolute;
+clear:left;
+bottom:0;
+left:0;
+width:51px;
+height:50px;
+margin:0 16px 17px 15px;
+background:url(/templates/radio/images/menu-item-button.gif) 0 0 no-repeat;
+}
+
+#main-menu .menu-item .menu-item-button:hover, #main-menu .switched a {
+background:url(/templates/radio/images/menu-item-button.gif) 0 -50px no-repeat;
+}
+
+#main-menu .menu-item-big .menu-item-button-big, #main-menu .menu-item-big a{
+display:block;
+position:absolute;
+clear:left;
+bottom:0;
+left:0;
+width:58px;
+height:66px;
+margin:13px 16px 0 15px;
+background:url(/templates/radio/images/menu-itembig-button.gif) 0 0 no-repeat;
+}
+
+#main-menu .menu-item-big .menu-item-button-big:hover, #main-menu .menu-item-big.switched a{
+background:url(/templates/radio/images/menu-itembig-button.gif) 0 -66px no-repeat;
+}

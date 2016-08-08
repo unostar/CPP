@@ -1,0 +1,1 @@
+{{php}}header("Location: http://nv-online.info/feed/printed.rss");{{/php}}

@@ -1,0 +1,324 @@
+/*
+Author:     Aleks Hudochenkov
+Release:    3.11.2011
+-----------------------------------------------------------------------------*/
+
+/* Reset
+-----------------------------------------------------------------------------*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	}
+
+/* General
+-----------------------------------------------------------------------------*/
+
+body, select, input, textarea {
+	color: #111;
+	font-family: Verdana, Geneva, sans-serif;
+	}
+body {
+	font: 12px/16px Verdana, Geneva, sans-serif;
+	padding: 12px;
+	}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	}
+a,
+a:active,
+a:visited {
+	color: #008951;
+	text-decoration: underline;
+	}
+	a:hover {
+		text-decoration: none;
+		}
+	a:hover,
+	a:active {
+		outline: none;
+		}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+	th {
+		font-weight: bold;
+		}
+	td {
+		vertical-align: top;
+		}
+strong, b {
+	font-weight: bold;
+}
+em, i {
+	font-style: italic;
+}
+img {
+	vertical-align: top;
+}
+
+.header {
+	font-size: 10px;
+	line-height: 12px;
+	margin-bottom: 20px;
+}
+.logo {
+	width: 136px;
+	float: left;
+	margin-right: 7px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.logo a {
+	text-decoration: none;
+	font-weight: bold;
+}
+.logo img {
+	height: 25px;
+}
+.logo small {
+	display: block;
+}
+.today {
+	padding-left: 16px;
+	background: url("/templates/img/mobile-header-slash.gif") 0 0 no-repeat;
+	height: 25px;
+	float: left;
+	margin-top: 2px;
+}
+.today span {
+	display: block;
+}
+.go-to-nav {
+	clear: both;
+}
+.go-to-nav a {
+	text-decoration: none;
+	border-bottom: 1px dashed;
+}
+
+
+
+
+
+.peek dt {
+	font-size: 10px;
+	text-transform: uppercase;
+	margin-bottom: 3px;
+}
+.peek.section dt {
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+.peek dt:first-child {
+	padding-top: 0;
+}
+.peek dt a {
+	font-weight: normal;
+	color: #707070;
+}
+.peek ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.peek li {
+	font-size: 11px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 4px;
+	line-height: 14px;
+}
+.peek li:first-child {
+	overflow: hidden;
+	font-size: 12px;
+}
+.peek li:first-child h3 {
+	font-weight: bold;
+}
+
+.peek .time {
+	padding-left: 8px;
+	background: url("/templates/img/archive-arrow.gif") 0 50% no-repeat;
+	margin-left: 3px;
+	font-size: 9px;
+	
+}
+.peek h3 {
+	display: inline;
+	font-weight: normal;
+}
+.peek img {
+	float: left;
+	margin: 3px 10px 3px 0;
+}
+.peek dd {
+	margin-bottom: 15px;
+}
+.peek dd a:visited {
+	color: #999;
+}
+.footer {
+	margin-top: 15px;
+}
+.footer p {
+	font-weight: bold;
+	font-size: 10px;
+}
+.footer .copyright {
+	
+}
+#nav {
+	margin: 0 0 15px;
+	padding: 15px 0;
+	list-style: none;
+	border: solid #ccc;
+	border-width: 1px 0;
+	line-height: 18px;
+	font-size: 11px;
+}
+#nav ul {
+	list-style: none;
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+#nav ul li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+
+.article {
+	
+}
+.article .title {
+	font-size: 15px;
+	line-height: 18px;
+	margin-bottom: 3px;
+}
+.article .date {
+	font-size: 10px;
+	margin: 0;
+}
+.article .author {
+	font-size: 11px;
+	margin: 0;
+}
+.article .intro {
+	padding-top: 11px;
+}
+
+.article h2 {
+	font-size: 14px;
+	margin-bottom: 10px;
+	margin-top: 21px;
+}
+.article p,
+.article ul,
+.article table {
+	margin-bottom: 11px;
+}
+.article .main-image {
+	float: left;
+	margin: 2px 10px 2px 0;
+}
+
+.article table {
+	width: 100%;
+}
+.article td,
+.article th {
+	vertical-align: middle;
+	padding: 3px;
+	border: 1px solid #444;
+}
+.article th {
+	text-align: left;
+	font-size: 10px;
+}
+.article blockquote {
+	background: #eee;
+	border: 1px solid #d3d4d5;
+	margin: 0 11px 11px;
+	padding: 12px;
+	font-style: italic;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+}
+.article blockquote p {
+	margin: 0;
+}
+
+.kinda-nav {
+	margin: 13px 0;
+	padding: 0;
+	list-style: none;
+	line-height: 18px;
+	font-size: 11px;
+}
+.kinda-nav.section a {
+	text-decoration: none;
+}
+.kinda-nav.section span {
+	text-decoration: underline;
+}
+.kinda-nav.section a:hover span {
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

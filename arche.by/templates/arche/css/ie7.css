@@ -1,0 +1,148 @@
+/*
+Author:		Aleks Hudochenkov
+Version:	3.04.2011
+-----------------------------------------------------------------------------*/
+
+.ie7 legend {
+	margin-left: -7px;
+	}
+.ie7 input[type="checkbox"] {
+	vertical-align: baseline;
+	}
+img {
+	-ms-interpolation-mode: bicubic;
+	}
+
+
+a.button,
+.header .nav-main li,
+.search p,
+.section-home .last-article .article-footer li,
+a.comments-count,
+.section-home .short-article .comments-count,
+.attachments,
+.galleries p,
+.footer .side nav h3,
+.footer .side nav ul,
+.footer .side nav li,
+.footer .side .social li,
+.main .pagination h3,
+.main .pagination ol,
+.main .pagination li,
+.social-buttons li,
+.search-articles .date .pickdate,
+.archive-page .choose-year li {
+	display: inline;
+}
+.search p {
+	margin-left: 5px;
+	
+}
+.search .submit {
+	border: 1px solid #ccdae3;
+	margin-top: 1px;
+	
+}
+.search .submit button {
+	border: none;
+	height: 19px;
+	line-height: 16px;
+	
+}
+.emails form span {
+	border: 1px solid #ccdae3;
+
+}
+.emails form span button {
+	border: none;
+	height: 19px;
+	line-height: 16px;
+	
+}
+
+.main-news .articles-list .thumb {
+	top: -5px;
+	
+}
+.sections {
+	width: 730px;
+	
+}
+.section-home header .rss {
+	margin-top: -15px;
+	
+}
+.section-home header .read-more {
+	margin-top: -17px;
+	
+}
+.section-home .last-article .article-header h3 {
+	width: 311px;
+	
+}
+.tabs .tabs-labels a:hover span {
+	cursor: pointer;
+	
+}
+.tabs.tabs-second {
+	padding-bottom: 10px;
+	
+}
+.columns header .read-more {
+	margin-top: -20px;
+	
+}
+.columns {
+	padding-bottom: 20px;
+}
+
+
+
+
+.article-content blockquote {
+	zoom: expression(
+		runtimeStyle.zoom = 0,
+		insertBefore(
+			createElement("m"), firstChild)
+	);
+}
+.article-content blockquote m {
+	width: 42px;
+	height: 42px;
+	display: block;
+	float: left;
+
+}
+.galleries p + p {
+	margin-left: 10px;
+	border-left: 1px solid;
+	padding-left: 10px;
+
+}
+.video-archive .video h3 {
+	left: 0;
+	
+}
+.article-content td, .article-content th,
+.article-content tr td:first-child, .article-content tr th:first-child {
+	border-bottom: 1px solid #797878;
+}
+.search-articles .date .pickdate {
+	top: 0;
+	left: 5px;
+	
+}
+.archive-page .choose-year li {
+	vertical-align: middle;
+	
+}
+.header-inner {
+	zoom: 1;
+	max-height: 186px;
+}
+
+
+
+
+
+

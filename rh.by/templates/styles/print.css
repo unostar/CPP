@@ -1,0 +1,64 @@
+/* 
+Title:     Regionalna Gazeta styles
+Updated:   May 3, 2009
+*/
+
+body {
+       background: #fff;
+       color: #000;
+}
+
+#rightbar {
+       display: none;
+}
+
+#main-nav {
+       display: none;
+}
+
+#header #banner468 {
+       display: none;
+}
+
+#header #head-menu {
+       display: none;
+}
+
+#header #search-box {
+       display: none;
+}
+
+.story {
+       background: #fff;
+       border: none;
+       padding: 0;
+       margin: 10px 0 0 0;
+}
+
+h1 {
+       font-family: Arial, sans-serif;
+       font-size: 250%;
+       font-weight: normal;
+       margin: 20px 0;
+}
+
+p {
+       font-family: Arial, sans-serif;
+       font-size: 100%;
+       line-height: 1.2em;
+}
+
+p.caption {
+       font-style: italic;
+}
+
+#footer {
+       border-top: 1px solid #000;
+       padding: 10px 0;
+       width: 660px;
+       margin-top: 20px;
+}
+
+#printer #footer p span {
+       color: #666;
+}

@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html>
+<!--[if IE 6 ]><html lang="ru" class="ie678 ie666"><![endif]-->
+<!--[if IE 7 ]><html lang="ru" class="ie678 ie7"><![endif]-->
+<!--[if IE 8 ]><html lang="ru" class="ie678 ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="ru" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="ru"><!--<![endif]-->
+<head>
+	<title>Хостинг сайтов в Беларуси | Купить хостинг у хостинг-провайдера hoster.by</title>
+	<link rel="shortcut icon" type="image/x-icon" href="/bitrix/templates/new_template/favicon.ico" />
+	<link href="/bitrix/templates/new_template/css/colorbox.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="/bitrix/templates/new_template/js/jq172.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="Хостинг сайтов от HOSTER.BY домены регистрация электронная почта VPS ПРОФЕССИОНАЛЬНЫЙ ХОСТИНГ МИНСК БЕЛАРУСЬ хостинг в Беларуси БЕЛОРУССИЯ LINUX НАДЕЖНЫЕ ПРОГРАММЫ  ХОСТЕР БАЙ LINUX   SVS SVN АРЕНДА СЕРВЕРОВ DEDICATED VPS TUT.BY ДОМЕН РЕГИСТРАЦИЯ ЭЛЕКТРОННАЯ ПОЧТА  COLOCATION РАЗМЕЩЕНИЕ СЕРВЕР техподдержка ПРОФЕССИОНАЛЬНЫЙ" />
+<meta name="description" content="Хостинг-провайдер hoster.by предоставляет услуги хостинга и регистрации доменов в Беларуси с 2000 года. Недорогой платный хостинг для любых веб-проектов: виртуальный хостинг, VPS, аренда серверов." />
+<link href="/bitrix/js/main/core/css/core.css?1339995413" type="text/css" rel="stylesheet" />
+<link href="/bitrix/js/main/core/css/core_window.css?1339995413" type="text/css" rel="stylesheet" />
+<link href="/bitrix/templates/new_template/styles.css?1343126818" type="text/css" rel="stylesheet" />
+<link href="/bitrix/templates/new_template/template_styles.css?1344847369" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="/bitrix/js/main/core/core.js?1339995413"></script>
+<script type="text/javascript">BX.message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','USER_ID':'','SERVER_TIME':'1347278437','SERVER_TZ_OFFSET':'10800','USER_TZ_OFFSET':'0','bitrix_sessid':'186a6723d3034fd87fd52591ad256beb','SITE_ID':'s1','JS_CORE_LOADING':'Загрузка...','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с'})</script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_ajax.js?1339995413"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_window.js?1339995413"></script>
+	<script type="text/javascript" src="/bitrix/templates/new_template/js/jquery.carouFredSel-5.5.0-packed.js"></script>
+	<script type="text/javascript" src="/bitrix/templates/new_template/js/main.js?t=5"></script>
+	<script type="text/javascript" src="/bitrix/templates/new_template/js/grayScale.js"></script>
+	<script type="text/javascript" src="/bitrix/templates/new_template/js/jquery.smooth-scroll.min.js"></script>
+
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+	<meta content="telephone=no" name="format-detection" />
+	<!-- CODE[02.08.2012 15:26]: hoster.by, head -->
+</head>
+<body class="jsOff">
+<noscript><div class="noscript">У вас отключено выполнение сценариев Java Script. Измените, пожалуйста, настройки браузера.</div></noscript>
+	<div id="panel"></div>
+	<div class="wrapper">
+	<div class="w-top-nav">
+		<div class="c-top-nav">
+			
+<ul class="nav-list">
+			<li class="item">
+			<a href="/about/" >О компании</a>
+		</li>
+			<li class="item">
+			<a href="/clients/" >Клиентам</a>
+		</li>
+			<li class="item">
+			<a href="/partners/" >Партнерам</a>
+		</li>
+			<li class="item">
+			<a href="http://support.tutby.com/index.php?/Knowledgebase/List" target="_blank">Помощь</a>
+		</li>
+	</ul>			 
+ <ul class="login" id="login">
+	<li class="item"><span class="lnk-login jLoginPopup"><i class="ico"></i><span>Войти</span></span></li>
+	<div class="b-login" id="loginPopup">
+        <div class="e-login-header">
+            <h3 class="e-title">Вход в систему</h3>
+        </div>
+        <div class="e-login-body">
+			<div class="reminder error" id="error"></div>
+           			<form action="https://user.hoster.by/login/" method="post" class="login-form">
+				<input type="hidden" name="action" id="action" value="login" />
+				<input type="hidden" name="back_url" id="back_url" value="http://hoster.by/index.php?tpl=224&section=110" />
+                <div class="row">
+                    <input type="email" name="email" class="text e-user db-placeholder" value="Ваш email"  />
+					
+                </div>
+                <div class="row">
+                    <input type="password" name="password" class="text e-pass db-placeholder" value="Ваш пароль"  />
+					
+                    <input type="submit" class="btn" value="">
+                </div>
+                <div class="reminder">
+                    <a href="https://user.hoster.by/forgot/?backurl=%2Findex.php%3Ftpl%3D224%26section%3D110">Забыли пароль?</a>
+					<a href="https://user.hoster.by/new/">Регистрация</a>
+                </div>
+            </form>
+        </div>
+		<script>
+	function dbAuth(){
+		var geturl;
+		geturl = $.ajax({
+			url:	'https://user.hoster.by/login/',
+			data: $('#login-form').serialize(),
+			type: 'POST',
+			error: function(xhr, text, err) {
+				console.log(xhr, text, err);
+			},
+			success: function(data) {
+				
+				if(data !== 'ok'){
+					$('#error').html(data);
+					$("input.e-pass[type='password']").val('');
+					
+				}else{
+					window.location.href = '/index.php?tpl=224&section=110';
+				}
+			}
+		});
+		return false;
+	}
+	</script>
+    </div>
+</ul>			<div class="w-cart" id="cart">
+			</div>
+			<div class="w-contacts" id="contacts">
+				<div id="contacts" class="w-contacts"> 	
+  <div class="lnk-contacts jTabTitle"><span>Свяжитесь с нами</span><i class="pic"></i></div>
+ 	
+  <div class="w-sub jTabBody"> 		
+    <div class="section s1"> 			
+      <h3>Отдел продаж:</h3>
+     			
+      <div class="mainphone">+375 (17) <span>239-57-02</span></div>
+     			
+      <table class="other-contacts"> 				
+        <tbody>
+          <tr> 					<td class="small">velcom:</td> 					<td>+375 (29) 3-4444-83</td> 				</tr>
+         				
+          <tr> 					<td class="small">МТС:</td> 					<td>+375 (29) 7-7644-83</td> 				</tr>
+         				
+          <tr> 					<td class="small">life:</td> 					<td>+375 (25) 7-2052-66</td> 				</tr>
+         				
+          <tr> 					<td class="small">Факс:</td> 					<td>+375 (17) 239-57-20</td> 				</tr>
+         				
+          <tr> 					<td class="small">Email:</td> 					<td><a href="mailto:info@hoster.by">info@hoster.by</a></td> 				</tr>
+         			</tbody>
+      </table>
+     		</div>
+   		
+    <div class="section s2"> 			
+      <h3>Техническая поддержка:</h3>
+     			
+      <div class="mainphone">+375 (17) <span>239-57-03</span></div>
+     			
+      <table class="other-contacts"> 				
+        <tbody>
+          <tr> 					<td class="small">velcom:</td> 					<td>+375 (29) 3-0912-26 доб. 3</td> 				</tr>
+         				
+          <tr> 					<td class="small">МТС:</td> 					<td>+375 (29) 8-6191-00 доб. 3</td> 				</tr>
+        				
+           				
+           				
+          <tr> 					<td class="small">Email:</td> 					<td><a href="mailto:support@hoster.by">support@hoster.by</a></td> 				</tr>
+         			</tbody>
+      </table>
+     		</div>
+   	</div>
+ </div>			</div>
+		</div>
+	</div>
+	<div class="w-header">
+		<div class="c-header">
+			<div class="header">
+				<div class="logo">					<img src="/include/logo_hoster.png" alt="Hoster.by"/>				</div>
+				<div class="w-site-menu"><ul class="site-menu" id="mainMenu">					<li class="item ">
+				<h3 class="jTabTitle"><a href="/service/domains/"><span>Домены</span><i class="d-bg-hover"></i></a></h3>
+			</li>
+				
+					<li class="item ">
+				<h3 class="jTabTitle"><span><a href="/service/hosting/virtual-hosting/unix/">Хостинг</a></span><i class="ico"></i><i class="d-bg-hover"></i></h3>
+				<div class="w-sub jTabBody">
+									
+							<div class="section s1">
+						<h4 class="">
+															Виртуальный хостинг													</h4>
+							<ul class="sub-nav">
+									<li class="item2 "><a href="/service/hosting/virtual-hosting/unix/">Стандартные тарифы</a><sup class="cnt">6</sup></li>
+									<li class="item2 "><a href="/service/hosting/virtual-hosting/windows/">Windows-хостинг</a><sup class="cnt">5</sup></li>
+				</ul></div>
+							<div class="section s1">
+						<h4 class="">
+															<a href="/service/hosting/professional-hosting/">Профессиональный хостинг</a>
+													</h4>
+							<ul class="sub-nav">
+									<li class="item2 "><a href="/service/hosting/professional-hosting/vps-hosting/">VPS-хостинг</a><sup class="cnt">5</sup></li>
+									<li class="item2 "><a href="/service/hosting/professional-hosting/zashchishchennyy-hosting/">Защищенный хостинг</a><sup class="cnt">3</sup></li>
+									<li class="item2 "><a href="/service/hosting/professional-hosting/colocation/">Colocation</a></li>
+									<li class="item2 "><a href="/service/hosting/professional-hosting/ded/">Аренда серверов</a><sup class="cnt">5</sup></li>
+									<li class="item2 "><a href="/service/hosting/professional-hosting/email/">Электронная почта</a></li>
+									<li class="item2 "><a href="/service/hosting/professional-hosting/bitrix/">Битрикс-хостинг</a><sup class="cnt">3</sup></li>
+				</ul></div></div></li>
+					<li class="item ">
+				<h3 class="jTabTitle"><span><a href="/service/services-and-solutions/">Услуги и решения</a></span><i class="ico"></i><i class="d-bg-hover"></i></h3>
+				<div class="w-sub jTabBody">
+											<div class="section s1"><ul class="sub-nav">
+																	<li class="item2 "><a href="/service/services-and-solutions/ssl-certificates/">SSL-сертификаты</a><sup class="cnt">20</sup></li>
+												<li class="item2 "><a href="/service/services-and-solutions/eds/">Электронная цифровая подпись</a></li>
+												<li class="item2 "><a href="/service/services-and-solutions/administrirovanie/">Администрирование</a></li>
+												<li class="item2 "><a href="/service/services-and-solutions/saas/">ПО в аренду</a></li>
+												<li class="item2 "><a href="/service/services-and-solutions/hosting-megaplan/">Мегаплан</a></li>
+												<li class="item2 "><a href="/service/services-and-solutions/seobility/">Продвижение сайтов</a></li>
+				</ul></div></div></li></ul>
+</div>
+			</div>
+		</div>
+	</div>
+	<div class="w-promo">
+	
+<ul class="promo-slider" id="promo">
+					<li class="promo" style="background: url(/upload/iblock/a5b/a5b14d0bf4ad77ef0c3d2f4bbca2e5cc.jpg) no-repeat scroll 50% 0pt rgb(88, 177, 222); width: 1903px;"><div class="promo-content">
+							<a href="/service/hosting/virtual-hosting/unix/"> 
+<h1 class="promo-title">Виртуальный 
+  <br />
+ <span>Хостинг</span></h1>
+ 
+<div class="promo-descr"><span>Для вашего сайта</span></div>
+ 
+<div class="promo-price">от <span>59&nbsp;500&nbsp;<small>руб/мес</small></span></div>
+ 
+<ul class="promo-benefits"> 	 	 
+  <li>От 3 ГБ дискового пространства</li>
+ 	 	 
+  <li>Бесплатная почта</li>
+ 	 
+  <li>Неограниченный трафик</li>
+ 
+  <li>Установка CMS за 1 клик </li>
+ 	 	 
+  <li>Техподдержка 24/7</li>
+ </ul>
+ </a>
+					</div></li>
+					<li class="promo" style="background: url(/upload/iblock/59b/59b6e3d57a046698a4d1ad6f8102005e.jpg) no-repeat scroll 50% 0pt #f5952d; width: 1903px;"><div class="promo-content">
+							<a href="/service/hosting/professional-hosting/vps-hosting/"><h1 class="promo-title"><span>VPS – хостинг</span></h1>
+<div class="promo-descr"><span>Для вашего сайта</span></div>
+<div class="promo-price">от <span>161&nbsp;500&nbsp;<small>руб/мес</small></span></div>
+<ul class="promo-benefits">
+	<li>Полный root-доступ</li>
+	<li>16-ядерная блейд-платформа</li>
+	<li>15 Гб включенного зарубежного трафика</li>
+	<li>Бесплатная первоначальная настройка сервера</li>
+</ul></a>
+					</div></li>
+					<li class="promo" style="background: url(/upload/iblock/33a/33aa038198ea28e1a260ab257c1006f0.jpg) no-repeat scroll 50% 0pt #65ac50; width: 1903px;"><div class="promo-content">
+							<a href="/service/domains/#block-sertif"><h1 class="promo-title">Сертификат о регистрации
+  <br />
+ <span>доменного имени</span></h1>
+<div class="promo-price">от <span>20&nbsp;000&nbsp;<small>руб/год</small></span></div>
+ <ul class="promo-benefits"> 	
+  <li>Основные данные о домене,&nbsp;его&nbsp;обладателе и сроках регистрации</li>
+ 	
+  <li>Юридическое подтверждение прав на домен</li>
+ 	
+  <li>Аксессуар в вашем офисе</li>
+ 
+  <li>Доставка по Беларуси</li>
+ </ul></a>
+					</div></li>
+	</ul>
+
+<ul class="promo-paginator"></ul>
+
+<ul class="pseudo-paging"> 
+			<li class="item"><span>Виртуальный<br />хостинг</span></li>
+			<li class="item"><span>VPS – хостинг</span></li>
+			<li class="item"><span>Сертификат<br />на домен</span></li>
+	 </ul>	
+	
+
+
+<div class="c-domen-finder">
+	<form method="GET" action="/service/domains/" class="domen-finder">
+		<h3 class="title"><img src="/bitrix/templates/new_template/images/finder_text.png" alt="Регистрация доменов"/></h3>
+		<div class="finder-block">
+			<div class="w-row"><input type="text" name="domain_name" class="db-placeholder text finder-input" value="Имя вашего сайта"/></div>
+			<div class="w-st-btn _green">
+				<div class="st-btn">Проверить
+					<input type="submit" class="submit" value="Проверить"/><i></i>
+				</div>
+			</div>
+		</div>
+		<div class="domen-zones pseudo-cbx" id="pseudoCbxTop">
+							<label class="w-cbx by hasChecked original"><span class="cbx checked"><input type="checkbox" name="zone[]" value="by" checked="checked" /></span><span class="zone">.by</span></label>
+							<label class="w-cbx ru "><span class="cbx "><input type="checkbox" name="zone[]" value="ru" /></span><span class="zone">.ru</span></label>
+							<label class="w-cbx com "><span class="cbx "><input type="checkbox" name="zone[]" value="com" /></span><span class="zone">.com</span></label>
+							<label class="w-cbx net "><span class="cbx "><input type="checkbox" name="zone[]" value="net" /></span><span class="zone">.net</span></label>
+							<label class="w-cbx org "><span class="cbx "><input type="checkbox" name="zone[]" value="org" /></span><span class="zone">.org</span></label>
+							<label class="w-cbx info "><span class="cbx "><input type="checkbox" name="zone[]" value="info" /></span><span class="zone">.info</span></label>
+							<label class="w-cbx biz "><span class="cbx "><input type="checkbox" name="zone[]" value="biz" /></span><span class="zone">.biz</span></label>
+					</div>
+		<div class="more-domens"><a class="lnk-more-domens" href="/service/domains/?show_all=y">Все домены</a><sup class="cnt">89</sup></div>
+	</form>	
+	<div class="pricer"><img src="/bitrix/templates/new_template/images/tmp/baloon45.png" alt=""/></div>
+	<div class="d-bottom"><i class="l"></i><i class="r"></i></div>
+</div>	<div class="d-waves"></div>
+</div>		<div class="c-main">
+						<!-- // b-page-header -->
+		
+<div class="b-simply-slider news-slider">
+	<ul class="e-simply-slider" id="miniSlider">
+					<li class="e-item" id="bx_1914200112_755">
+							<img src="/upload/resize_cache/iblock/8d0/82_82_001a9461d51526113595f057e89280f5a/8d0aa881137a4e9556a402e7d3674bba.png" alt="Обновленные тарифы VPS-хостинга" title="Обновленные тарифы VPS-хостинга" />
+										<h3><a href="/clients/actions/obnovlennye-tarify-vps-khostinga/">Обновленные тарифы VPS-хостинга</a></h3>
+										<div class="descr"><p>Год по цене 10 месяцев</p></div>
+					</li>
+					<li class="e-item" id="bx_1914200112_756">
+							<img src="/upload/resize_cache/iblock/c42/82_82_001a9461d51526113595f057e89280f5a/c42fb62f3670a128843447d40f694578.png" alt="Бесплатная реклама" title="Бесплатная реклама" />
+										<h3><a href="/clients/actions/kontekstnaya-reklama-v-podarok/">Бесплатная реклама</a></h3>
+										<div class="descr">
+<p>От агентства Seobility при заказе поискового продвижения сайта</p>
+</div>
+					</li>
+					<li class="e-item" id="bx_1914200112_221">
+							<img src="/upload/resize_cache/iblock/ef6/82_82_001a9461d51526113595f057e89280f5a/ef6416392082a50a440e441a8d73e6a1.png" alt="-10% на Мегаплан" title="-10% на Мегаплан" />
+										<h3><a href="/clients/actions/655/">-10% на Мегаплан</a></h3>
+										<div class="descr"><p>От 27 900 руб./месяц </p></div>
+					</li>
+					<li class="e-item" id="bx_1914200112_220">
+							<img src="/upload/resize_cache/iblock/d0c/82_82_001a9461d51526113595f057e89280f5a/d0cc40c3e02b5f5489e743531bfe4115.png" alt="Спасем сайт из плена!" title="Спасем сайт из плена!" />
+										<h3><a href="/clients/actions/641/">Спасем сайт из плена!</a></h3>
+										<div class="descr"><p>Бесплатный хостинг при переносе сайта</p></div>
+					</li>
+					<li class="e-item" id="bx_1914200112_222">
+							<img src="/upload/resize_cache/iblock/a57/82_82_001a9461d51526113595f057e89280f5a/a570a1bb434256d84725a9b5272abd9a.png" alt="Домен в подарок!" title="Домен в подарок!" />
+										<h3><a href="/clients/actions/639/">Домен в подарок!</a></h3>
+										<div class="descr"><p>Покупая .BY с хостингом, получайте .ru, .com, .net, .org бесплатно</p></div>
+					</li>
+		</ul>
+	<div class="e-next-btn" id="miniNext"></div>
+	<div class="e-prev-btn" id="miniPrev"></div>
+</div> <div class="b-news-list"> 
+	<h3 class="e-title _hr"><span>Новости компании</span></h3>
+		<div class="e-hot-news" id="bx_1914200112_1019">
+					<a href="/about/news/1019/"><img width="200" height="160" src="/upload/resize_cache/iblock/f50/200_215_101a9461d51526113595f057e89280f5a/f507d5196cce6a8414431c5c86633912.jpg" /></a>
+		             <div class="news-content">
+					<h4><a href="/about/news/1019/">Семинар «Успешный интернет-проект» уже в это воскресенье!</a></h4>
+									<div class="date">10 Сентября</div>
+											<div class="descr">
+<p>16 сентября пройдёт бесплатный образовательный семинар для наших клиентов &laquo;Успешный интернет-проект&raquo;. Мы встретимся с Николаем Сунак, руководителем представительства МЕГАПЛАН в РБ и Евгением Невгенем, креативным директором благотворительного аукциона встреч «МаеСэнс». Мы приглашаем всех желающих присоединиться к онлайн-трансляции на <a href="http://news.tut.by/tag/delovoy-internet-tv.html" target="_blank" >TUT.BY-TV</a>.</p>
+ </div>
+		            </div>
+	</div>
+	<div class="w-news-list">
+		<ul class="e-news-list">
+																								<li class="news-item" id="bx_1914200112_1017">
+													<div class="date">5 Сентября</div>
+													<div class="descr"><a href="/about/news/1017/">Домены .info, .mobi и .pro стали дешевле на 30%</a></div>
+					</li>
+																					<li class="news-item" id="bx_1914200112_1013">
+													<div class="date">30 Августа</div>
+													<div class="descr"><a href="/about/news/1013/">Первый благотворительный аукцион доменов .BY стартует  1 октября </a></div>
+					</li>
+									</ul>
+		<a href="/about/news/" class="more">Все новости</a>
+	</div>
+</div> <ul class="b-product-list">
+		<li class="e-product" id="bx_1914200112_308">
+		<a class="ins" href="/service/hosting/professional-hosting/zashchishchennyy-hosting/">
+			<div class="prod-img">
+				<img src="/upload/iblock/dbd/dbd3ae5acc101c0cf629d1180aeb57b6.png" alt="Защищенный хостинг"/>
+			</div>
+					<h3><span class="lnk">Защищенный хостинг</span></h3>
+					<div class="descr">Компания hoster.by уполномочена оказывать услуги платного хостинга государственным органам и организациям, использующим в своей деятельности сведения, составляющие государственные секреты.</div>
+																<!--<div class="active-arr"><span class="lnk">Подробнее</span></div>-->
+									</a>
+				<div class="d-bg"><i></i></div>
+			</li>
+		<li class="e-product" id="bx_1914200112_304">
+		<a class="ins" href="/service/hosting/professional-hosting/email/">
+			<div class="prod-img">
+				<img src="/upload/iblock/ed1/ed19468a11e9deb1ca9841a9842125d4.png" alt="Электронная почта"/>
+			</div>
+					<h3><span class="lnk">Электронная почта</span></h3>
+					<div class="descr">Профессиональный почтовый сервис: доступ из любой точки мира, удобный веб-интерфейс, мобильный доступ, неограниченный объем почтового ящика, антивирусная и антиспам защита, простая привязка к домену .BY, техподдержка 24/7.</div>
+																<!--<div class="active-arr"><span class="lnk">Подробнее</span></div>-->
+									</a>
+				<div class="d-bg"><i></i></div>
+			</li>
+		<li class="e-product" id="bx_1914200112_795">
+		<a class="ins" href="/service/services-and-solutions/ssl-certificates/">
+			<div class="prod-img">
+				<img src="/upload/iblock/f7e/f7ec74eeb3c29305bcf9584e6d4a9e56.png" alt="SSL-сертификаты"/>
+			</div>
+					<h3><span class="lnk">SSL-сертификаты</span></h3>
+					<div class="descr">Сертификаты от ведущих поставщиков с мировым именем. Подтверждение безопасности и подлинности сайта, а также сохранности передаваемой информации. Залог доверия посетителей. </div>
+																<!--<div class="active-arr"><span class="lnk">Подробнее</span></div>-->
+									</a>
+				<div class="d-bg"><i></i></div>
+			</li>
+		<li class="e-product" id="bx_1914200112_796">
+		<a class="ins" href="/service/services-and-solutions/administrirovanie/">
+			<div class="prod-img">
+				<img src="/upload/iblock/f60/f601c16856fd439458fba0c2f4466a0b.png" alt="Администрирование"/>
+			</div>
+					<h3><span class="lnk">Администрирование</span></h3>
+					<div class="descr">Передача полномочий по администрированию серверов нашим техническим специалистам: от первичных настроек до полного контроля над оборудованием и проведения нестандартных технических работ.</div>
+																<!--<div class="active-arr"><span class="lnk">Подробнее</span></div>-->
+									</a>
+				<div class="d-bg"><i></i></div>
+			</li>
+</ul>
+  
+<div class="b-one_img"> 
+  <h2 class="e-title"><span>О компании</span></h2>
+ 
+  <div class="e-media-fleft"><img src="/images/bialiayeva_logoDesign_BY копия.png"  /></div>
+ 
+  <div class="e-content wys"> 
+    <p>Hoster.by &ndash; хостинг-провайдер, крупнейший регистратор и технический администратор национальной доменной зоны .BY с февраля 2012 года. Выбор хостинга из более чем 20 тарифных планов и <a href="/service/domains/" target="_blank" >регистрация доменов</a> в более чем 80 доменных зонах.</p>
+   
+    <p>Hoster.by – это возможность купить хостинг (hosting) для любых веб-проектов: надежный и недорогой <a href="/service/hosting/virtual-hosting/unix/" target="_blank" >виртуальный хостинг</a>, <a href="/service/hosting/professional-hosting/vps-hosting/" target="_blank" >VPS</a> и <a href="/service/hosting/professional-hosting/ded/" target="_blank" >аренда сервера</a> для нагруженных проектов или специализированный <a href="/service/hosting/professional-hosting/bitrix/" target="_blank" >Битрикс-хостинг</a> – лучший хостинг для сайтов, разработанных на системах 1С-Битрикс.</p>
+   
+    <p>Hoster.by – хостинг сайтов в Беларуси с 2000 года.</p>
+   					 				</div>
+ 		 </div>
+ 				</div>
+	<div style="clear: both;"></div>
+	<div class="w-partners">
+		<div class="c-partners">
+			<div class="title"><div class="ins">
+Более <a href="/about/clients/">35 000 клиентов</a> работает с нами</div></div>
+			<ul class="partners-list">
+					<li class="partner" id="bx_1914200112_553" style="display: block; height: 40px; width: 75px; margin-right: 14px; background-position: 0 -45px;">
+							<a href="http://www.ctv.by/" title="Столичное телевидение" target="_blank" rel="nofollow" style="background-image:url(/upload/iblock/031/0318c6a447c0220ce683629e4dfc6858.png)"></a>
+					</li>
+					<li class="partner" id="bx_1914200112_539" style="display: block; height: 40px; width: 75px; margin-right: 14px; background-position: 0 -45px;">
+							<a href="http://abiatec.com/" title="Abiatec" target="_blank" rel="nofollow" style="background-image:url(/upload/iblock/3f5/3f5148d85fde1fa101185021e9992b35.gif)"></a>
+					</li>
+					<li class="partner" id="bx_1914200112_519" style="display: block; height: 40px; width: 75px; margin-right: 14px; background-position: 0 -45px;">
+							<a href="http://www.krinitsa.by/" title="ОАО «Криница» " target="_blank" rel="nofollow" style="background-image:url(/upload/iblock/4fe/4fe153dd89ada03d572579b7b98a2907.gif)"></a>
+					</li>
+					<li class="partner" id="bx_1914200112_532" style="display: block; height: 40px; width: 75px; margin-right: 14px; background-position: 0 -45px;">
+							<a href="http://gefest.com" title="Gefest  " target="_blank" rel="nofollow" style="background-image:url(/upload/iblock/994/9946ff5c1fbd7524430b983e8b0a6e20.gif)"></a>
+					</li>
+					<li class="partner" id="bx_1914200112_559" style="display: block; height: 40px; width: 75px; margin-right: 14px; background-position: 0 -45px;">
+							<a href="http://www.kosht.com/" title="KOSHT.com" target="_blank" rel="nofollow" style="background-image:url(/upload/iblock/1ae/1ae1bdf62e448f2a571f5870499d5321.gif)"></a>
+					</li>
+					<li class="partner" id="bx_1914200112_523" style="display: block; height: 40px; width: 75px; margin-right: 14px; background-position: 0 -45px;">
+							<a href="http://www.onega.by/" title="Компания «ОНЕГА»" target="_blank" rel="nofollow" style="background-image:url(/upload/iblock/d7a/d7a80bfda8e6d2b7bc552ad35de01c77.gif)"></a>
+					</li>
+					<li class="partner" id="bx_1914200112_549" style="display: block; height: 40px; width: 75px; margin-right: 14px; background-position: 0 -45px;">
+							<a href="http://www.guvd.gov.by/" title="ГУВД Мингорисполкома" target="_blank" rel="nofollow" style="background-image:url(/upload/iblock/e18/e1883ff0053718a8c2d2fd426b2bf108.png)"></a>
+					</li>
+					<li class="partner" id="bx_1914200112_557" style="display: block; height: 40px; width: 75px; margin-right: 14px; background-position: 0 -45px;">
+							<a href="http://www.db.by/" title="Студия Борового" target="_blank" rel="nofollow" style="background-image:url(/upload/iblock/bb0/bb060f04e132ecda7a8c0f0ed16f3c12.gif)"></a>
+					</li>
+					<li class="partner" id="bx_1914200112_545" style="display: block; height: 40px; width: 75px; margin-right: 14px; background-position: 0 -45px;">
+							<a href="http://mzbn.com" title="ЗАО &quot;Минский завод безалкогольных напитков&quot;" target="_blank" rel="nofollow" style="background-image:url(/upload/iblock/26e/26e4a0a3b7484aa7fe8698c5fb209cf4.gif)"></a>
+					</li>
+					<li class="partner" id="bx_1914200112_544" style="display: block; height: 40px; width: 75px; margin-right: 14px; background-position: 0 -45px;">
+							<a href="http://lge.by/" title="LG" target="_blank" rel="nofollow" style="background-image:url(/upload/iblock/cc9/cc97b46b9cf4ffb1cf0cdf5656c4917e.gif)"></a>
+					</li>
+	</ul>
+ 		</div>
+	</div>
+	<div class="w-footer">
+		<div class="c-footer">
+			<div class="section s1">
+				<div class="w-services-list">
+					<h3>Услуги</h3>
+					<ul class="link-list">
+	<li class="item"><a href="/service/domains/" >Регистрация доменов</a></li>
+			<li class="item"><a href="/service/hosting/virtual-hosting/unix/" >Unix-хостинг</a></li>
+			<li class="item"><a href="/service/hosting/virtual-hosting/windows/" >Windows-хостинг</a></li>
+			<li class="item"><a href="/service/hosting/professional-hosting/email/" >Электронная почта</a></li>
+			<li class="item"><a href="/service/hosting/professional-hosting/vps-hosting/" >VPS-хостинг</a></li>
+			<li class="item"><a href="/service/hosting/professional-hosting/ded/" >Аренда серверов</a></li>
+			<li class="item"><a href="/service/hosting/professional-hosting/zashchishchennyy-hosting/" >Защищённый хостинг</a></li>
+	</ul><ul class="link-list">		<li class="item"><a href="/service/hosting/professional-hosting/bitrix/" >Битрикс-хостинг</a></li>
+			<li class="item"><a href="/service/hosting/professional-hosting/colocation/" >Colocation</a></li>
+			<li class="item"><a href="/service/services-and-solutions/ssl-certificates/" >SSL-сертификаты</a></li>
+			<li class="item"><a href="/service/services-and-solutions/eds/" >Цифровая подпись</a></li>
+			<li class="item"><a href="/service/services-and-solutions/saas/" >Аренда лицензий </a></li>
+			<li class="item"><a href="/service/services-and-solutions/administrirovanie/" >Администрирование</a></li>
+		</ul>				</div>
+				<div class="w-help-list">
+					<h3>Помощь</h3>
+					<ul class="link-list">
+	<li class="item"><a href="http://support.tutby.com/index.php?/Knowledgebase/List" target="_blank">FAQ</a></li>
+			<li class="item"><a href="/clients/tariffs/" >Тарифы на услуги</a></li>
+			<li class="item"><a href="/clients/public/" >Документы</a></li>
+			<li class="item"><a href="/clients/payments/" >Способы оплаты</a></li>
+			<li class="item"><a href="/about/" >О компании</a></li>
+	</ul><ul class="link-list">		<li class="item"><a href="http://cctld.by/rus/about.html" target="_blank">Whois зоны .BY</a></li>
+			<li class="item"><a href="/about/reklamnye-materialy/" >Рекламные материалы</a></li>
+			<li class="item"><a href="/partners/" >Партнерам</a></li>
+		</ul>				</div>
+				<div class="w-help-list w-serv-list">
+					<h3>Услуги партнеров</h3>
+					<ul class="link-list">
+	<li class="item"><a href="/service/services-and-solutions/seobility/" >Продвижение сайтов</a></li>
+			<li class="item"><a href="/service/services-and-solutions/hosting-megaplan/" >Мегаплан</a></li>
+		</ul>				</div>
+			</div>
+			<div class="section s2">
+				<div class="reducer">
+					<div class="col copyright">
+						<h5>Профессиональный хостинг</h5>
+<div class="descr">
+	© 2012 УП "Надежные программы" - технический администратор зоны .BY и поставщик услуг для государственных органов, использующих в своей деятельности государственные секреты. 
+</div>					</div>
+					<div class="col contacts">
+						<h5>Контакты</h5>
+ 
+<div class="descr"> 	220005, г.Минск, ул. В.Хоружей, 1А, 6 этаж
+  <br />
+ 	Тел.: (+375 17) 239-57-02
+  <br />
+ 	velcom: (+375 29) 3-4444-83,<br /> МТС: (+375 29) 776-44-83, <br />life: (+375 25) 720-52-66, <br />факс (+375 17) 239-57-20 	
+  <div class="feedback-lnk"><a href="mailto:info@hoster.by" >Написать письмо</a></div>
+ </div>					</div>
+					<div class="col social">
+						<div class="social-lnks">
+							<h4>Присоединяйтесь</h4>
+							<a href="http://vkontakte.ru/public28667135" target="_blank"><img src="/bitrix/templates/new_template/images/soc1.png" alt=""/></a>
+<a href="http://www.facebook.com/Hoster.by" target="_blank"><img src="/bitrix/templates/new_template/images/soc2.png" alt=""/></a>
+<a href="http://twitter.com/#/hoster_by" target="_blank"><img src="/bitrix/templates/new_template/images/soc3.png" alt=""/></a>
+						</div>
+                        <div class="madein">
+                            <span class="pic"><img src="/bitrix/templates/new_template/images/db.png" alt="Студия Борового" /></span>
+                            <span class="m-links">
+                                <a href="http://www.db.by/" class="m-links-db" title="Создание сайтов в Минске">Создание сайта</a> <a class="m-links-bitrix" title="Создание сайтов на 1С-Битрикс" href="http://bx.db.by/">на 1С-Битрикс</a>
+                            </span>
+                            <span class="m-links db">
+                                <a href="http://www.db.by/">Студия Борового</a>
+                            </span>
+                        </div><!--madein-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- CODE[02.08.2012 15:27]: hoster.by, footer -->
+<script type="text/javascript">
+var TUTBYScriptLoader=function (url,callback)
+{
+	var script = document.createElement("script")
+	script.type = "text/javascript";
+	script.async = true;
+	if(script.readyState) script.onreadystatechange=function()
+	{
+		if(script.readyState=="loaded" || script.readyState=="complete")
+		{
+			script.onreadystatechange=null;
+			if(typeof(callback)=="function")
+				callback();
+		}
+	};
+	else if(typeof(callback)=="function")
+		script.onload=callback;
+	script.src=url;
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script,s);
+}
+var bCurrentPageIsHTTPS=('https:'==document.location.protocol);
+</script>
+<!--mernik counter start-->
+<script type='text/javascript'>
+var SID=536;
+if(!bCurrentPageIsHTTPS) (function(){ var t='text/javascript', h, s, u, d=document, l='http://s3.countby.com/code.js';
+try { h=d.getElementsByTagName('head')[0]; s=d.createElement('script');
+s.src=l; s.type=t; h.appendChild(s); }catch(e){
+u='%3Cscript%20src="'+l+'"%20type="'+t+'"%3E%3C/script%3E'; d.write(unescape(u));}})();
+</script><noscript><img src='http://s3.countby.com/cnt?id=536' border='0' height='1'  width='1' alt='' /></noscript>
+<!--mernik counter end-->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+var aGAAccounts=[['','UA-285326-5','hoster.by']];
+TUTBYScriptLoader((bCurrentPageIsHTTPS?"https://api.tut.by/":"http:\/\/www.tut.by\/")+"scripts/BY/ga~"+"r10148"+".js");
+</script>
+<!-- Yandex.Metrika counter -->
+<div style="display:none;"><script type="text/javascript">(function(w, c) {
+	(w[c] = w[c] || []).push(function() {
+		try {
+			w.yaCounter11804764 = new Ya.Metrika({id:11804764, enableAll: true, webvisor:true});
+		}
+		catch(e) { }
+	});
+})(window, "yandex_metrika_callbacks");</script></div>
+<script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
+<noscript><div><img src="//mc.yandex.ru/watch/11804764" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter --><div class="helper">
+<div class="helper">
+ 
+<!-- webim button generation date: 2011-11-02 version: 5.5.7 -->
+ <a class="webim_button" href="http://hosterby.pro-service.webim.ru/webim/client.php" target="_blank" rel="webim" title="" ><img src="http://hosterby.pro-service.webim.ru/webim/button.php" border="0" alt=""  /></a>
+ 
+ 
+<script type="text/javascript">
+   webim = {
+     accountName: "hosterby",
+     domain: "hosterby.pro-service.webim.ru"
+   };
+   (function () {
+       var s = document.createElement("script");
+       s.type = "text/javascript";
+       s.src = "http://hosterby.pro-service.webim.ru/webim/js/button.js";
+       document.getElementsByTagName("head")[0].appendChild(s);
+   })();
+</script>
+
+ 
+<!-- /webim button -->
+
+ </div>
+
+</body>
+</html>

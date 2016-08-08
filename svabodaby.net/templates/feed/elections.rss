@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+<title>ТУТ І ЦЯПЕР - </title>
+<link>http://svabodaby.net/by/178/</link>
+<description>Усе навіны вольнай Беларусі ў адным месцы - ТУТ і ЦЯПЕР!</description>
+<language>be</language>
+<copyright>Copyright 2012, ТУТ І ЦЯПЕР</copyright>
+<lastBuildDate>Mon, 10 Sep 2012 14:00:06 +0200</lastBuildDate>
+<ttl>60</ttl>
+<generator>Campsite</generator>
+<image>
+<url>http://svabodaby.net/templates/img/logo_rss.gif</url>
+<title>ТУТ І ЦЯПЕР - </title>
+<link>http://svabodaby.net/by/178/</link>
+<width>144</width>
+<height>32</height>
+</image>
+<atom:link href="http://svabodaby.net/feed/elections.rss" rel="self" type="application/rss+xml" />
+</channel>
+</rss>

@@ -1,0 +1,36 @@
+<div  class="meat-right-item" id="most">
+<ul class="ui-tabs-nav">
+  <li><a href="#most-reads"><span>папулярнае</span></a></li>
+  <li><a href="#most-comments"><span>каментары</span></a></li>
+</ul>
+
+<div id="most-reads" style="border-top: none">
+
+{{ local }}
+{{ set_current_issue }}
+{{ list_articles length="5" order="bypopularity desc" }}
+
+  <div class="news-popular">
+    <a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a>
+  </div>  
+
+{{ /list_articles }}
+{{ /local }}
+
+</div>
+
+<div id="most-comments" style="border-top: none">
+
+{{ local }}
+{{ set_current_issue }}
+{{ list_articles length="5" order="bycomments desc" }}
+
+  <div class="news-popular">
+    <a href="{{ uri options="article" }}">{{ $gimme->article->name }}</a> <a class="combal" href="{{ uri options="article" }}">({{ $gimme->article->comment_count }})</a>
+  </div>
+
+{{ /list_articles }}
+{{ /local }}
+              
+</div>
+</div>

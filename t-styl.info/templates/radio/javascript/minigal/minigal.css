@@ -1,0 +1,188 @@
+/* minigalZoom CSS declarations */
+
+#minigalZoom{
+	background-color:#eee;
+	border: 1px solid #ccc;
+	}
+
+#minigalZoomDetails{ font-size: 0.8em; line-height:1.6em; }
+#minigalZoomCaption{ float: left; margin-left: 0.4em; }
+#keyboardMsg{ float: right; display: none; }
+#closeButton{ top: 0px; right: 0px; display: none; }
+
+#minigalZoom img{ border: none; clear: both;} 
+#overlay img{ border: none; }
+
+#overlay{ background-image: url(overlay.png); }
+
+* html #overlay{
+	background-color: #1b1b1b;
+	back\ground-color: transparent;
+	background-image: url(blank.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="overlay.png", sizingMethod="scale");
+	}
+
+
+/* minigalSlider CSS declarations */
+
+.minigal-gallery {
+background:#464646;
+width:530px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+}
+
+#minigal-gallery {
+margin:20px 22px 20px 21px;
+visibility:hidden;
+border:1px solid #4f4a4a;
+}
+
+#minigal.sliderwrapper {
+position: relative; /*leave as is*/
+overflow: hidden; /*leave as is*/
+width: 530px; /*width of featured content slider*/
+height: 360px;
+font-size:0;
+}
+
+#minigal.sliderwrapper .contentdiv{
+visibility: hidden; /*leave as is*/
+position: absolute; /*leave as is*/
+left: 0;  /*leave as is*/
+top: 0;  /*leave as is*/
+width: 510px; /*width of content DIVs within slider*/
+height: 100%;
+filter:progid:DXImageTransform.Microsoft.alpha(opacity=100);
+-moz-opacity: 1;
+opacity: 1;
+padding: 0;
+margin: 10px 10px 0 10px;
+font: normal 10px Arial,Helvetica,sans-serif;
+}
+
+#minigal.sliderwrapper .contentdiv a {
+display:block;
+width: 510px;
+height: 360px;
+border: 1px solid #363636;
+}
+
+
+/* 
+	root element for the scrollable. 
+	when scrolling occurs this element stays still. 
+*/
+.minigal-slider {
+width:530px;
+margin:0 0 10px 0;
+}
+
+.minigal-slider .minigal-scrollable {
+	
+	/* required settings */
+	position:relative;
+	overflow:hidden;	 	
+	width: 454px;
+	height: 50px;
+}
+
+/* 
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a super large width to accomodate scrollable items.
+	it's enough that you set width and height for the root element and
+	not for this element.
+*/
+.minigal-slider .minigal-scrollable div.items {	
+	/* this cannot be too large */
+	width:20000em;	
+	position:absolute;
+	clear:both;		
+}
+
+/* single scrollable item */
+.minigal-slider .minigal-scrollable div.items a {
+	float:left;
+	
+	/* custom decoration */
+	width:40px;
+  height:40px;
+  padding:5px;
+  font-size:0;
+	background-color:#363636;
+	margin-right: 17px;
+}
+
+
+/* active item */
+.minigal-slider .minigal-scrollable div.items a.active {
+	background-color:#9AB2BE;
+}
+
+
+
+
+/* this makes it possible to add next button beside scrollable */
+.minigal-slider .minigal-scrollable {
+	float:left;		
+}
+
+/* prev, next, prevPage and nextPage buttons */
+.minigal-slider a.less, .minigal-slider a.more, .minigal-slider a.prevPage, .minigal-slider a.nextPage {
+	display:block;
+	width:18px;
+	height:18px;
+	background:url(/templates/radio/javascript/minigal/left.png) no-repeat;
+	float:left;
+	margin:16px 10px;
+	cursor:pointer;
+}
+
+/* mouseover state */
+.minigal-slider a.less:hover, .minigal-slider a.more:hover, .minigal-slider a.prevPage:hover, .minigal-slider a.nextPage:hover {
+	background-position:0px -18px;		
+}
+
+/* disabled navigational button */
+.minigal-slider a.disabled {
+	visibility:hidden !important;		
+}
+
+/* next button uses another background image */
+.minigal-slider a.more, .minigal-slider a.nextPage {
+	background-image:url(/templates/radio/javascript/minigal/right.png);
+	clear:right;	
+}
+
+
+
+/*********** navigator ***********/
+
+/* position and dimensions of the navigator */
+.minigal-slider div.navi {
+	margin-left:245px;
+	width:200px;
+	height:14px;
+}
+
+
+/* items inside navigator */
+.minigal-slider div.navi a {
+	width:8px;
+	height:8px;
+	float:left;
+	margin:3px;
+	background:url(/templates/radio/javascript/minigal/navigator.png) 0 0 no-repeat;
+	cursor:pointer;	
+}
+
+/* mouseover state */
+.minigal-slider div.navi a:hover {
+	background-position:0 -8px;      
+}
+
+/* active state (current page state) */
+.minigal-slider div.navi a.active {
+	background-position:0 -16px;     
+} 	
+

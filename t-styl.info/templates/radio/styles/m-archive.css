@@ -1,0 +1,94 @@
+ /*******************/
+  /*** archive ******/
+ /*******************/
+ .archive{
+  width:305px;
+  float:left;
+  margin:26px 0 0 0;
+ }
+ h3.calendar{
+  margin:20px 0 0 0;
+  font-size:16px;
+  color:#3c7bc1;
+  line-height:16px;
+ }
+ .archive p{
+  color:#fff;
+  font-size:16px;
+  padding:0;
+  line-height:26px;
+ }
+ .archive p a:link, .archive p a:visited{
+  color:#9ab2be;
+  font-size:16px;
+  padding:0;
+  line-height:26px;
+ }
+ .article-left-content  .calendar-box{
+  margin:14px 0 0 0;
+ }
+ .archive p.navigation{
+   color:#3c7bc1;
+   margin:21px 0 0 0;
+  }
+ .archive p.navigation a:link, .archive p.navigation a:visited{
+   color:#3c7bc1;
+   padding:0 15px 0 15px;
+ }
+ .archive-search-box{
+  margin:0 0 0 20px;
+  width:546px;
+  clear:left;
+  padding:40px 0 0 0;  
+ }
+ .archive-search-box h3.calendar{
+   margin:0 0 0 0;
+   padding:0;
+ }
+ .archive-search-box form{
+   margin:13px 0 0 0;
+ }
+ .archive-search-box label{
+  color:#FFFFFF;
+  font-size:13px;
+  clear:left;
+  line-height:30px;
+  }
+  .archive-search-box form .formInputText {
+   width:205px;
+   height:20px;
+   border:1px solid #333333;
+   margin:0 0 0 9px;
+   font-size:12px;
+   color:#333333;
+   line-height:30px;
+  }
+  .archive-search-box .formcheck{
+   height:14px;
+   width:14px;
+   border:1px solid #333333;
+   margin:0 0 0 58px;
+   margin-right: 5px;
+   clear:right;
+  }
+  .archive-search-box .radio{
+   height:14px;
+   margin:0 0 0 16px;
+   padding:2px 0 0 0;
+   line-height:normal;
+  }
+  .archive-search-box .formInputdata{
+  margin:0 0 0 32px;
+  width:85px;
+  height:20px;
+  border:1px solid #333333;
+  }
+  .archive-search-box .sbutton{
+    background: url(../images/asearch-button.gif) left top no-repeat;
+	width:81px;
+	height:25px;
+	margin:14px 0 0 64px;
+	border:0;
+  }
+
+

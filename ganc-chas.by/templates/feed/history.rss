@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+<title>Ганцавіцкі час - Пралеска (литературная страница)</title>
+<link>http://ganc-chas.by/by/page/history</link>
+<description>Ганцевичи. ганцевичский час. погода работа знакомства новости карта вакансии магазины фото телефоны  vk.com/ganc_chas</description>
+<language>be</language>
+<copyright>Copyright 2012, Ганцавіцкі час</copyright>
+<lastBuildDate>Mon, 10 Sep 2012 15:00:19 +0300</lastBuildDate>
+<ttl>60</ttl>
+<generator>Campsite</generator>
+<image>
+<url>http://ganc-chas.by/templates/images/rss-logo.png</url>
+<title>Ганцавіцкі час - Пралеска (литературная страница)</title>
+<link>http://ganc-chas.by/by/page/history</link>
+<width>144</width>
+<height>31</height>
+</image>
+<atom:link href="http://ganc-chas.by/feed/history.rss" rel="self" type="application/rss+xml" />
+<item>
+<title>Пралеска (верасень 2012)</title>
+<link>http://ganc-chas.by/by/page/history/2122</link>
+<description>
+Павольна, са шчырай усмешкай, ступае па нашай зямельцы восень. Адыходзіць непрыкметна і нечакана лета. Дабавілася клопатаў ва ўсіх, хто жыве на зямлі.Зазвінелі званочкамі галасы дзяцей – спяшаюцца ў школу. У многіх паэтаў ажыло натхненне, ляглі на паперу новыя радкі, з якімі мы знаёмім вас.
+&lt;br clear="all"&gt;
+</description>
+<category domain="http://ganc-chas.by/by/page/history">Гісторыя маёй вёскі</category>
+<atom:author><atom:name>Аляксей ГАЛАСКОК</atom:name></atom:author>
+<pubDate>Fri, 31 Aug 2012 14:27:18 +0300</pubDate>
+<guid isPermaLink="true">http://ganc-chas.by/by/page/history/2122</guid>
+</item>
+<item>
+<title>Пралеска (жнівень 2012)</title>
+<link>http://ganc-chas.by/by/page/history/2060</link>
+<description>
+Паважаныя чытачы,сёння мы пазнаёмім вас з новымі творамі аўтараў літ,старонкі “Пралеска”. У сваіх вершах яны выказваюць свае думкі пра каханне, адносіны з сваімі бацькамі, пра сваё дзяцінства і іншыя.Мы будзем рады, калі вы падзеліціся сваімі ўражаннямі аб творчасці нашых паэтаў, выкажаце свае пажаданні.
+&lt;br clear="all"&gt;
+</description>
+<category domain="http://ganc-chas.by/by/page/history">Гісторыя маёй вёскі</category>
+<atom:author><atom:name>Аляксей ГАЛАСКОК</atom:name></atom:author>
+<pubDate>Mon, 13 Aug 2012 12:33:40 +0300</pubDate>
+<guid isPermaLink="true">http://ganc-chas.by/by/page/history/2060</guid>
+</item>
+</channel>
+</rss>

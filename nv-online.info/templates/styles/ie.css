@@ -1,0 +1,151 @@
+/* 
+Title:     Fixes for ie/win
+Updated:   June 16, 2009
+*/
+
+/* fixes font-size keyword problem for IE5/Win */
+body {
+	font-size: x-small; /* IE5 Win */
+  	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	font-size: small;
+	}
+	
+/* ie/mac clear problem */
+* html #section #meat-left {
+	width: 795px;
+}
+
+/* hide from ie/mac \*/
+* html #section #leftbar {
+	width: 797px;
+}
+/* end hide */	
+
+html>body { /* be nice to Opera */
+	font-size: small;
+	}
+
+/* double float margin bug */
+
+* html #header-right,
+* html #main-logo,
+* html #main-nav,
+* html #header-uvaga,
+* html #header-temp,
+* html #ticker-outter strong,
+* html #meat,
+* html #meat-left,
+* html #central-divide,
+* html #big-story,
+* html img#big-story-image,
+* html #more-stories,
+* html .more-stories-item,
+* html img.more-stories-image,
+* html .meat-item,
+* html .meat-item-inner,
+* html .right-list,
+* html #section-divide,
+* html #section-divide-left,
+* html #section-divide-right,
+* html #meat-right,
+* html #meat-down,
+* html .fifths,
+* html #footer,
+* html #footer-logo,
+* html #footer-copyright {
+	display: inline;
+	}
+	
+/* self-clearing floats
+----------------------------------------------------- */
+
+/* for ie7 */
+
+#header-right,
+#main-logo,
+#main-nav,
+#header-uvaga,
+#header-temp,
+#meat,
+#meat-left,
+#central-divide,
+#big-story,
+img#big-story-image,
+#more-stories,
+.more-stories-item,
+img.more-stories-image,
+.meat-item,
+.meat-item-inner,
+.right-list,
+#section-divide,
+#section-divide-left,
+#section-divide-right,
+#meat-right,
+#meat-down,
+.fifths,
+#footer,
+#footer-logo,
+#footer-copyright {
+	display: inline-block; 
+}	
+
+/* target ie5+6/win only, hide for ie/mac, then reset for all other browsers \*/
+
+* html #header-right,
+* html #main-logo,
+* html #main-nav,
+* html #header-uvaga,
+* html #header-temp,
+* html #ticker-outter strong,
+* html #meat,
+* html #meat-left,
+* html #cetral-divide,
+* html #big-story,
+* html img#big-story-image,
+* html #more-stories,
+* html .more-stories-item,
+* html img.more-stories-image,
+* html .meat-item,
+* html .meat-item-inner,
+* html .right-list,
+* html #section-divide,
+* html #section-divide-left,
+* html #section-divide-right,
+* html #meat-right,
+* html #meat-down,
+* html .fifths,
+* html #footer,
+* html #footer-logo,
+* html #footer-copyright {
+	height: 1%;
+	}
+
+#header-right,
+#main-logo,
+#main-nav,
+#header-uvaga,
+#header-temp,
+#ticker-outter strong,
+#meat,
+#meat-left,
+#central-divide,
+#big-story,
+img#big-story-image,
+#more-stories,
+.more-stories-item,
+img.more-stories-image,
+.meat-item,
+.meat-item-inner,
+.right-list,
+#section-divide,
+#section-divide-left,
+#section-divide-right,
+#meat-right,
+#meat-down,
+.fifths,
+#footer,
+#footer-logo,
+#footer-copyright { 
+	display: block; 
+	}

@@ -1,0 +1,142 @@
+/* 
+Title:     Fixes for ie/win
+Updated:   April 23 2009
+*/
+
+/* fixes font-size keyword problem for IE5/Win */
+body {
+	font-size: x-small; /* IE5 Win */
+  	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	font-size: small;
+	}
+	
+html>body { /* be nice to Opera */
+	font-size: small;
+	}
+	
+/* ie/mac clear problem */
+* html #leftbar {
+	width: 530px;
+	}
+/* hide from ie/mac \*/
+* html #leftbar {
+	width: 531px;
+	}
+/* end hide */	
+
+/* double float margin bug */
+
+* html #logo,
+* html #banner468,
+* html #head-menu,
+* html search-box,
+* html .search-form,
+* html .search-text,
+* html .searh-button,
+* html .searh-form a,
+* html #novosti,
+* html ul#novosti li,
+* html #big-stories,
+* html #four-stories,
+* html #leftbar,
+* html .story,
+* html #rightbar,
+* html .banner125,
+* html .fourths,
+* html #galereja-inner,
+* html .galereja-item,
+* html .left,
+* html .right,
+* html #foot-left,
+* html #foot-right {
+	display: inline;
+	}
+	
+/* self-clearing floats
+----------------------------------------------------- */
+
+/* for ie7 */
+
+#wrap,
+#logo,
+#banner468,
+#head-menu,
+#search-box,
+.search-form,
+.search-text,
+.searh-button,
+.searh-form a,
+#novosti,
+ul#novosti li,
+#big-stories,
+#four-stories,
+.fourths,
+#galereja-inner,
+.galereja-item,
+#leftbar,
+.story,
+#rightbar,
+.banner125,
+.left,
+.right,
+#footer,
+#foot-left,
+#foot-right { 
+	display: inline-block; 
+	}
+	
+/* target ie5+6/win only, hide for ie/mac, then reset for all other browsers \*/
+* html #wrap,
+* html #logo,
+* html #banner468,
+* html #head-menu,
+* html #search-box,
+* html .search-form,
+* html .search-text,
+* html .searh-button,
+* html .searh-form a,
+* html #novosti,
+* html ul#novosti li,
+* html #big-stories,
+* html #four-stories,
+* html .fourths,
+* html #galereja-inner,
+* html .galereja-item,
+* html #leftbar,
+* html .story,
+* html #rightbar,
+* html .left,
+* html .right,
+* html #footer,
+* html #foot-left,
+* html #foot-right {
+	height: 1%;
+	}
+#wrap,
+#logo,
+#banner468,
+#head-menu,
+#search-box,
+.search-form,
+.search-text,
+.searh-button,
+.searh-form a,
+#novosti,
+ul#novosti li,
+#big-stories,
+#four-stories,
+.fourths,
+#galereja-inner,
+.galereja-item,
+#leftbar,
+.story,
+#rightbar,
+.left,
+.right,
+#footer,
+#foot-left,
+#foot-right { 
+	display: block; 
+	}
+/* end hide */		

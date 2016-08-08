@@ -1,0 +1,80 @@
+body{
+	font-family: Arial, Helvetica, Garuda, san-serif;
+	width:664px;
+	padding:0 0 0 22px;
+	color:#000;
+}
+.logo{
+    background: url(../images/print-logo.gif) 0pt 7px no-repeat;
+	padding:57px 0 0 145px;
+	font-size:14px;
+}
+.logo .date{
+    color:#0000ee;
+}
+h2{
+   font-size:28px;
+   text-transform:uppercase;
+   margin:17px 0 0 0;
+   font-weight:normal;
+   line-height:40px;
+}
+.full_text, .intro{
+  width:664px;
+}
+.full_text p{
+   font-size:14px;
+   line-height:18px;
+   width:664px;
+   margin:20px 0 0 0;
+}
+p.data{
+   clear:right;
+   font-size:14px;
+  line-height:18px;
+}
+.intro p{
+  font-weight:bold;
+  width:664px;
+  font-size:14px;
+  line-height:18px;
+  margin:20px 0 0 0;
+}
+body img{
+  margin:20px 0 10px 0;
+  clear:both;
+  width:500px;
+}
+h3.notice{
+  font-size:14px;
+  font-style:italic;
+  padding:20px 0 0 0;
+  margin:16px 0 0 0;
+  border-top:1px solid #b5b5b5;
+  width:664px;
+  font-weight:normal;
+}
+form{
+  margin:17px 0 42px 0;
+}
+.comments{
+  height:135px;
+  width:570px;
+  background: url(../images/print-notice.gif) right bottom no-repeat;
+  font-size:14px;
+  border:1px solid #b5b5b5;
+}
+.footer{
+  width:664px;
+  padding:15px 0 0 0;
+  border-top:1px solid #535353;
+}
+.footer .ts{
+  font-size:14px;
+  font-weight:bold;
+  color:#000000;
+}
+.footer p{
+  color:#666666;
+  line-height:21px;
+}

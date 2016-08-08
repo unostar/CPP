@@ -1,0 +1,162 @@
+.home-program-slider {
+  width:810px;
+  height:186px;
+  display:block;
+  clear: both;
+  position:relative;
+  float:left;
+  margin:27px 20px 22px 20px;
+  padding:12px 0;
+  text-align:left;
+  background: #EEE;
+  font:0;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+}
+
+
+/* 
+  root element for the scrollable. 
+  when scrolling occurs this element stays still. 
+*/
+.home-program-slider .scrollable {
+  
+  /* required settings */
+  position:relative;
+  overflow:hidden;    
+  width: 750px; 
+  height: 166px;  
+
+}
+
+
+.home-program-slider .scrollable div.items {  
+  /* this cannot be too large */
+  width:20000em;  
+  position:absolute;
+  clear:both;   
+}
+
+/* single scrollable item */
+.home-program-slider .scrollable div.items div {
+  float:left;
+  
+  /* custom decoration */
+  width:160px;
+  height:156px;
+  padding:5px;
+  font-size:0;
+  background-color:#363636;
+  margin-right: 23px;
+}
+
+.home-program-slider .scrollable div.items img {border:none;width:160px;height:134px;}
+.home-program-slider .scrollable div.items a {display:inline-block;position:relative;width:156px;height:22px;line-height:22px;margin:0;padding-left:4px;background:url(/templates/radio/images/program-slider-download.gif);font-size:12px;font-weight:normal;color:#9ab2be;}
+
+.home-program-slider .scrollable div.items .jason {
+  position:relative;
+  top:-134px;
+  left:0;
+  width:155px;
+  height:140px;
+  padding:16px 1px 0 4px;
+  background:#1c242b;
+  display:none;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12px;
+  line-height:16px;
+  font-weight:bold;
+  color:#fff;
+  overflow:hidden;
+  margin-bottom:-156px;
+}
+.home-program-slider .scrollable div.items a.button {
+  display:block;
+  position:relative;
+  top:-134px;
+  left:106px;
+  width:54px;
+  height:16px;
+  padding:0;margin:0;
+  background:url(/templates/radio/images/program-slider-hover-button.gif);
+  margin-bottom:-16px;
+  z-index:11;
+}
+
+
+/* active item */
+.home-program-slider .scrollable div.items div.active {
+  background-color:#9AB2BE;
+}
+
+
+
+
+/* this makes it possible to add next button beside scrollable */
+.home-program-slider .scrollable {
+  float:left;   
+}
+
+/* prev, next, prevPage and nextPage buttons */
+.home-program-slider a.prev, .home-program-slider a.next, .home-program-slider a.prevPage, .home-program-slider a.nextPage {
+  display:block;
+  width:21px;
+  height:21px;
+  background:url(/templates/radio/images/home-program-slider-left.gif) no-repeat;
+  float:left;
+  margin:59px 5px 87px 4px;
+  cursor:pointer;
+}
+
+/* mouseover state */
+.home-program-slider a.prev:hover, .home-program-slider a.next:hover, .home-program-slider a.prevPage:hover, .home-program-slider a.nextPage:hover {
+  background-position:0px 1px;    
+}
+
+/* disabled navigational button */
+.home-program-slider a.disabled {
+  visibility:hidden !important;   
+}
+
+/* next button uses another background image */
+.home-program-slider a.next, .home-program-slider a.nextPage {
+  background-image:url(/templates/radio/images/home-program-slider-right.gif);
+  clear:right;  
+}
+
+
+
+/*********** navigator ***********/
+
+/* position and dimensions of the navigator */
+.home-program-slider div.navi {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:16px;
+  font-weight:bold;
+  color:#363636;
+  margin-left:30px;
+  width:200px;
+  height:20px;
+}
+
+
+/* items inside navigator */
+.home-program-slider div.navi a {
+  width:8px;
+  height:8px;
+  float:left;
+  margin:3px;
+  background:url(/templates/radio/images/home-program-slider-navigator.gif) 0 0 no-repeat;     
+  cursor:pointer; 
+}
+
+/* mouseover state */
+.home-program-slider div.navi a:hover {
+  background-position:0 -8px;      
+}
+
+/* active state (current page state) */
+.home-program-slider div.navi a.active {
+  background-position:0 -16px;     
+}   
+

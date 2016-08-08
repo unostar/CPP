@@ -1,0 +1,81 @@
+{{ dynamic }}
+{{ if $gimme->article->comments_enabled }}
+
+<div id="comments">
+               
+{{ if $gimme->submit_comment_action->is_error }}
+<p class="hot">Памылка падчас каментавання:
+    {{ $gimme->submit_comment_action->error_message }}
+</p>
+{{ /if }}
+
+{{ if $gimme->submit_comment_action->rejected }}
+    <p class="hot">Каментар адхілены!</p>
+{{ /if }}
+
+{{ if $gimme->submit_comment_action->defined }}
+{{ if $gimme->publication->moderated_comments }}
+    <p class="hot">Ваш каментар адпраўлены і чакае мадэрацыі</p>
+{{ /if }}
+{{ /if }}
+
+{{ if $gimme->submit_comment_action->is_error }}
+    <p class="hot">{{ $gimme->submit_comment_action->error_message }}
+        ({{ $gimme->submit_comment_action->error_code }})</p>
+{{ /if }}
+
+{{ if $gimme->user->blocked_from_comments }}
+    <p class="hot">Гэтаму карыстачу забаронена каментаванне</p>
+{{ /if }}
+
+{{ list_article_comments order="bydate asc" }}
+  {{ if $gimme->current_list->at_beginning }}<h5>абмеркаваць</h5>{{ /if }}
+
+  <div class="comment-item">
+    <p class="comment-author">{{ $gimme->comment->subject }} ({{ $gimme->comment->submit_date|camp_date_format:"%e.%m.%Y %H:%i" }})</p>
+    <p>{{ $gimme->comment->content }}</p>
+  </div><!-- /.comment-item -->
+
+{{ /list_article_comments }}
+               
+  <div id="comments-separator"></div>
+               
+  <div id="comment-form">
+    <h5>Дадаць каментарый</h5>
+
+{{ comment_form submit_button="Даслаць каментарый" }}
+
+<input type="hidden" value="void" name="f_comment_reader_email" />
+
+<div class="form-element">
+  <label for="comment-name">Iмя</label>
+  {{ camp_edit object="comment" attribute="subject" html_code="" id=\"comment-name\"" }}
+</div>
+
+<div class="form-element">
+  <label for="comment-subject">Каментарый</label>
+  {{ camp_edit object="comment" attribute="content" html_code="id=\"comment-text\" cols=\"40\" rows=\"4\"" }}
+</div>  
+
+{{ if $gimme->publication->captcha_enabled }}
+<div class="form-element">
+  <label id="captcha-label" for="comment-captcha">Код</label>
+  <img alt="Captcha" src="{{ captcha_image_link }}" />
+</div>
+
+<div class="form-element">
+   <label id="captcha-enter-code" for="comment-captcha">Напiшыце код</label>
+  {{ camp_edit object="captcha" attribute="code" html_code="id=\"comment-captcha\""}}
+</div>
+{{ /if }}
+
+<div class="form-element">
+  <label for="submitComment"></label>
+  {{ /comment_form }}
+</div>
+
+  </div><!-- /#comment-form -->
+</div><!-- /#comments -->
+
+{{ /if }}
+{{ /dynamic }}

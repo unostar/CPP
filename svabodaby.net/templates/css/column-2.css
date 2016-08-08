@@ -1,0 +1,143 @@
+/********** COLUMN-2 (edited to utilize general styles) **********/
+
+.column-2 ul.lists{
+	width: 208px;
+	padding: 0 0 30px 7px;
+	margin: 0 0 20px 0;
+	background-image: url(/templates/img/lists-bkg.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+.column-2 .blog, .column-2 .poll, .column-2 .links{
+	width: 215px;
+	clear: left;
+	float:left;
+	background-image: url(/templates/img/lists-bkg.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	padding: 0 0 24px 0;
+	margin: 0 0 20px 0;
+}
+
+.column-2 .blog .blog-article a {
+	color:#960;
+	font-size:0.9em;
+	font-weight: bold;
+	text-decoration:none;
+}
+
+.column-2 .blog .blog-article a:hover, .column-2 .blog .blog-name a:hover{
+	text-decoration: underline;
+}
+
+.column-2 .blog .blog-name a {
+	font-size:1.3em;
+  font-weight: bold;
+	margin: 13px 0 10px 15px;
+  text-decoration: none;
+  display: block;
+  clear: left;  
+}
+
+.column-2 .blog a.readmore {
+	margin: 8px 0 0 14px;
+}
+
+.column-2 .blog img{
+	float: left;
+  width: 50px;
+	margin: 5px 10px 13px 15px;
+}
+
+.column-2 .blog .issue-pic img {
+	float: none;
+	margin: 0 15px;
+  width: 185px !important;
+  border-top: 1px #ccc solid;
+  border-left: 1px #ccc solid;
+  border-bottom: 1px #a1a1a1 solid;
+  border-right: 1px #a1a1a1 solid;
+}
+
+.column-2 .pdf{
+	margin: -5px 0 20px 0;
+  display: block;
+	clear: left;
+	width:215px;
+	text-align: center;
+}
+.column-2 .pdf p{
+	color: #333;
+	font-weight: bold;
+	font-size: 1.083em;
+	margin-top: 5px;
+}
+.column-2 .pdf a {
+	color: #960;
+	font-weight: normal;
+}
+
+.column-2 .poll{
+	font-size: 1.1em;
+	color: #666;
+}
+
+.column-2 .poll p {
+  margin: 0 0 0 16px;
+}
+
+.column-2 .poll div.answer {
+  margin: 8px 0 0 23px;
+  padding: 0 15px 0 0;
+}
+
+.column-2 .poll-question{
+	font-weight: bold;
+	margin: 6px 0 19px 16px;
+}
+.column-2 .poll form{
+	margin: 0 0 0 12px;	
+	padding: 0;
+}
+
+.column-2 .poll form input.button{
+	font-size:0.9em;
+	margin: 8px 0 0 6px;
+}
+
+.column-2 .poll a {
+  clear: both;
+  display: block;
+	margin: 6px 0 0 6px;
+}
+
+.column-2 h5 {
+	margin-bottom: 21px;
+}
+
+.column-2 .links{
+	padding: 0 0 47px 0;
+  margin: 0;
+}
+.column-2 .links a.readmore {
+	margin: 8px 0 0 17px;
+  background-position: 0 7px;
+	font-size: 1.083em;
+	line-height: 1.66em;
+}
+
+.column-2 .promo{
+	float: left;
+	clear: left;
+	border: 0;
+	margin: 5px 0 20px 0;
+}
+
+.column-2 #IssueCalendar {
+  padding: 5px 0 23px 3px;
+}
+
+.column-2 #IssueCalendar .highlight a {
+  background: #ee9b17;
+}

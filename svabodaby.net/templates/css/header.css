@@ -1,0 +1,203 @@
+/***** HEADER *****/
+
+#header {
+  margin: 0 0 26px 0;
+}
+
+#header .banner {
+  width: 728px;
+  height: 90px;
+  clear: both;
+}
+
+#header .logo {
+  display: block;
+  float: left;
+  width: 319px;
+  height: 102px;
+  margin: 5px 30px 0 0;
+}
+
+#header .search {
+  display: block;
+  float: left;
+  padding: 0 0 0 8px;
+  border-left: 6px solid #5a4040;
+}
+
+#header .search-text {
+  width: 183px;
+  height: 21px;
+  font-size: 1em;
+  padding: 5px 0 0 5px;
+  border: 1px solid #CCC;
+  color: #999;
+}
+
+#header input.button {
+  margin: 3px 0 0 27px;
+}
+
+.gecko #header .search-button {
+  padding: 0 0 4px 0;
+}
+
+
+#header .links {
+  display: block;
+  float: left;
+  font-size: 1em;
+  color: #333;
+  text-decoration: none;
+}
+
+#header .links a {
+  display: block;
+  float: left;
+  clear: left;
+  margin-bottom: 9px;
+}
+
+#header .links a:hover {
+  text-decoration: underline;
+  color: #A77114;
+}
+
+#header .links .mailing_list {
+  line-height: 30px;
+  padding-left: 42px;
+  background: url(/templates/img/icon-mailing-list.gif) no-repeat left center;
+}
+
+#header .links .send_letter {
+  line-height: 30px;
+  padding-left: 48px;
+  background: url(/templates/img/icon-send-letter.gif) no-repeat left center;
+}
+
+/*******************************************************************************************/
+
+#header .header-column-2 h4 {
+  margin-bottom: 8px;
+}
+
+#header .header-column-2 img {
+  width: 69px;
+  height: 69px;
+  float: left;
+  margin: 2px 8px 2px 3px;
+}
+
+#header .header-column-2 p {
+  font-size: 1em;
+  color: #333;
+  padding: 8px 2px 2px 0;
+}
+
+#header .header-column-2 a {display: inline; clear: none; float: right; margin-right: 8px;}
+
+#header .header-column-2 #this_day {width: 290px; height: 73px; overflow: hidden;}
+#header .header-column-2 #this_day {background: url(/templates/img/header-column2-bkg.gif) repeat-x bottom;}
+#header .header-column-2 #this_day div {display: none;}
+#header .header-column-2 #this_day div.weather {display: block;}
+#header .header-column-2 #this_day div.weather img {width: 55px; height: 55px; padding: 7px;}
+
+
+/*******************************************************************************************/
+
+#header .main-menu {
+  display: block;
+  clear: both;
+  width: 980px;
+}
+
+#header .main-menu .menu {
+  height: 29px;
+  width: 978px;
+  display: block;
+  border: 1px #fff solid;
+  background: #5a4040 url(/templates/img/header-menu-bkg.gif) repeat-x center;
+}
+
+#header .main-menu .submenu {
+  height: 29px;
+  width: 980px;
+  display: block;
+  background: #f3f3f3 url(/templates/img/header-submenu-bkg.gif) repeat-x center;
+}
+
+#header .main-menu .submenu ul {
+  background: none;
+}
+
+#header .main-menu li {
+  display: inline-block;
+  float: left;
+  height: 29px;
+  line-height: 29px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #fff;
+}
+
+#header .main-menu .submenu li {
+  color: #996600;
+}
+
+#header .main-menu a.noborder, #header .main-menu .submenu a.noborder {
+  background-image: none;
+}
+
+#header .main-menu li.right {
+  float: right;
+}
+
+#header .main-menu a {
+  display: inline-block;
+  float: left;
+  height: 29px;
+  line-height: 29px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
+  background: url(/templates/img/header-menu-divider.gif) no-repeat right;
+}
+
+#header .main-menu .submenu a {
+  color: #996600;
+  background: url(/templates/img/header-submenu-divider.gif) no-repeat right;
+}
+
+#header .main-menu a:hover, #header .main-menu a.selected {
+  color: #5a4040;
+  background-color: #d1d1d1;
+  background-image: none;
+  margin-left: -1px;
+  padding-left: 11px;
+}
+
+#header .main-menu a:active {
+  color: #333;
+  background-color: #ffbb00;
+}
+
+.ie6 #header .main-menu a:hover, .ie6 #header .main-menu a.selected {
+  position: relative;
+  left: -1px;
+  padding: 0 9px 0 12px;
+}
+
+#header .main-menu a.rss {
+  background: url(/templates/img/icon-header-rsslink.gif) no-repeat 11px center !important;
+  padding-left: 33px !important;
+}
+
+#header .main-menu a.rss:hover {
+  background: #d1d1d1 url(/templates/img/icon-header-rsslink_hov.gif) no-repeat 12px center !important;
+  color: #5a4040;
+  padding-left: 34px !important;
+}
+
+.ie6 #header .main-menu a.rss:hover {
+  padding-right: 11px;
+}

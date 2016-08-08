@@ -1,0 +1,1 @@
+<div class='s_front'>Сайт forbes.ru - <a href="http://www.forbes.ru/news">новости</a> России и мира.</div>

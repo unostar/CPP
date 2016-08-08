@@ -1,0 +1,150 @@
+article.static {
+  padding-top: 28px;
+}
+
+.exclusive-video .video .last-video a.flowplayer {
+  display: block;
+  width: 224px;
+  height: 184px;
+}
+
+.aside .entertainment .girl-of-the-week a.flowplayer {
+  display: block;
+  width: 210px;
+  height: 170px;
+  margin-top: 8px;
+}
+
+.exclusive-video .video a.selected {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.exclusive-video .video ul {
+	height: 165px;
+	overflow: hidden;
+}
+
+.opinions li {
+  min-height: 45px;
+}
+
+.aside .specialists-advices section {
+  min-height: 75px;
+}
+
+.authors-articles {
+	clear: left;
+}
+
+.pds-pd-link {display: none !important;}
+.pds-links {padding: 8px 0 0 0 !important;}
+
+.full_text em {
+  font-style: italic;
+}
+
+
+
+/* DISQUS Commenting System
+-----------------------------------------------------------------------------*/
+
+.section-related .recent-comments .dsq-widget ul.dsq-widget-list {padding: 0;margin: 0;text-align: left;word-wrap: break-word;word-wrap: break-all;}
+.section-related .recent-comments img.dsq-widget-avatar {width: 32px;height: 32px;border: 0px;margin: 0px;padding: 0px 3px 3px 0px;float: left;}
+.section-related .recent-comments a.dsq-widget-user {color: #008951;}
+.section-related .recent-comments a.dsq-widget-thread {font-weight: bold;}
+.section-related .recent-comments p.dsq-widget-meta {clear: both;font-size: 80%;padding: 0;margin: 0;}
+.section-related .recent-comments .dsq-widget-meta a {color: #707070;}
+.section-related .recent-comments li.dsq-widget-item {list-style-type: none;clear: both;padding:0;margin: 0 0 10px 0;}
+.section-related .recent-comments span.dsq-widget-clout {padding: 0 2px;background-color: #ff7300;color: #fff;}
+.section-related .recent-comments table.dsq-widget-horiz td {padding-right: 15px;}
+
+
+
+/* Google Maps
+-----------------------------------------------------------------------------*/
+
+.geomap_container {margin: 0 0 0 -13px;}
+.geomap_container .geomap_info {border-bottom: 1px dotted #999999; margin-bottom: 5px;}
+.geomap_container .geomap_info .geomap_map_name {color: #39517F; font-size: 11px; font-weight: normal; text-transform: uppercase; margin: 0;}
+  .geomap_container .geomap_info .geomap_map_name dt, .geomap_container .geomap_info .geomap_map_name dd {display: inline;}
+  .geomap_container .geomap_info .geomap_map_name .geomap_map_name_value {color: #000;}
+.geomap_container .geo_side_info {}
+  .geomap_container .geo_side_info .geomap_poi_name {display: inline-block; float: left; margin-right: 0.2em;}
+  .geomap_container .geo_side_info .geomap_poi_center {text-align: right; font-size: 0.8em;}
+  .geomap_container .geo_side_info .geomap_poi_perex {clear: left; font-size: 0.85em; margin-bottom: -1.5em;}
+  .geomap_container .geo_side_info .geomap_poi_spacer {display: block; clear: left; height: 5px;}
+.geomap_container .geomap_menu {text-align: right; font-size: 0.8em;}
+
+
+/* Google Custom Search
+-----------------------------------------------------------------------------*/
+/* Default theme
+-----------------*/
+/* Slight reset to make the preview have ample padding. */
+.cse .gsc-control-cse, .gsc-control-cse {width: 100%;}
+.cse .gsc-branding, .gsc-branding, .gcsc-branding {display: none;}
+.cse .gsc-control-cse div, .gsc-control-cse div {position: normal;}
+/* Selector for entire element. */
+.cse .gsc-control-cse, .gsc-control-cse {background-color: #ffffff;border: 1px solid;  border-color: #ffffff;}
+.cse .gsc-control-cse:after, .gsc-control-cse:after { content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.cse .gsc-resultsHeader,.gsc-resultsHeader {border: block;}
+/* Search button */
+.cse input.gsc-search-button, input.gsc-search-button {font-family: inherit;   color: #000000;   text-shadow: 0 1px 2px #FFFFFF;  background-color: #CECECE;  border: 1px outset;  border-color: #666666;  border-radius: 2px;  -moz-border-radius: 2px;  -webkit-border-radius: 2px;}
+/* Inactive tab */
+.cse .gsc-tabHeader.gsc-tabhInactive, .gsc-tabHeader.gsc-tabhInactive {  border-bottom: none;  color: #666666;  background-color: #e9e9e9;  border: 1px solid;  border-color: #e9e9e9;  border-bottom: none;}
+/* Active tab */
+.cse .gsc-tabHeader.gsc-tabhActive, .gsc-tabHeader.gsc-tabhActive {  background-color: #FFFFFF;  border: 1px solid;  border-top: 2px solid;  border-color: #e9e9e9;  border-top-color: #FF9900;  border-bottom: none;}
+/* This is the tab bar bottom border. */
+.cse .gsc-tabsArea,.gsc-tabsArea {margin-top: 1em;  border-bottom: 1px solid #e9e9e9;}
+/* Inner wrapper for a result */
+.cse .gsc-webResult.gsc-result, .gsc-webResult.gsc-result, .gsc-imageResult-column, .gsc-imageResult-classic {  padding: .25em;  border: 1px solid;  border-color: #ffffff;  margin-bottom: 1em;}
+/* Result hover event styling */
+.cse .gsc-webResult.gsc-result:hover, .gsc-webResult.gsc-result:hover, .gsc-results .gsc-imageResult-classic:hover, .gsc-results .gsc-imageResult-column:hover {  border: 1px solid;  border-color: #FFFFFF;}
+/*Promotion Settings*/
+/* The entire promo */
+.cse .gs-promotion, .gs-promotion {  background-color: #FFFFFF;  border: 1px solid;  border-color: #336699;}
+/* Promotion image */
+.cse .gs-promotion .gs-promotion-image, .gs-promotion .gs-promotion-image {}
+/* Promotion links */
+.cse .gs-promotion a.gs-title:link, .gs-promotion a.gs-title:link, .cse .gs-promotion a.gs-title:link *, .gs-promotion a.gs-title:link *, .cse .gs-promotion .gs-snippet a:link, .gs-promotion .gs-snippet a:link {  color: #0000CC;}
+.cse .gs-promotion a.gs-title:visited, .gs-promotion a.gs-title:visited, .cse .gs-promotion a.gs-title:visited *, .gs-promotion a.gs-title:visited *, .cse .gs-promotion .gs-snippet a:visited, .gs-promotion .gs-snippet a:visited {  color: #0000CC;}
+.cse .gs-promotion a.gs-title:hover, .gs-promotion a.gs-title:hover, .cse .gs-promotion a.gs-title:hover *, .gs-promotion a.gs-title:hover *, .cse .gs-promotion .gs-snippet a:hover, .gs-promotion .gs-snippet a:hover {  color: #0000CC;}
+.cse .gs-promotion a.gs-title:active, .gs-promotion a.gs-title:active, .cse .gs-promotion a.gs-title:active *, .gs-promotion a.gs-title:active *, .cse .gs-promotion .gs-snippet a:active, .gs-promotion .gs-snippet a:active {  color: #0000CC;}
+/* Promotion snippet */
+.cse .gs-promotion .gs-snippet, .gs-promotion .gs-snippet, .cse .gs-promotion .gs-title .gs-promotion-title-right, .gs-promotion .gs-title .gs-promotion-title-right, .cse .gs-promotion .gs-title .gs-promotion-title-right *, .gs-promotion .gs-title .gs-promotion-title-right * {  color: #000000;}
+/* Promotion url */
+.cse .gs-promotion .gs-visibleUrl, .gs-promotion .gs-visibleUrl {  color: #008000;}
+/* Style for auto-completion table
+ * .gsc-completion-selected : styling for a suggested query which the user has moused-over
+ * .gsc-completion-container : styling for the table which contains the completions
+ */
+.gsc-completion-selected {background: #D5E2FF;}
+.gsc-completion-container {z-index: 10000; background-position: 0 bottom !important; font-family: sans-serif;  font-size: 11px;  position: absolute;  background: white;  border: 1px solid #ccdae3 !important;  margin-left: 0;  margin-right: 0;  /* The top, left, and width are set in JavaScript. */}
+/* Full URL */
+.gs-webResult div.gs-visibleUrl-short {  display: none;}
+.gs-webResult div.gs-visibleUrl-long {  display: block;}
+
+
+/* Customization
+---------------------------------------*/
+
+#cse-search-form {float: right; clear: right; margin-top: 20px; width: 235px;}
+input.gsc-input {border: solid #C7C7C7 !important; height: 18px; line-height: 18px; font-size: 11px; padding: 0 8px !important; border-width: 0 1px 1px 0 !important; color: #111; vertical-align: middle; font-family: Verdana, Geneva, sans-serif;}
+table.gsc-search-box td.gsc-input {padding-right: 18px !important;}
+input.gsc-search-button {height: 19px; width: 18px; text-indent: -9999px; padding: 0; border: 0; background: url("/templates/img/search-submit.gif") 4px 5px no-repeat;cursor: pointer;vertical-align: middle;}
+input.gsc-search-button::-moz-focus-inner {padding: 0; border: 0;}
+.gsc-clear-button {display: none !important;}
+
+#cse .gsc-control-cse {border: none !important; background: none !important;}
+#cse .gsc-search-box {margin: 8px 0 !important;}
+.gsc-result-info {font: 11px Verdana, Geneva, sans-serif !important;}
+.gsc-webResult .gsc-result {padding: 1em 0 !important;}
+.gs-result .gs-title, .gs-result .gs-title * {font: bold 12px/16px Verdana, Geneva, sans-serif !important; color: #008951 !important; text-decoration: none !important;}
+  .gs-result a.gs-title:hover {text-decoration: underline !important;}
+.gs-result .gs-snippet, .gs-result .gs-snippet * {color: #111 !important; font: normal 11px/14px Verdana, Geneva, sans-serif !important;}
+.gs-spelling {font: 12px/16px Verdana, Geneva, sans-serif !important;}
+.gs-spelling a {color: #008951 !important;}
+.gsc-results .gsc-cursor-box {margin: 1em 0 !important;}
+.gsc-results .gsc-cursor {height: 25px !important; width: 25px !important; margin-right: 10px !important;}
+.gsc-results .gsc-cursor-box .gsc-cursor-page {text-decoration: none !important; display: inline-block !important; height: 25px !important; width: 25px !important; cursor: pointer !important; text-align: center !important; vertical-align: middle !important; line-height: 25px !important; font-size: 11px !important; color: white !important; text-decoration: none !important; background: url("/templates/img/section-pagination.png") 0 -40px no-repeat !important;}

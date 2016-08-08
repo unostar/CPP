@@ -1,0 +1,223 @@
+/*
+Author:		Aleks Hudochenkov
+Version:	3.06.2011
+-----------------------------------------------------------------------------*/
+
+/* Reset
+-----------------------------------------------------------------------------*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+	}
+
+/* General
+-----------------------------------------------------------------------------*/
+
+body, select, input, textarea {
+	color: #000;
+	font-family: sans-serif;	
+	}
+body {
+	font: 14px/20px sans-serif;
+	padding: 1% 3%;
+	}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	}
+a {
+	color: #900;
+	text-decoration: underline;
+	}
+	a:hover {
+		text-decoration: none;
+		}
+ul, ol {
+	margin-left: 2em;
+	}
+blockquote {
+	margin: 20px;
+	font-style: italic;	
+}
+blockquote p {
+	margin: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-top: 1px solid #797878;
+	margin-bottom: 18px;
+	
+}
+thead th {
+	font-weight: bold;
+}
+td,
+th {
+	padding: 10px;
+	text-align: left;
+	vertical-align: middle;
+	border-left: 1px dotted #999;
+	
+}
+tr td:first-child,
+tr th:first-child {
+	border: none;
+	
+}
+tr {
+	border-bottom: 1px solid #797878;
+	
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+
+.header {
+	overflow: hidden;
+	padding-bottom: 15px;
+	margin-bottom: 40px;
+	border-bottom: 1px dotted #999;
+	color: #3d3832;
+}
+.header .logo {
+	float: left;
+	margin-right: 35px;
+	
+}
+.header h2 {
+	font-weight: normal;
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	margin-top: 2px;
+	
+}
+.header h2 b {
+	color: #900;
+	
+}
+.header .url a {
+	color: #39517f;
+	text-decoration: none;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main
+-----------------------------------------------------------------------------*/
+
+.main {
+	
+}
+.main h1,
+.main h2,
+.main h3,
+.main h4 {
+	color: #3d3832;
+	margin-bottom: 15px;
+	font: bold 24px/1 "Times New Roman", Times, serif;
+}
+.main h1 {
+	margin-bottom: 4px;
+}
+.main h2 {
+	font-size: 20px;
+}
+.main h3 {
+	font-size: 18px;
+}
+.main h4 {
+	font-size: 16px;
+	font-style: italic;
+}
+.main .info {
+	color: #3d3832;
+	margin-bottom: 10px;
+}
+.main p {
+	margin-bottom: 20px;
+}
+.main .lead {
+	font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+
+.my-comments {
+	margin-top: 40px;
+	margin-bottom: 30px;
+	padding-top: 20px;
+	border-top: 1px dotted #999;
+	
+}
+.my-comments h3 {
+	font: 14px sans-serif;
+	color: #000;
+	margin-bottom: 10px;
+	
+}
+.my-comments textarea {
+	width: 98%;
+}
+
+
+
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+.footer {
+	border-top: 1px solid #535353;
+	padding-top: 15px;
+	
+}
+.footer a {
+	color: #000;
+	
+}
+.footer a:first-child {
+	color: #900;
+	font-weight: bold;
+	text-decoration: none;
+	
+}
+
+
+
+
+

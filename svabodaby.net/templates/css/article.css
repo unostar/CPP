@@ -1,0 +1,303 @@
+/****** ARTICLE-SPECIFIC ******/
+
+.artgal {
+  margin: 20px 0;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.artgal a {
+  text-align: center;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  display: block;
+}
+
+.column-1.article .article_box {
+  margin-bottom: 40px;
+}
+
+.column-1.article .article_box .main_news {
+  padding-bottom: 0;
+  width: 729px;
+}
+
+.column-1.article .article_box .main_news h1 {
+  margin: 0 0 20px -16px;
+}
+
+.column-1.article .article_box .main_news p.date {
+  margin: 0 0 16px -16px;
+}
+
+.column-1.article .art_controls {
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 305px;
+  height: 26px;
+  line-height: 26px;
+  margin: 0 13px 17px -16px;
+  padding-left: 35px;
+  background: #efefef url(/templates/img/icon-comments.gif) no-repeat 10px 7px;
+  color: #666;
+  font-size: 1.083em;
+}
+
+.column-1.article .art_controls a.font {
+  text-decoration: none;
+  font-size: 1.25em;
+  line-height: 26px;
+}
+
+.column-1.article .art_controls a.font:hover {
+  text-decoration: underline;
+}
+
+.column-1.article .art_controls a.font.increase {
+  background: url(/templates/img/font-size.gif) no-repeat right -23px;
+  padding-right: 6px;
+  margin: 0 5px 0 40px;
+}
+
+.column-1.article .art_controls a.font.decrease {
+  background: url(/templates/img/font-size.gif) no-repeat right 3px;
+  padding-right: 6px;
+  margin: 0 8px 0 6px;
+}
+
+.column-1.article #intro {
+  font-size: 1.25em;
+  line-height: 1.3;
+  font-weight: normal;
+  margin-bottom: 23px;
+}
+.column-1.article #intro p {
+  font-size: 1em;
+  line-height: 1.3;
+  font-weight: normal;
+  margin-bottom: 23px;
+}
+
+.column-1.article #full_text {
+  font-size: 1.083em;
+  line-height: 1.3;
+  width: 729px !important;
+}
+
+.column-1.article #full_text p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.column-1.article #full_text table {
+  margin: auto;
+  padding: auto;
+}
+
+.column-1.article #full_text table.border, .column-1.article #full_text table.border td {
+  border-color: #000;
+  border-style: solid;
+}
+
+.column-1.article #full_text table.border {
+  border-width: 1px 1px 1px 1px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.column-1.article #full_text table.border td {
+    margin: 0;
+    padding: 2px;
+    border-width: 1px 1px 1px 1px;
+}
+
+
+
+/* image and image caption by Holman */
+
+.column-1.article #full_text div.cs_img {
+  margin: 10px;
+  padding: 0;
+}
+
+.column-1.article #full_text div.cs_img p {
+  display: table-cell;
+}
+
+.column-1.article #full_text div.cs_img p.cs_img_caption {
+  display: table-caption;
+  caption-side: bottom;
+  padding: 0.4em;
+  margin: 0.2em 0em 0em 0em;
+  line-height: 1.1em;
+  font-size: 0.8em;
+  color: #666;
+  text-align: left;
+  background-color: #dfdfdf;
+}
+
+
+.column-1.article p.author {
+  color: #666;
+  margin-top: 23px;
+}
+
+.column-1.article .campsite_subhead {
+  font-weight:bold;
+  text-transform:uppercase;
+}
+
+.column-1.article .campsite_external_link {
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 230px;
+  border: 5px #fff double;
+  background: #efefef url(/templates/img/icon-subhead-quote.gif) no-repeat 8px 13px;
+  padding: 13px 13px 13px 40px !important;
+  margin: 0 18px 0px 0 !important;
+  font-size: 1.083em;
+  color: #666;
+  line-height: 1.38;
+}
+
+.column-1.article div.campsite_quote {
+  display: inline-block;
+  width: 670px;
+  border: 5px #fff double;
+  background: #efefef url(/templates/img/icon-subhead-quote.gif) no-repeat 8px 13px;
+  padding: 13px 13px 13px 40px !important;
+  margin: 0 18px 0px 0 !important;
+  color: #666;
+  line-height: 1.38;
+}
+
+.ie6 .column-1.article .campsite_external_link, .ie7 .column-1.article .campsite_external_link {
+  border: 4px #efefef double;
+}
+
+.column-1.article .art_controls.bottom {
+  margin: 23px 0 8px -16px;
+  width: 703px;
+  padding-left: 42px;
+  background-position: 17px 7px;
+}
+
+.column-1.article .art_controls.bottom a.print {
+  text-decoration: none;
+  line-height: 26px;
+  color: #666;
+  background: url(/templates/img/icon-print.gif) no-repeat left center;
+  padding-left: 26px;
+  margin-left: 60px;
+}
+
+.column-1.article .art_controls.bottom a.goup {
+  text-decoration: none;
+  line-height: 26px;
+  color: #666;
+  background: url(/templates/img/icon-goup.gif) no-repeat left center;
+  padding-left: 20px;
+  margin-left: 55px;
+}
+
+.column-1.article .art_controls.bottom a.print:hover, .column-1.article .art_controls.bottom a.goup:hover {
+  color: #996600;
+  text-decoration: underline;
+}
+
+/********************** Comments ***************************/
+
+.column-1.article .article_box.comment {
+  padding-left: 16px;
+  width: 729px;
+}
+
+.column-1.article .article_box.comment h5 {
+  margin-left: -16px;
+}
+
+.column-1.article .article_box.comment p.name {
+  color: #999;
+  font-size: 1em;
+  margin: 23px 0 13px 0;
+}
+
+.column-1.article .article_box.comment p.name a {
+  font-weight: bold;
+  font-size: 1.25em;
+  text-decoration: none;
+}
+
+.column-1.article .article_box.comment p {
+  margin-bottom: 23px;
+}
+
+.column-1.article .commentsform { 
+  display: block;
+  float: left;
+  clear: both;
+  padding: 23px 0;
+  color: #333;
+  font-size: 1.083em;
+}
+
+.column-1.article .commentsform p {
+  margin-bottom: 1em;
+}
+
+.column-1.article .comment code {
+  color: #996600;
+  font-weight: bold;
+  font-size: 1.083em;
+  font-style: oblique;
+}
+
+.column-1.article .commentsform span {
+  width: 100%;
+  display: block;
+  float: left;
+  clear: both;
+  margin: 0 0 20px 0;
+}
+
+.column-1.article .commentsform label {
+  float: left;
+  clear: left;
+  display: block;
+  width: 120px;
+}
+
+.column-1.article .commentsform input, .column-1.article .commentsform textarea {
+  float: left;
+  overflow: auto;
+  border: 1px solid #D6D7D6;
+}
+
+.column-1.article .commentsform img {
+  float: left;
+  margin: -16px 0 0 0;
+}
+
+.column-1.article .commentsform input.name,
+.column-1.article .commentsform textarea.text {
+  width: 603px;
+}
+
+.column-1.article .commentsform input.email {
+  color: #ccc;
+  font-style: oblique;
+}
+
+.column-1.article .commentsform input.captcha_code {
+  width: 220px;
+}
+
+.column-1.article .commentsform #article_comment_submit {
+  font-size: 12px;
+  display: block;
+  clear: both;
+}

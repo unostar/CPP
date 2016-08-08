@@ -1,0 +1,89 @@
+/*
+Author:     Aleks Hudochenkov
+Release:    3.11.2011
+-----------------------------------------------------------------------------*/
+
+textarea {
+	overflow: auto;
+}
+.nav-general {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#3a3a3a', EndColorStr='#0e0e0e');
+}
+.informer h4 {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cccccc', EndColorStr='#adadad');
+}
+.header .nav {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#00aae8', EndColorStr='#007ddc');
+}
+.header .nav a:hover,
+.header .nav .current a {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#3a3a3a', EndColorStr='#0e0e0e');
+}
+.aside section header {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#00aae8', EndColorStr='#0082dd');
+}
+.aside .main-news header {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffca59', EndColorStr='#efa505');
+}
+.aside .news-list header {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#5395c1', EndColorStr='#0163a3');
+}
+.aside .poll .submit a {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffca59', EndColorStr='#f0a506');
+}
+.footer .nav {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#3a3a3a', EndColorStr='#0e0e0e');
+}
+.pagination .current a {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#5395c1', EndColorStr='#0565a4');
+}
+.about-author .write-to-author a {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#00aae8', EndColorStr='#0082dd');
+}
+.block header {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cdcdcd', EndColorStr='#acacac');
+	width: 100%;
+}
+input[type="submit"] {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#00aae8', EndColorStr='#0082dd');
+}
+.archive-section .selected {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffca59', EndColorStr='#f0a506');
+}
+.archive-section .selected-persons {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#09ade9', EndColorStr='#0082dd');
+}
+.home .block header {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffca59', EndColorStr='#efa505');
+}
+.search input[type="submit"] {
+	filter: none;
+}
+.aside .poll label input,
+.search-articles .place input,
+.search-articles .all-words input {
+	margin-top: -4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

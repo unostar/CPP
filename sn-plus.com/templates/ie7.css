@@ -1,0 +1,116 @@
+/*
+Author:     Aleks Hudochenkov
+Release:    3.11.2011
+-----------------------------------------------------------------------------*/
+
+input[type="checkbox"] {
+	vertical-align: baseline;
+}
+/*.aside .poll label input,
+.search-articles .place input,
+.search-articles .all-words input {
+	margin-top: 0;
+}*/
+.aside .poll .submit a,
+.pagination li,
+.about-author .write-to-author a,
+.search-articles .date .pickdate,
+.archive-section h3 {
+	display: inline;
+	zoom: 1;
+}
+.middle {
+	zoom: 1;
+}
+.article blockquote {
+	zoom: expression(
+		runtimeStyle.zoom = 0,
+		insertBefore(createElement("bqb"), firstChild),
+		appendChild(createElement("bqa"))
+	);
+}
+.article blockquote bqb {
+	position: absolute;
+	height: 100%;
+	top: 2px;
+	right: -2px;
+	width: 1px;
+	display: block;
+	background: #dadada;
+}
+.article blockquote bqa {
+	position: absolute;
+	width: 100%;
+	bottom: -2px;
+	left: 2px;
+	height: 1px;
+	display: block;
+	background: #dadada;
+}
+.article .actions {
+	zoom: expression(
+		runtimeStyle.zoom = 0,
+		insertBefore(createElement("m"), firstChild)
+	);
+}
+.article .actions m {
+	position: absolute;
+	top: 0;
+	background: #fff;
+	height: 1px;
+	width: 100%;
+	left: 0;
+}
+.aside .expandable {
+	zoom: expression(
+		runtimeStyle.zoom = 1,
+		appendChild(createElement("ea"))
+	);
+}
+.aside .expandable ea {
+	position: absolute;
+	height: 5px;
+	top: 22px;
+	width: 320px;
+	left: -1px;
+	background: url("img/aside-expand-arrow.gif") 17px 0 no-repeat;
+}
+.aside section {
+	zoom: 1;
+}
+/*.aside section header {
+	width: 290px;
+	position: relative;
+	top: -2px;
+	left: -14px;
+}*/
+/*.aside .main-news header {
+	position: absolute;
+	top: auto;
+	left: auto;
+}*/
+.block {
+	zoom: 1;
+}
+/*.block header {
+	position: relative;
+	top: -2px;
+	left: -13px;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

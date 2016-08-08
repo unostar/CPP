@@ -1,0 +1,68 @@
+/* CSS Mobile Reset */
+
+* {margin: 0; padding: 0; border: 0;}
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.875em;
+	font-style: normal;
+	font-variant: normal;
+	line-height: normal;
+	word-wrap: break-word;
+}
+
+body {padding: 1em;}
+
+a {text-decoration: none;}
+
+a:hover {text-decoration: underline;}
+
+/* Main styles ____________________________________________________________________________ */
+
+i.ico {
+  background: url(/templates/mobile/mobile-icons.gif) 0 0 no-repeat;
+  display: inline-block;
+  width: 13px;
+  height: 12px;
+  padding: 0;
+  vertical-align: middle;
+  margin: 0 0 0 4px !important;
+}
+i.photo {background-position: 0 0;}
+i.audio {background-position: -13px 0;}
+i.video {background-position: -26px 0;}
+
+.logo {color: #666;}
+.logo img {float: left;}
+
+h1, h2, h3, h4, h5, h6 {font-size: 1em; padding: 1em 0 0.5em 0;text-transform: uppercase;}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: #ff6600;}
+h4 {font-weight: normal; text-transform: none;}
+
+p.title {color: #666; line-height: 1.5; clear: left;}
+p.title span {font-size: 0.8em;}
+p.title a {color: #333; padding-left: 12px; background: url(/templates/mobile/mobile-icons.gif) -43px -29px no-repeat;}
+p.title a:visited {color: #999;}
+p.title a:hover {background-position: -43px 4px;}
+
+p.title_bold {color: #666; line-height: 1.5;}
+p.title_bold span {font-size: 0.8em;}
+p.title_bold a {color: #333; font-weight: bold;}
+p.title_bold a:visited {color: #999;}
+p.title_bold img {float: left; margin: 0 12px 4px 0;}
+
+
+p.copy {padding-top: 2em; color: #333;}
+p.copy a {color: #006699;}
+
+h1 {font-size: 1.25em; text-transform: none;}
+h1 span {font-size: 0.7em; font-weight: normal; color: #666;}
+
+.full_text, .intro {color: #333;}
+.intro {font-weight: bold;}
+  .intro img {border:0; float: left; margin-right: 1em;}
+.full_text {clear: left; padding-top: 1em; }
+.article_images {padding-top: 1em;}
+  .article_images img {border:0; margin: 0 0.4em 0.2em 0;}
+.article_attachments {padding-top: 1em;}
+  .article_attachments a {color: #006699;}

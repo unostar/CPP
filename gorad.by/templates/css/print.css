@@ -1,0 +1,35 @@
+/* 6. PRINT VERSION
+-------------------------------------------------------- */
+html {font-size: 62.5%;}
+a { color: #4d7aa7}
+body {font: normal 1.2em Arial, Helvetica, sans-serif; color: #000;}
+#print { background: #fff; width: 642px; padding-left:22px; padding-top: 25px; text-align: left}
+#print .b-article { font-size: 1.14em; padding-bottom: 50px; clear: both}
+#print .b-article_img {float: left; width: 310px; margin: 0 20px 10px 0; color: #4d4842; font-size: 0.79em; background: none; padding: 0}
+#print .b-article_img img { margin-bottom: 7px; display: block; background: #6dbae5; padding: 5px}
+.b-article_pre { font-weight: bold; margin-bottom: 1em;}
+.b-article_body {clear: both;}
+#print #header { font-size: 1.08em; padding-bottom: 18px; border-bottom: #bcbbbb 1px solid; margin-bottom: 25px}
+#print #header div { font-size: 1.4em; position: absolute; left: 370px; top: 42px}
+#print #footer { border-top: #656565 1px solid; padding: 10px 0 0 0; font-size: 1em; line-height: 1.7}
+#print .mycomments {border-top: #b5b5b5 1px solid; padding: 20px 0}
+#print #header .b-article_name { font-size: 0.8em; display: block; padding-top: 10px}
+	#print .mycomments fieldset {border: 0}
+	#print .mycomments legend {display: block; padding-bottom: 10px}
+	#print .mycomments textarea {overflow-x: hidden; overflow-y: auto; height: 135px; width: 570px; border-width: 1px; border-style: solid; border-color: #737373 #999 #999 #999}
+	.header-article { font-size: 2.5em; margin: 0; margin-bottom: 12px}
+/* Фотографии в статье */
+.cs_img {display:table;background: #75C5F0;}
+.cs_img p {display:table-cell;margin:0;padding:0;}
+.cs_img img {max-width: 660px !important; padding: 5px;}
+.cs_img .cs_img_caption {max-width:660px !important;display:table-caption;caption-side:bottom;text-align:left;color:#4D4842;line-height:0.79em;font-size:0.79em;padding: 5px 7px 13px 7px;}
+
+/* Врезка статьи */
+.quote {color: #0e2940; font-weight: bold; font-size: 0.9em; display: block; float: left; width: 50%; border: #bcbbbb 1px solid; padding: 6px; position: relative; zoom:1; overflow: visible; margin: 0 12px 6px 0;}
+.quote p {margin: 0;}
+.quote img {float: left; margin: 0 14px 0 0;}
+.quote .g-bg { height: 7px; width: 7px; z-index: 999}
+.quote .bg-article-funcs-rb { right:-1px; bottom: -1px; background: url(/templates/images/ttt.png) -152px -170px no-repeat;}
+.quote .bg-article-funcs-rt { right: -1px; top: -1px; background: url(/templates/images/ttt.png) -152px -163px no-repeat;}
+.quote .bg-article-funcs-lt {left: -1px; top: -1px; background: url(/templates/images/ttt.png) -145px -163px no-repeat;}
+.quote .bg-article-funcs-lb { left: -1px; bottom: -1px; background: url(/templates/images/ttt.png) -145px -170px no-repeat;}

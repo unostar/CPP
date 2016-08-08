@@ -1,0 +1,28 @@
+/*
+Author:		Aleks Hudochenkov
+Version:	3.04.2011
+-----------------------------------------------------------------------------*/
+
+button {
+	overflow: visible;
+	width: auto;
+	}
+textarea {
+	overflow: auto;
+	}
+
+
+
+.emails .options label input {
+	margin-top: -1px;
+	
+}
+.search-articles .place input {
+	margin-top: -3px;
+}
+.search-articles .all-words input {
+	margin-top: -2px;
+}
+
+
+

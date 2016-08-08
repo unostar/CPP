@@ -1,0 +1,8 @@
+<ul class="imported-news"><li class="news"><a rel="nofollow" href="http://belapan.com/archive/2012/09/10/573225/">Завтра днем в Беларуси ожидается до 27°С тепла, без осадков</a> <small class="time">(10 сентября 2012)</small></li>
+<li class="news"><a rel="nofollow" href="http://belapan.com/archive/2012/09/10/573207/">Послом Беларуси в России назначен Игорь Петришенко</a> <small class="time">(10 сентября 2012)</small></li>
+<li class="news"><a rel="nofollow" href="http://belapan.com/archive/2012/09/10/573201/">У здания посольства Беларуси в Бишкеке прошел очередной митинг с требованиями выдать братьев Бакиевых</a> <small class="time">(10 сентября 2012)</small></li>
+<li class="news"><a rel="nofollow" href="http://belapan.com/archive/2012/09/10/573202/">На открывшейся в Женеве сессии Совета ООН по правам человека будет назначен спецдокладчик по ситуации в Беларуси</a> <small class="time">(10 сентября 2012)</small></li>
+<li class="news"><a rel="nofollow" href="http://belapan.com/archive/2012/09/10/573194/">ЦИК пообещал наблюдателям БДИПЧ ОБСЕ обеспечить свободное наблюдение за подсчетом голосов</a> <small class="time">(10 сентября 2012)</small></li>
+<li class="news"><a rel="nofollow" href="http://belapan.com/archive/2012/09/10/573190/">За последние сутки в лесах Беларуси потерялись пять человек, в том числе ребенок</a> <small class="time">(10 сентября 2012)</small></li>
+<li class="news"><a rel="nofollow" href="http://belapan.com/archive/2012/09/10/573187/">В Минске пройдут суды над активистами кампании "Говори правду!" Павлом Виноградовым и Александром Арцыбашевым</a> <small class="time">(10 сентября 2012)</small></li>
+</ul>

@@ -1,0 +1,1 @@
+<img alt="banner 160x60px" src="/templates/temp/banner160x60.jpg" />

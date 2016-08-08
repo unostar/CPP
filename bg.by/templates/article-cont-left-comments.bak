@@ -1,0 +1,62 @@
+{{ if $campsite->article->comments_enabled }}
+<a name="comments-list"></a>
+<div class="articlecomments">
+{{ list_article_comments order="bydate asc"}}
+{{ if $campsite->current_list->at_beginning }}
+<div class="title">Комментарий</div>
+{{ /if }} 
+<p class="comment-author">{{ $campsite->comment->reader_email }}</p>
+<p class="comment-text">{{ $campsite->comment->content }}</p>
+<p class="comment-data">{{ $campsite->comment->submit_date|camp_date_format:"%d/%m %Y, %H:%i" }}</p>
+{{ /list_article_comments }}
+
+<div class="title">Отправить комментарий<a class="eula">Правила комментирования</a></div>
+</div>
+
+<div class="articlecomments-form">
+
+<div class="eula" style="display:none">
+<p>Уважаемые читатели!</p>
+<p>На сайте действует премодерация. Это значит, что ваш комментарий будет опубликован только после проверки его модератором. Ваше сообщение будет опубликовано, если оно не содержит:</p>
+<ul>
+<li>ненормативной лексики</li>
+<li>личных оскорблений или негативных высказываний в адрес других посетителей форума или иных лиц</li>
+<li>ссылок на определенные страницы в интернете</li>
+<li>рекламы товаров или услуг, адресов или телефонов и т.п.</li>
+<li>призывы к насилию</li>
+</ul>
+<p>Администрация сайта оставляет за собой право не публиковать комментарии без объяснения причин.</p>
+<p>Администрация сайта не несет ответственности за содержание комментариев. Мнение автора комментария может не совпадать с мнением редакции.</p>
+<p><br /></p>
+</div>
+
+{{ if $campsite->submit_comment_action->ok }}
+{{ if $campsite->publication->moderated_comments }}
+<p class="comment_content"><strong>Ваши комментарии отправлены для модерации.</strong></p>
+{{ else }}
+<p class="comment_content"><strong>Ваши комментарии заблокированы</strong></p>
+{{ /if }}
+{{ /if }}
+{{ if $campsite->submit_comment_action->is_error }}
+<p class="comment_content">Ошибка в процессе комментирования: вы должны заполнить ВСЕ поля формы.</p>
+{{ /if }}
+
+{{ comment_form submit_button="Отправить комментарий" anchor="comments" button_html_code="class=\"button\"" }}
+<input type="hidden" name="IdLanguage" value="{{ $campsite->language->number }}" />
+<input type="hidden" name="IdPublication" value="{{ $campsite->publication->identifier }}" />
+<input type="hidden" name="NrIssue" value="{{ $campsite->issue->number }}" />
+<input type="hidden" name="NrSection" value="{{ $campsite->section->number }}" />
+<input type="hidden" name="NrArticle" value="{{ $campsite->article->number }}" />
+<input type="hidden" name="f_comment_subject" value="Комментарий к статье {{$campsite->article->number}}" />
+<label for="CommentReaderEMail">Имя:</label>{{ camp_edit object="comment" attribute="reader_email" html_code="class=\"formInputText\" id=\"CommentReaderEMail\""}}<br />
+<label for="CommentContent">Комментарий:</label>{{ camp_edit object="comment" attribute="content" html_code="id=\"CommentContent\""}}<br />
+{{ if $campsite->publication->captcha_enabled }}
+<label>&nbsp;</label><img src="/include/captcha/image.php" alt="captcha" /><br />
+<label for="f_captcha_code">Введите символы, изображенные на картинке:</label>{{ camp_edit object="captcha" attribute="code" html_code="class=\"formInputText\" id=\"f_captcha_code\"" }}
+{{ /if }}
+<br /><br />
+<label>&nbsp;</label>
+{{ /comment_form }}
+
+</div>
+{{ /if }}

@@ -1,0 +1,223 @@
+/*
+Author:		Aleks Hudochenkov
+Version:	3.07.2011
+-----------------------------------------------------------------------------*/
+
+legend {
+	margin-left: -7px;
+	}
+input[type="checkbox"] {
+	vertical-align: baseline;
+	}
+
+
+.block-title span,
+.article footer .actions .font-size a,
+.section-pagination li,
+.section,
+.sections .opinions,
+.sections .special-projects,
+.photogallery-pagination li,
+.article .photos li {
+	display: inline;
+}
+
+.exclusive-video .video,
+.opinions,
+.last-news {
+	zoom: expression(
+		runtimeStyle.zoom = 0,
+		insertBefore(
+			createElement("m"), firstChild)
+	);
+	}
+.exclusive-video .video m,
+.opinions m,
+.last-news m {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	height: 8px;
+	background: #007d47;
+	left: 0;
+	right: 0;
+	
+}
+.opinions m {
+	background: #747474;
+	
+}
+.header .nav-main > .current > a {
+	zoom: expression(
+		runtimeStyle.zoom = 0,
+		insertBefore(
+			createElement("m"), firstChild)
+	);
+	}
+.header .nav-main > .current > a m {
+	content: "";
+	display: block;
+	width: 13px;
+	height: 9px;
+	position: absolute;
+	background: url("/templates/img/nav-main-current-arrow.png");
+	right: -3px;
+	bottom: -10px;
+	
+}
+.article blockquote {
+	zoom: expression(
+		runtimeStyle.zoom = 0,
+		insertBefore(
+			createElement("m"), firstChild)
+	);
+	}
+.article blockquote m {
+	content: "";
+	position: absolute;
+	bottom: -8px;
+	right: 21px;
+	width: 14px;
+	height: 8px;
+	display: block;
+	background: url("/templates/img/blockquote-thing.png") 0 0 no-repeat;
+	
+}
+.disqcc {
+	zoom: expression(
+		runtimeStyle.zoom = 0,
+		insertBefore(
+			createElement("n"), firstChild)
+	);
+	}
+.disqcc n {
+	content: "";
+	display: block;
+	width: 9px;
+	height: 9px;
+	background: url("/templates/img/comments-count-arrow.png") 0 0 no-repeat;
+	position: absolute;
+	right: -1px;
+	bottom: -9px;
+	
+}
+.featured li {
+	zoom: expression(
+		runtimeStyle.zoom = 0,
+		insertBefore(
+			createElement("m"), firstChild)
+	);
+	}
+.featured li m {
+	position: absolute;
+	width: 25px;
+	height: 290px;
+	top: 0;
+	left: 0;
+	background: url("/templates/img/featured-shadow.png") 0 0 repeat-y;
+	content: "";
+	z-index: 10;
+	
+}
+.featured .current m {
+	display: none;
+	
+}
+.readers-write > h3 {
+	zoom: expression(
+		runtimeStyle.zoom = 0,
+		insertBefore(
+			createElement("n"), firstChild)
+	);
+	}
+.readers-write > h3 n {
+	content: "";
+	width: 740px;
+	display: block;
+	height: 4px;
+	border-bottom: 1px solid #00592a;
+	background: #00814a;
+	top: 13px;
+	position: absolute;
+	left: 0;
+
+}
+.readers-write .button {
+	zoom: expression(
+		runtimeStyle.zoom = 0,
+		appendChild(
+			createElement("mn"))
+	);
+	}
+.readers-write .button mn {
+	content: "";
+	display: inline-block;
+	width: 6px;
+	height: 11px;
+	background: url("/templates/img/readers-write-button-arrow.gif") 0 0 no-repeat;
+	margin-left: 5px;
+	
+}
+.header .lang {
+	width: 56px;
+	
+}
+.header .social {
+	width: 89px;
+	
+}
+.header .searchbar {
+	width: 273px;
+	
+}
+.opinions li {
+	zoom:1
+}
+.photogallery-pagination li {
+	text-indent: 0;
+	margin: 0 6px;
+	
+}
+.article-short.first {
+	top: -323px;
+	
+}
+.article-short .main-image {
+	margin-bottom: -32px;
+	
+}
+.article-short.first .main-image {
+	margin-bottom: 0;
+	
+}
+.section-pagination li {
+	position: relative;
+	top: 4px;
+	
+}
+.article footer .actions {
+	position: absolute;
+	top: 25px;
+	
+}
+.article footer h3 + .actions {
+	position: static;
+	top: 0;
+	
+}
+.about-author {
+	zoom: 1;
+}
+.article .photos li {
+	margin-left: 12px;
+}
+.article .photos {
+	margin-left: -12px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+/* 
+Title:     Narodnaja Volja styles
+Updated:   June 3rd, 2009
+*/
+
+body {
+	margin: 35px;
+	padding: 0;
+	font-family: Georgia, serif;
+	font-size: small;
+	color: #000;
+        background: #fff;
+}
+
+td {
+	font-family: Georgia, serif;
+	font-size: small;
+	color: #000;
+}
+
+div.clear {
+        clear: both;
+        height: 7px;
+        margin-bottom: 21px;
+	border-bottom: 1px dashed #333;
+}
+
+#logo {
+        text-align: left;
+        margin: 0;
+        clear: both;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 200%;
+	line-height: 1em;
+	font-weight: normal;
+	color: #000;
+}

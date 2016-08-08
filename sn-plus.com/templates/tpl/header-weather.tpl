@@ -1,0 +1,1 @@
+<img src="http://img.gismeteo.ru/images/icons/new/d.sun.c1.png" height="24" title="температура 16..18 С, давление 746..748 мм рт.ст., ветер Юго-Западный, 3 м/с"> 16..18 &deg;C

@@ -1,0 +1,138 @@
+BODY {
+	LINE-HEIGHT: 1.3; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px;
+	margin: 0;
+  padding: 0;
+  background: #808080;
+}
+A:link {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+.header {
+	CLEAR: both
+}
+#footer {
+	CLEAR: both
+}
+#wrapper {
+	TEXT-ALIGN: center; MARGIN: 0 auto; WIDTH: 950px; BACKGROUND: #fff; padding: 0 20px;
+}
+#main {
+	TEXT-ALIGN: left; MARGIN-BOTTOM: 40px
+}
+#column-1 {
+	MARGIN: 0px 25px 0px 0px; WIDTH: 625px !important; FLOAT: left
+}
+#column-2 {
+	WIDTH: 300px !important; FLOAT: left
+}
+.readmore SPAN {
+	MARGIN: 0px 0.35em; COLOR: #e9e9e9; FONT-SIZE: 1.1em
+}
+.date {
+	TEXT-TRANSFORM: uppercase; COLOR: #bcbcbc; FONT-WEIGHT: bold
+}
+H1 {
+	LINE-HEIGHT: 1em; TEXT-TRANSFORM: none; FONT-FAMILY: "Times New Roman", Times, serif; MARGIN-BOTTOM: 0.6em; FLOAT: left; COLOR: #006699; FONT-SIZE: 2.2em; FONT-WEIGHT: normal
+}
+.h1 {
+	LINE-HEIGHT: 1em; TEXT-TRANSFORM: none; FONT-FAMILY: "Times New Roman", Times, serif; MARGIN-BOTTOM: 0.6em; FLOAT: left; COLOR: #006699; FONT-SIZE: 2.2em; FONT-WEIGHT: normal
+}
+H1.small {
+	MARGIN: 2em 0px; FONT-SIZE: 1.5em
+}
+.h1.small {
+	MARGIN: 2em 0px; FONT-SIZE: 1.5em
+}
+H2 {
+	TEXT-TRANSFORM: uppercase; MARGIN-BOTTOM: 0.5em; COLOR: #003366; FONT-SIZE: 2em; FONT-WEIGHT: bold; clear: left;
+}
+.h2 {
+	TEXT-TRANSFORM: uppercase; MARGIN-BOTTOM: 0.5em; COLOR: #003366; FONT-SIZE: 2em; FONT-WEIGHT: bold
+}
+H3 {
+	MARGIN-BOTTOM: 0.5em; COLOR: #003366; FONT-SIZE: 1.3em; FONT-WEIGHT: bold
+}
+.h3 {
+	MARGIN-BOTTOM: 0.5em; COLOR: #003366; FONT-SIZE: 1.3em; FONT-WEIGHT: bold
+}
+H1 A:link {
+	COLOR: #006699
+}
+H1 A:visited {
+	COLOR: #006699
+}
+.h1 A:link {
+	COLOR: #006699
+}
+.h1 A:visited {
+	COLOR: #006699
+}
+H2 A:link {
+	COLOR: #003366
+}
+H2 A:visited {
+	COLOR: #003366
+}
+.h2 A:link {
+	COLOR: #003366
+}
+.h2 A:visited {
+	COLOR: #003366
+}
+H3 A:link {
+	COLOR: #003366
+}
+H3 A:visited {
+	COLOR: #003366
+}
+.h3 A:link {
+	COLOR: #003366
+}
+.h3 A:visited {
+	COLOR: #003366
+}
+H1 A:hover {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+.h1 A:hover {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+H1.small A:hover {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+.h1.small A:hover {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+H2 A:hover {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+.h2 A:hover {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+H3 A:hover {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+.h3 A:hover {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+HR {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BACKGROUND: #e9e9e9; HEIGHT: 1px; COLOR: #e9e9e9; CLEAR: both; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+HR.section-divider {
+	MARGIN: 0px 0px 2em
+}
+HR.black {
+	MARGIN: 20px 0px; BACKGROUND: #000; COLOR: #000
+}
+.rss-link {
+	PADDING-LEFT: 18px; DISPLAY: inline-block; BACKGROUND: url(/templates/images/rss-icon.gif) no-repeat left center
+}
+.block-title {
+	FONT-FAMILY: "Times New Roman", Times, serif; COLOR: #666; FONT-SIZE: 1.5em; FONT-WEIGHT: normal
+}

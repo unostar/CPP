@@ -1,0 +1,1 @@
+<table cellspacing=0><tr valign=middle><td colspan=2>Курсы валют<td align=right nowrap>  10.09.12<td align=right nowrap>  11.09.12<tr><td nowrap>EUR<td>Евро<td align=right>10 680.00<td align=right>10 760.00<tr><td>USD<td>Доллар США<td align=right nowrap>8 430.00<td align=right>8 410.00<tr><td>RUB<td nowrap>Российский рубль<td align=right>263.50<td align=right>265.00</table>

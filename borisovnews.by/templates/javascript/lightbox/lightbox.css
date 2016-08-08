@@ -1,0 +1,39 @@
+#lightbox{
+	background-color:#eee;
+	padding: 5px;
+	border-bottom: 1px solid #666;
+	border-right: 1px solid #666;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+#lightboxDetails{
+	font-size: 0.9em;
+	padding-top: 0.5em;
+}
+#closeButton {
+  top: 0px;
+  right: 0px;
+}
+#lightboxCaption{ float: left; }
+#keyboardMsg{ float: right; }
+
+#lightbox img{ border: none; clear: both;} 
+#overlay img{ border: none; }
+
+#overlay{ background-image: url(overlay.png); }
+
+* html #overlay{
+	background-color: #e9e9e9;
+	back\ground-color: transparent;
+	background-image: url(blank.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="overlay.png", sizingMethod="scale");
+	}
+kbd {
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  padding: 0pt 3px 2px 4px;
+  color: #555555;
+  background-color: #dddddd;
+  font-size: inherit;
+  font-family: inherit;
+  }

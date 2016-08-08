@@ -1,0 +1,220 @@
+/****************************** PHOTOFACT **********************************/
+
+#photofact {
+  margin-bottom: 40px;
+}
+
+#photofact .slider {
+  width: 745px;
+  height: 230px;
+  background: #d1d1d1;
+  margin-top: 10px;
+}
+
+#photofact .slider div.prev, #photofact .slider div.next {
+  display: inline-block;
+  float: left;
+  margin: 102px 0;
+  width: 20px;
+  height: 26px;
+  cursor: pointer;
+}
+
+#photofact .slider div.prev {
+  background: url(/templates/img/icon-slideshow-prev.gif) no-repeat;
+}
+
+#photofact .slider div.next {
+  background: url(/templates/img/icon-slideshow-next.gif) no-repeat;
+}
+
+#photofact .slider div.prev:hover {
+  background: url(/templates/img/icon-slideshow-prev_hov.gif) no-repeat;
+}
+
+#photofact .slider div.next:hover {
+  background: url(/templates/img/icon-slideshow-next_hov.gif) no-repeat;
+}
+
+#photofact div.scrollable {
+  position:relative;
+  overflow:hidden;
+  float: left;
+  width: 699px;
+  height: 184px;
+  background: #efefef;
+  border: 3px #fff solid;
+  margin: 20px 0;
+}
+
+#photofact div.scrollable div.items {
+  width: 20000em;
+  position: absolute;
+}
+
+#photofact div.scrollable div.items div {
+  float: left;
+  display: block;
+  width: 217px;
+  height: 144px;
+  margin: 30px 0 10px 12px;
+}
+
+#photofact div.scrollable div.items div img {
+  border: 3px #ccc solid;
+  padding: 1px;
+  float: left;
+  width: 100px !important;
+  height: 100px !important;
+  margin-right: 10px;
+}
+
+#photofact div.scrollable div.items div a {
+  text-decoration: none;
+  color: #996600;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#photofact div.scrollable div.items div a:hover {
+  text-decoration: underline;
+  color: #A77114;
+}
+
+#photofact div.scrollable div.items div p {
+  margin: 5px 0;
+}
+
+#photofact div.scrollable div.items div p.date {
+  color: #999;
+}
+
+#photofact div.scrollable div.items div p.comments {
+  color: #333;
+}
+
+#photofact div.scrollable div.items div p.comments a {
+  font-weight: normal;
+}
+
+
+/********* PHOTOFACT PAGE **************/
+
+.column-1.article .photos {
+  float: left;
+  clear: both;
+  display: block;
+  padding: 23px 0;
+  margin: 0 0 0 -16px;
+  width: 745px;
+}
+
+.column-1.article .photos a {
+  display: block;
+  float: left;
+  margin: 0 10px 10px 0;
+  padding: 0;
+  border-left: 3px solid #5a4040;
+  text-decoration: none;
+  color: #333;
+  background: #efefef;
+  width: 235px;
+  font-size: 0.916em;
+}
+
+.column-1.article .photos a img {
+  max-width: 120px !important;
+  max-height: 80px !important;
+  border: solid #fff;
+  border-width: 1px 1px 1px 2px;
+  float: left;
+  margin: 1px 5px 1px 0;
+}
+
+/********************* FRONT CENTER LINKS ******************************/
+
+.center-links .links {
+  border-top: 6px #efefef solid;
+  padding: 6px 0 0 0;
+}
+
+.center-links .links dd a {
+  color: #666;
+  text-decoration: underline;
+}
+
+.center-links .links dd a:hover {
+  color: #333;
+}
+
+.center-links .links dl {
+  float:left;
+  clear: right;
+  display: block;
+  width: 320px;
+  margin-right: 10px;
+  background: #f9f8f9;
+}
+
+.center-links .links dl.last {
+  margin: 0;
+}
+
+.center-links .links dt {
+  font-size: 1.33em;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.88em;
+  display: block;
+  clear: both;
+  color: #adaead;
+  background: #efefef;
+  border-bottom: 10px #fff solid;
+  padding-left: 17px;
+}
+
+.center-links .links dd {
+  margin: 0 30px;
+  font-size: 1em;
+  line-height: 1.83em;
+}
+
+/**************************** SEARCH ********************************/
+
+.column-1.search .article_box .big_article {
+  padding-bottom: 10px;
+}
+
+.column-1.search .article_box .big_article_data {
+  padding: 10px 0 10px 16px;
+}
+
+.column-1.search .article_box p.date {
+  margin-bottom: 6px;
+}
+
+.column-1.search .article_box p.more {
+  padding-top: 5px;
+}
+
+.column-1.search .article_box .navigation {
+  display: block;
+  clear: both;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.column-1.search .article_box .navigation a {
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #ccc;
+  background: #efefef;
+  color: #cecfce;
+  text-decoration: none;
+}
+
+.column-1.search .article_box .navigation a:link, .column-1.search .article_box .navigation a:visited {
+  color: #996600;
+}

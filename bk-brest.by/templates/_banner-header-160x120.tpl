@@ -1,0 +1,1 @@
+<img src="/templates/images/banner160.jpg" alt="Брестъ-литовский Курьеръ" />

@@ -1,0 +1,46 @@
+/***** FOOTER *****/
+
+#footer .links {
+  width: 968px;
+  height: 62px;
+  display: block;
+  background: #e7e3e7;
+  border-left: 6px #5a4142 solid;
+  border-right: 6px #5a4142 solid;
+  text-align: center;
+  margin: 75px 0 20px 0;
+}
+
+#footer .links img {
+  float: left;
+  clear: right;
+}
+
+#footer .links p {
+  float: left;
+  font-size: 1.1em;
+  line-height: 1.6em;
+  color: #999999;
+  text-align: left;
+  margin: 11px 0 11px 5px;
+}
+
+#footer .links a {
+  color: #996600;
+  text-decoration: none;
+}
+
+#footer .links a:hover {
+  color: #A77114;
+  text-decoration: underline;
+}
+
+#footer .counters {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#footer .counters * {
+  margin: 0 14px;
+}

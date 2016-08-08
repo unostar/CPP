@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* 
+===============СОДЕРЖАНИЕ===================
+	1. КОРРЕКТНОЕ ОТОБРАЖЕНИЕ ГЛОБАЛЬНЫХ СТИЛЕЙ
+	2. РАЗМЕТКА
+	3. Bugfix
+		3.1. IE6 и IE7
+		3.2. IE6
+		3.3. IE7
+============================================	
+*/
+
+/* 1. КОРРЕКТНОЕ ОТОБРАЖЕНИЕ ГЛОБАЛЬНЫХ СТИЛЕЙ
+-------------------------------------------------------- */
+
+a:hover {word-spacing: normal}
+
+* html legend {margin-left: -7px}
+
+.g-clean, .l-header, .b-h-top, .b-nfeed, .submit-t1 {height: 1%} /* Очистка потока */
+	
+.b-f-menu li, .b-h-top_menu li, .g-iblock, .ico {display: inline; margin-right: 4px; zoom: 1} /* display: inline-block с отступом справа в 4px */
+.g-iblockie, .b-h-mid_wt-arrleft, .b-h-mid_wt-arrright, .b-bheader_blue b, .b-bheader_gray b, .b-bheader_pright a, .g-justifynewspaper {display: inline; zoom: 1} /* display: inline-block */
+
+.g-tjustify li, .g-bjustify {display: inline} /* Стиль для блоков, которые выравниваются по все ширине */
+	
+/* 2. Все 
+-------------------------------------------------------- */
+/* has layout */
+.g-bg, .l-footer, .b-h-top_menu, .g-tjustify, .b-navi, .b-bheader_blue, .b-bheader_gray, .b-bheader_black, .b-gallery_body, .list-linksgray li, .list-linkslightgray li, .b-freshnews li {zoom: 1}
+
+/* fixes */
+.b-h-top {height: 18px}
+.b-h-top .b-f-search_submit {margin-top: 3px}
+.b-h-mid_wt-arrleft, .b-h-mid_wt-arrright {margin-right: 1px; margin-left: 0}
+.b-bheader_blue, .b-bheader_gray {background-position: 0 16px; top: -4px; zoom:1}
+.b-artgallery_item-i td {padding-bottom: 2px}
+
+/* Data:uri */
+.b-bheader_black {background-image: url(/templates/images/bg-bheader_black.gif)}
+.b-bheader_blue, .b-bheader_gray {background-image: url(/templates/images/bg-bheader_blue.gif)}
+.m-navi_bgbottom {background-image: url(/templates/images/bg-navi.gif)} 
+.b-curpaper {background: url(/templates/images/bg-curno.gif) 0 0 repeat-x}
+.b-calendar_header {background: url(/templates/images/bg-calendar_header.gif) 0 0 repeat-x; zoom:1}
+.submit-t1 {background: url(/templates/images/bg-submitt1.gif) #cacbcb repeat-x}
+.b-artgallery a.header {background-image: url(/templates/images/bg-artgallery_header.gif);}
+.b-artgallery div {background-image: url(/templates/images/bg-artgallery_div.gif);}
+.b-gallery_body {background-image: url(/templates/images/bg-gallery.gif)}
+.b-article_ddmenu {background: url(/templates/images/bg-ddmenu.png)}
+
+.b-printnumber li, .a-linebullet, .list-linksgray li, .list-linkslightgray li, .b-nazvper_next, .b-freshnews li div {background-image: url(/templates/images/bullet-blue.gif); background-repeat: no-repeat} /* bullet blue */
+.b-nazvper_previous {background-image: url(/templates/images/bullet-blue-left.gif); background-repeat: no-repeat} /* bullet blue left */
+.list-linkslightgray li.down {background-image: url(/templates/images/bullet-blue-down.gif); background-repeat: no-repeat} /* bullet blue down */
+.bg-dotted, .b-freshnews li, .b-nfeed_bottom, .b-www_item, .b-comments_item, .b-archive_search, .b-allcomments_item, .b-article .b-vnimaniya_credits, .b-article_panel {background: url(/templates/images/bg-dotted.gif) 0 bottom repeat-x} /* dotted bottom */
+.b-freshnews li, .b-nfeed_bottom, .b-www_item, .b-comments_item, .b-allcomments_item {background-position: 0 0}
+.b-h-mainmenu, .b-h-mainmenu li, .b-h-submenu, .b-h-submenu li, .b-h-mainmenu a, .b-h-submenu a {background-image: url(/templates/images/spr-bgx.png); background-repeat: repeat-x}
+.b-h-mainmenu a, .b-h-submenu a {background-repeat: no-repeat}
+
+/* Вставка кода */
+	.b-f-menu ul li em {font-style: normal; display: none}
+	.b-f-menu ul:first-child li em {display: inline}
+	.b-f-menu ul:first-child li:first-child em {display: none}
+.b-f-menu ul li {zoom: expression(runtimeStyle.zoom = 1, insertAdjacentHTML('afterBegin','<em>|</em>'));}
+
+/* 3. IE 6 только
+-------------------------------------------------------- */
+/* ie6 png */
+* html .b-brcourier {zoom: expression(runtimeStyle.zoom=1, runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/img-brcourier.png)", runtimeStyle.background=0);}
+* html .dd1 {zoom: expression(runtimeStyle.zoom=1, runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/bg-dd1.png, sizingMethod=crop)", runtimeStyle.background=0);}
+* html .dd2 {zoom: expression(runtimeStyle.zoom=1, runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/bg-dd2.png, sizingMethod=crop)", runtimeStyle.background=0);}
+* html .dd3 {zoom: expression(runtimeStyle.zoom=1, runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/bg-dd3.png, sizingMethod=crop)", runtimeStyle.background=0);}
+* html .dd4 {zoom: expression(runtimeStyle.zoom=1, runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/bg-dd4.png, sizingMethod=crop)", runtimeStyle.background=0);}
+
+* html .b-article_ddmenu {top: 27px; zoom: expression(runtimeStyle.zoom=1, runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/bg-ddmenu.png, sizingMethod=scale)", runtimeStyle.background=0);}
+
+/* ie6 min-height */
+* html .l-footer {height: 30px}
+
+/* ie6 Эмуляция first-child */
+* html b-f-menu ul, * html b-f-menu ul li, * html .b-h-mainmenu li, * html .b-h-submenu li, * html .b-freshnews li, * html .b-calendar td, * html th, * html .b-comments_item, * html .b-artgallery_item, * html .b-artgallery_item-i td, * html .b-obozrevatel .b-nfeed, * html .b-nfeed_bottom, * html .b-archive_search td, * html .b-allcomments_item {zoom: expression(runtimeStyle.zoom = 1, this == parentNode.firstChild ? (className += " first-child") : 0);}
+
+* html .ico { vertical-align:top; }

@@ -1,0 +1,58 @@
+<VirtualHost *:81>
+    DocumentRoot /var/www/svaboda/campsite
+    ServerName svabodaby.net
+    ServerAlias www.svabodaby.net svaboda.omniton.net
+    TransferLog /dev/null
+    DirectoryIndex index2.php index.html
+    ExpiresActive On
+    ExpiresByType text/html "access plus 10 minutes"
+    ExpiresByType text/xml "access plus 10 minutes"
+    ExpiresByType application/rss+xml "access plus 10 minutes"
+    ExpiresDefault "access plus 30 days"
+    <Directory /var/www/svaboda/campsite>
+	Options -Indexes FollowSymLinks MultiViews
+	AllowOverride All
+	<IfModule mod_access.c>
+	    Order allow,deny
+	    Allow from all
+	</IfModule>
+    </Directory>	
+
+    Redirect /admin https://svaboda.omniton.net/admin
+    Redirect /banner http://openx.omniton.net
+    Redirect /phpmyadmin__ https://svaboda.omniton.net/phpmyadmin__
+    											    
+</VirtualHost>
+
+<VirtualHost *:443>
+#ErrorLog logs/ssl_error_log
+#TransferLog logs/ssl_access_log
+LogLevel warn
+SSLEngine on
+SSLProtocol all -SSLv2
+SSLCipherSuite ALL:!ADH:!EXPORT:!SSLv2:RC4+RSA:+HIGH:+MEDIUM:+LOW
+SSLCertificateFile /etc/ssl/www/omniton.net/cert.pem
+SSLCertificateKeyFile /etc/ssl/www/omniton.net/key.pem
+SSLCACertificateFile /etc/ssl/ca/cacert.pem
+SSLCARevocationFile /etc/ssl/ca/ca.crl	
+SSLVerifyDepth 2
+SSLOptions +FakeBasicAuth +ExportCertData
+#SSLVerifyClient require
+				    
+    DocumentRoot /var/www/svaboda/campsite
+    ServerName svaboda.omniton.net
+#    ServerAlias tsr.omniton.net
+    DirectoryIndex index.php index.html
+    <Directory /var/www/svaboda/campsite>
+	Options -Indexes FollowSymLinks MultiViews
+	AllowOverride All
+#        SSLRequire %{SSL_CLIENT_S_DN_OU} eq "Admin" or %{SSL_CLIENT_S_DN_OU} eq "svaboda"	
+	<IfModule mod_access.c>
+	    Order allow,deny
+	    Allow from all
+	</IfModule>
+    </Directory>	
+</VirtualHost>                                  
+
+
+# RedirectMatch ^/mailman[/]*$ http://www.example.com/mailman/listinfo

@@ -1,0 +1,96 @@
+/* minigalZoom CSS declarations */
+
+#minigalZoom{
+	background-color:#eee;
+	padding: 5px;
+	border-bottom: 1px solid #999;
+	border-right: 1px solid #999;
+	}
+#minigalZoomDetails{
+	font-size: 0.8em;
+	padding-top: 0.4em;
+	}	
+#minigalZoomCaption{ float: left; }
+#keyboardMsg{ float: right; }
+#closeButton{ top: 0px; right: 0px; }
+
+#minigalZoom img{ border: none; clear: both;} 
+#overlay img{ border: none; }
+
+#overlay{ background-image: url(overlay.png); }
+
+* html #overlay{
+	background-color: #ccc;
+	back\ground-color: transparent;
+	background-image: url(blank.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="overlay.png", sizingMethod="scale");
+	}
+
+
+/* minigalSlider CSS declarations */
+
+#minigal, #paginate-minigal {margin:0 auto;visibility:hidden;}
+
+#minigal.sliderwrapper {
+position: relative; /*leave as is*/
+overflow: hidden; /*leave as is*/
+width: 328px; /*width of featured content slider*/
+height: 229px;
+background-color: #CCC;
+font-size:0;
+}
+
+#minigal.sliderwrapper .tc {display:block;height:6px;width:100%;background:url(minigal.gif) repeat-x scroll center -24px;}
+#minigal.sliderwrapper .tl {display:block;height:6px;width:100%;background:url(minigal.gif) no-repeat scroll left 0px;}
+#minigal.sliderwrapper .tr {display:block;height:6px;width:100%;background:url(minigal.gif) no-repeat scroll right -6px;}
+
+#minigal.sliderwrapper .contentdiv{
+visibility: hidden; /*leave as is*/
+position: absolute; /*leave as is*/
+left: 0;  /*leave as is*/
+top: 0;  /*leave as is*/
+width: 302px; /*width of content DIVs within slider*/
+height: 100%;
+filter:progid:DXImageTransform.Microsoft.alpha(opacity=100);
+-moz-opacity: 1;
+opacity: 1;
+padding: 7px 12px 0 12px;
+margin: 6px  1px 0 1px;
+background: #FFF url(minigal.gif) repeat-x scroll center -30px;
+font: normal 10px Arial,Helvetica,sans-serif;
+}
+
+#minigal.sliderwrapper .contentdiv a {
+display:block;
+width:300px;
+height:200px;
+border: 1px solid #CCC;
+}
+
+#paginate-minigal.pagination {
+width: 328px;
+background-color: #CCC;
+}
+
+#paginate-minigal.pagination .wrapper{
+width: 324px; /* Width of pagination DIV */
+margin:0 1px;
+padding-left:2px;
+text-align: left;
+font-size:0;
+background: #FFF url(minigal.gif) repeat-x scroll center bottom;
+}
+
+#paginate-minigal.pagination .bc {display:block;height:6px;width:100%;background:url(minigal.gif) repeat-x scroll center bottom;margin-top:-6px;font-size:0;}
+#paginate-minigal.pagination .bl {display:block;height:6px;width:100%;background:url(minigal.gif) no-repeat scroll left -12px;}
+#paginate-minigal.pagination .br {display:block;height:6px;width:100%;background:url(minigal.gif) no-repeat scroll right -18px;}
+
+#paginate-minigal.pagination a {
+display:inline-block;
+width:40px;
+height:40px;
+border:1px solid #bebebe;
+margin:0 0 10px 10px;
+}
+
+#paginate-minigal.pagination a:hover, #paginate-minigal.pagination a.selected {}

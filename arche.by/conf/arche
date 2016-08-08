@@ -1,0 +1,64 @@
+<VirtualHost *>
+    DocumentRoot /var/www/arche/campsite
+    ServerName arche.by
+    ServerAlias *.arche.by
+    #TransferLog /dev/null
+
+    FileETag None
+    Header unset X-Powered-By
+    Header unset ETag
+    Header unset Pragma
+
+    ExpiresActive On
+    ExpiresByType text/html "access plus 10 minutes"
+    ExpiresByType text/xml "access plus 10 minutes"
+    ExpiresByType application/rss+xml "access plus 10 minutes"
+    ExpiresDefault "access plus 30 days"
+    DirectoryIndex index.php index.html
+    <Directory /var/www/arche/campsite>
+	Options -Indexes FollowSymLinks MultiViews
+	AllowOverride All
+	<IfModule mod_access.c>
+	    Order allow,deny
+	    Allow from all
+	</IfModule>
+    </Directory>	
+
+    Redirect /admin https://www.arche.by/admin
+    Redirect /phpmyadmin__ https://www.arche.by/phpmyadmin__/
+    											    
+</VirtualHost>
+
+
+
+<VirtualHost *:443>
+#ErrorLog logs/ssl_error_log
+#TransferLog logs/ssl_access_log
+LogLevel warn
+SSLEngine on
+SSLProtocol all -SSLv2
+SSLCipherSuite ALL:!ADH:!EXPORT:!SSLv2:RC4+RSA:+HIGH:+MEDIUM:+LOW
+SSLCertificateFile /etc/ssl/www/cert.pem
+SSLCertificateKeyFile /etc/ssl/www/key.pem
+SSLCACertificateFile /etc/ssl/ca/cacert.pem
+#SSLCARevocationFile /etc/ssl/ca/ca.crl	
+SSLVerifyDepth 2
+SSLOptions +FakeBasicAuth +ExportCertData
+SSLVerifyClient require
+				    
+    DocumentRoot /var/www/arche/campsite
+    ServerName arche.by
+    ServerAlias *.arche.by
+    DirectoryIndex index.php index.html
+    <Directory /var/www/arche/campsite>
+	Options -Indexes FollowSymLinks MultiViews
+	AllowOverride All
+        SSLRequire %{SSL_CLIENT_S_DN_OU} eq "Admin" or %{SSL_CLIENT_S_DN_OU} eq "arche"	
+	<IfModule mod_access.c>
+	    Order allow,deny
+	    Allow from all
+	</IfModule>
+    </Directory>	
+</VirtualHost>                                  
+
+# RedirectMatch ^/mailman[/]*$ http://www.example.com/mailman/listinfo

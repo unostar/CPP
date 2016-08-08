@@ -1,0 +1,1 @@
+<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/6515223.js"></script>
